@@ -2,23 +2,115 @@
 
 Workspace guidance for taking software products from idea to operation without skipping the thinking that prevents expensive stupidity later.
 
-The guidance is deliberately modular. The top-level process explains the flow; each sub-document expands one discipline or checkpoint. Small projects can use the lightweight versions. Serious, public, security-sensitive, multi-user, regulated, or production projects should treat the full guidance as required gates.
+The guidance is modular. The top-level process explains the flow; each sub-document expands one discipline or checkpoint. Small projects can use the lightweight versions. Serious, public, security-sensitive, multi-user, regulated, or production projects should treat the full guidance as required gates.
+
+Start here instead of reading everything like a doomed compliance intern:
+
+1. Classify the project with `TAILORING_GUIDE.md`.
+2. Follow the lifecycle spine in `SOFTWARE_PRODUCT_DEVELOPMENT_PROCESS.md`.
+3. Use the relevant discipline guide when that phase becomes active.
+4. Copy starter artifacts from `templates/` when useful.
+5. Use `GOVERNANCE_AND_APPROVALS.md` when decisions, approvals, risk acceptance, releases, or agent boundaries matter.
+
+## Quick Start by Project Size
+
+### Tiny / Personal / Throwaway
+
+Use:
+
+- `TAILORING_GUIDE.md`
+- lightweight sections from the relevant guidance docs
+- direct smoke test or inspection evidence
+
+Usually enough:
+
+- short problem statement
+- TODO/backlog note if follow-up exists
+- usage notes
+- safety/privacy note if relevant
+
+### Small Internal Tool
+
+Use:
+
+- `TAILORING_GUIDE.md`
+- `PRODUCT_FRAMING_GUIDANCE.md`
+- `REQUIREMENTS_GUIDANCE.md`
+- `ARCHITECTURE_GUIDANCE.md`
+- `IMPLEMENTATION_GUIDANCE.md`
+- `QA_GUIDANCE.md`
+- selected templates
+
+Add `GOVERNANCE_AND_APPROVALS.md` if the tool touches external systems, shared users, sensitive data, destructive actions, or release approval.
+
+### Serious / Production / Public / Regulated Product
+
+Use the full lifecycle:
+
+- `SOFTWARE_PRODUCT_DEVELOPMENT_PROCESS.md`
+- `ENGINEERING_PRINCIPLES.md`
+- all relevant discipline guides
+- `RELEASE_SECURITY_GATE.md`
+- `GOVERNANCE_AND_APPROVALS.md`
+- templates for evidence and approvals
 
 ## Core Documents
 
+### Start / Navigation
+
+- `TAILORING_GUIDE.md` — classify project risk and choose the right amount of process
 - `SOFTWARE_PRODUCT_DEVELOPMENT_PROCESS.md` — high-level process and phase gates
 - `ENGINEERING_PRINCIPLES.md` — baseline engineering, security, privacy, and operations principles
+- `GOVERNANCE_AND_APPROVALS.md` — human approval boundaries, accepted-risk rules, and agent autonomy limits
+
+### Product and Design
+
 - `PRODUCT_FRAMING_GUIDANCE.md` — opportunity framing and problem definition
 - `REQUIREMENTS_GUIDANCE.md` — product, functional, non-functional, security, and operational requirements
 - `UX_GUIDANCE.md` — UX design process, trust UX, accessibility, validation, and UX readiness
-- `SECURITY_GUIDANCE.md` — security and privacy design process
+
+### Security, Architecture, and Planning
+
+- `SECURITY_GUIDANCE.md` — canonical security and privacy design process
 - `ARCHITECTURE_GUIDANCE.md` — technical architecture and system design
 - `IMPLEMENTATION_PLANNING_GUIDANCE.md` — milestones, backlog breakdown, and delivery planning
+
+### Build, Verify, Release, Operate
+
 - `IMPLEMENTATION_GUIDANCE.md` — build guidance and coding expectations
 - `QA_GUIDANCE.md` — verification, testing, and quality gates
 - `RELEASE_SECURITY_GATE.md` — explicit security review before release
 - `RELEASE_GUIDANCE.md` — launch/release checklist and rollback readiness
 - `OPERATIONS_GUIDANCE.md` — post-launch operations, automation, maintenance, and incident handling
+
+## Templates
+
+Starter artifacts live in `templates/`:
+
+- `templates/product-brief.md`
+- `templates/requirements-spec.md`
+- `templates/architecture-overview.md`
+- `templates/risk-register.md`
+- `templates/threat-model.md`
+- `templates/qa-plan.md`
+- `templates/release-checklist.md`
+- `templates/operations-runbook.md`
+- `templates/decision-record.md`
+
+Templates are deliberately plain Markdown. Copy them into a project and delete what does not apply. The punishment for using every section blindly is owning the resulting bureaucracy.
+
+## Canonical Source Rules
+
+Some topics appear in multiple documents because they matter in multiple phases. To avoid drift:
+
+- Security/privacy design source of truth: `SECURITY_GUIDANCE.md`
+- Release security decision source of truth: `RELEASE_SECURITY_GATE.md`
+- Operational ownership and runbooks source of truth: `OPERATIONS_GUIDANCE.md`
+- Overall lifecycle source of truth: `SOFTWARE_PRODUCT_DEVELOPMENT_PROCESS.md`
+- Project-class/tailoring source of truth: `TAILORING_GUIDE.md`
+- Approval and agent-boundary source of truth: `GOVERNANCE_AND_APPROVALS.md`
+
+Other documents may include phase-specific checkpoints, but should not redefine those policies in incompatible ways.
 
 ## Operating Model
 
