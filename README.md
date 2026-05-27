@@ -73,11 +73,12 @@ Add:
 - `ENGINEERING_PRINCIPLES.md` — baseline engineering, security, privacy, and operations principles
 - `GOVERNANCE_AND_APPROVALS.md` — human approval boundaries, accepted-risk rules, and agent autonomy limits
 
-### Product and Design
+### Product, Design, and Documentation
 
 - `PRODUCT_FRAMING_GUIDANCE.md` — opportunity framing and problem definition
 - `REQUIREMENTS_GUIDANCE.md` — product, functional, non-functional, security, and operational requirements
 - `UX_GUIDANCE.md` — UX design process, trust UX, accessibility, validation, and UX readiness
+- `DOCUMENTATION_GUIDANCE.md` — user, admin, operator, developer, release, and documentation QA expectations
 
 ### Security, Compliance, Architecture, and Planning
 
@@ -113,6 +114,13 @@ Starter artifacts live in `templates/`:
 - `templates/soc2-iso27001-crosswalk.md`
 - `templates/audit-readiness-checklist.md`
 - `templates/security-questionnaire.md`
+- `templates/user-guide.md`
+- `templates/admin-guide.md`
+- `templates/quick-start.md`
+- `templates/configuration-guide.md`
+- `templates/troubleshooting-guide.md`
+- `templates/documentation-plan.md`
+- `templates/documentation-qa-checklist.md`
 
 Templates are deliberately plain Markdown. Copy them into a project and delete what does not apply. The punishment for using every section blindly is owning the resulting bureaucracy.
 
@@ -123,6 +131,7 @@ Some topics appear in multiple documents because they matter in multiple phases.
 - Security/privacy design source of truth: `SECURITY_GUIDANCE.md`
 - Release security decision source of truth: `RELEASE_SECURITY_GATE.md`
 - Enterprise compliance readiness source of truth: `COMPLIANCE_READINESS_GUIDANCE.md`
+- User/admin/operator documentation source of truth: `DOCUMENTATION_GUIDANCE.md`
 - Operational ownership and runbooks source of truth: `OPERATIONS_GUIDANCE.md`
 - Overall lifecycle source of truth: `SOFTWARE_PRODUCT_DEVELOPMENT_PROCESS.md`
 - Project-class/tailoring source of truth: `TAILORING_GUIDE.md`

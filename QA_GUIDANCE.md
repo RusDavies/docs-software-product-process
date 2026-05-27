@@ -127,6 +127,20 @@ Verify:
 - runbook accuracy
 - self-healing behavior where implemented
 
+### 9. Documentation QA
+
+Verify:
+
+- required user/admin/operator docs exist
+- quick-start/setup steps work
+- configuration guidance matches reality
+- troubleshooting and recovery guidance is accurate
+- release notes match the release
+- links, examples, and screenshots are current where used
+- security/privacy/compliance claims are accurate and approved
+
+Guidance: `DOCUMENTATION_GUIDANCE.md`
+
 ## Lightweight Project Version
 
 For small projects:
@@ -136,7 +150,8 @@ For small projects:
 3. Security smoke checks
 4. Accessibility basics
 5. Operational smoke checks
-6. Known issues list
+6. Documentation smoke check
+7. Known issues list
 
 ## Recommended Project Files
 
@@ -145,6 +160,7 @@ For small projects:
 - `docs/qa/security-test-results.md`
 - `docs/qa/accessibility-checks.md`
 - `docs/qa/release-qa-report.md`
+- `docs/documentation/documentation-qa-checklist.md`
 
 ## Definition of QA-Ready
 
@@ -152,7 +168,7 @@ QA is ready when:
 
 - acceptance criteria exist
 - test data/environment exists
-- security/UX/operations checks are known
+- security/UX/operations/documentation checks are known
 - risks and edge cases are identified
 
 ## Definition of QA-Done
@@ -160,6 +176,7 @@ QA is ready when:
 QA is done when:
 
 - required checks pass or exceptions are approved
+- required documentation has been checked or exceptions are approved
 - known issues are documented
 - release blockers are resolved
 - evidence is recorded
