@@ -20,6 +20,8 @@ Every project should move deliberately from idea to operation:
 
 The process is modular. Small projects can use lightweight versions. Larger, riskier, public, customer-facing, regulated, security-sensitive, or multi-role projects should use the full process.
 
+Before applying the full process, classify the project with `TAILORING_GUIDE.md`. Use `GOVERNANCE_AND_APPROVALS.md` when approvals, accepted risk, release authority, or agent autonomy boundaries matter.
+
 ## Process Principles
 
 All phases should apply `ENGINEERING_PRINCIPLES.md`. Project teams may tailor or deviate from principles, but deviations should be explicit and justified.
@@ -292,7 +294,9 @@ A product or major feature is ready for release when:
 
 ## Lightweight Project Version
 
-For small internal projects:
+For small internal projects, confirm the project class in `TAILORING_GUIDE.md`, then use only the artifacts justified by risk and complexity.
+
+Suggested minimum:
 
 1. Problem statement
 2. Target users/roles
