@@ -150,15 +150,15 @@ Required:
 
 Recommended:
 
-- SOC 2 / ISO 27001 crosswalk
+- SOC 2 / ISO/IEC 27001 crosswalk
 - audit-readiness checklist
-- Statement of Applicability planning if ISO 27001 certification is a real target
+- Statement of Applicability planning if ISO/IEC 27001 certification is a real target
 - SOC 2 Type I/Type II roadmap if attestation is a real target
 - monthly evidence-readiness review until audit posture is mature
 
 Approval:
 
-- human approval required for compliance claims, audit scope, customer-facing security answers, accepted compliance gaps, formal auditor engagement, and any claim that the product is SOC 2 or ISO 27001 ready/certified.
+- human approval required for compliance claims, audit scope, customer-facing security answers, accepted compliance gaps, formal auditor engagement, and any claim that the product is SOC 2 or ISO/IEC 27001 ready/certified.
 
 Guidance: `COMPLIANCE_READINESS_GUIDANCE.md`
 
@@ -259,7 +259,7 @@ Class 4E evidence should also include:
 - control register
 - evidence register
 - policy index
-- SOC 2 / ISO 27001 crosswalk where both are target outcomes
+- SOC 2 / ISO/IEC 27001 crosswalk where both are target outcomes
 - audit-readiness checklist
 - enterprise security questionnaire answers
 

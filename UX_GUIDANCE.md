@@ -496,20 +496,20 @@ For small internal projects, use this reduced checklist:
 
 For future projects, consider adding a `docs/ux/` folder with:
 
-- `ux-strategy.md`
-- `research-notes.md`
-- `personas.md`
-- `jobs-to-be-done.md`
-- `workflows.md`
-- `journey-maps.md`
-- `information-architecture.md`
-- `content-design.md`
-- `wireframes.md`
-- `accessibility.md`
-- `usability-testing.md`
-- `ux-acceptance-criteria.md`
-- `ux-approval.md`
-- `post-launch-ux-review.md`
+- `docs/ux/ux-strategy.md`
+- `docs/ux/research-notes.md`
+- `docs/ux/personas.md`
+- `docs/ux/jobs-to-be-done.md`
+- `docs/ux/workflows.md`
+- `docs/ux/journey-maps.md`
+- `docs/ux/information-architecture.md`
+- `docs/ux/content-design.md`
+- `docs/ux/wireframes.md`
+- `docs/ux/accessibility.md`
+- `docs/ux/usability-testing.md`
+- `docs/ux/ux-acceptance-criteria.md`
+- `docs/ux/ux-approval.md`
+- `docs/ux/post-launch-ux-review.md`
 
 Use only what the project actually needs, but do not skip the thinking just because the interface looks obvious. “Obvious” is often where the bugs breed.
 

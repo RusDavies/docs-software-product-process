@@ -143,7 +143,7 @@ For small projects:
 
 ## Recommended Project Files
 
-- `TODO.md` or `BACKLOG.md`
+- `BACKLOG.md` or an equivalent project-specific TODO file
 - `docs/planning/milestones.md`
 - `docs/planning/risk-register.md`
 - `docs/planning/test-strategy.md`
