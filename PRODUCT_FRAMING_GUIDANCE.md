@@ -74,6 +74,7 @@ Capture:
 - approvers/reviewers
 - support users
 - security/privacy stakeholders
+- enterprise buyers/procurement reviewers, where relevant
 - external auditors or regulators, where relevant
 
 ### 4. Context and Existing Alternatives
@@ -101,6 +102,7 @@ Capture:
 - external exposure
 - user permissions/roles
 - regulatory/compliance concerns
+- enterprise compliance expectations such as SOC 2 attestation, ISO/IEC 27001 certification/alignment, vendor-risk review, or security questionnaires
 - consequences of misuse or failure
 
 ### 6. Operational Framing

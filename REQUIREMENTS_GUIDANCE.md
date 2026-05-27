@@ -121,7 +121,12 @@ Where relevant, capture:
 - regulatory needs
 - internal policies
 - contractual obligations
+- enterprise customer expectations
+- SOC 2 attestation target, if applicable
+- ISO/IEC 27001 certification or alignment target, if applicable
+- vendor-risk/security-questionnaire requirements
 - audit evidence requirements
+- control ownership requirements
 - approvals required
 
 ### 8. Acceptance Criteria

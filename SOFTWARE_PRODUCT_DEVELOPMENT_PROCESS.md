@@ -10,15 +10,16 @@ Every project should move deliberately from idea to operation:
 2. Define requirements.
 3. Design the user experience.
 4. Design security and privacy.
-5. Design the technical architecture.
-6. Plan implementation.
-7. Build the product.
-8. Verify quality.
-9. Pass release and security gates.
-10. Launch deliberately.
-11. Operate and improve it.
+5. Define compliance readiness where enterprise, regulated, or customer-required.
+6. Design the technical architecture.
+7. Plan implementation.
+8. Build the product.
+9. Verify quality.
+10. Pass release and security gates.
+11. Launch deliberately.
+12. Operate and improve it.
 
-The process is modular. Small projects can use lightweight versions. Larger, riskier, public, customer-facing, regulated, security-sensitive, or multi-role projects should use the full process.
+The process is modular. Small projects can use lightweight versions. Larger, riskier, public, customer-facing, enterprise-targeted, regulated, security-sensitive, or multi-role projects should use the full process.
 
 Before applying the full process, classify the project with `TAILORING_GUIDE.md`. Use `GOVERNANCE_AND_APPROVALS.md` when approvals, accepted risk, release authority, or agent autonomy boundaries matter.
 
@@ -123,7 +124,28 @@ Security checkpoint:
 
 Guidance: `SECURITY_GUIDANCE.md`
 
-### 5. Technical Architecture
+### 5. Compliance Readiness, Where Applicable
+
+For enterprise-targeted, regulated, customer-facing B2B, or procurement-heavy products, define compliance readiness early enough that SOC 2, ISO/IEC 27001, and security-questionnaire evidence can be built into the operating model instead of reconstructed later with a shovel.
+
+Key outputs:
+
+- compliance target and scope
+- control register
+- evidence register
+- policy/document index
+- SOC 2 / ISO 27001 crosswalk where relevant
+- enterprise security questionnaire answers
+- audit-readiness checklist
+- compliance gap backlog
+
+Security checkpoint:
+
+- Do not claim SOC 2 attestation, ISO 27001 certification, or equivalent readiness unless scope, controls, evidence, and approval support that claim.
+
+Guidance: `COMPLIANCE_READINESS_GUIDANCE.md`
+
+### 6. Technical Architecture
 
 Define how the system is built, integrated, deployed, observed, and evolved.
 
@@ -145,7 +167,7 @@ Security checkpoint:
 
 Guidance: `ARCHITECTURE_GUIDANCE.md`
 
-### 6. Implementation Planning
+### 7. Implementation Planning
 
 Turn the design into an actionable delivery plan.
 
@@ -165,7 +187,7 @@ Security checkpoint:
 
 Guidance: `IMPLEMENTATION_PLANNING_GUIDANCE.md`
 
-### 7. Build / Implementation
+### 8. Build / Implementation
 
 Implement the product with quality controls and security expectations embedded in everyday work.
 
@@ -186,7 +208,7 @@ Security checkpoint:
 
 Guidance: `IMPLEMENTATION_GUIDANCE.md`
 
-### 8. Verification / QA
+### 9. Verification / QA
 
 Prove the product behaves acceptably before release.
 
@@ -206,7 +228,7 @@ Security checkpoint:
 
 Guidance: `QA_GUIDANCE.md`
 
-### 9. Release Security Gate
+### 10. Release Security Gate
 
 Before release, confirm security and operational readiness.
 
@@ -225,7 +247,7 @@ Security checkpoint:
 
 Guidance: `RELEASE_SECURITY_GATE.md`
 
-### 10. Launch / Release
+### 11. Launch / Release
 
 Release deliberately, with rollback and support ready.
 
@@ -245,7 +267,7 @@ Security checkpoint:
 
 Guidance: `RELEASE_GUIDANCE.md`
 
-### 11. Operations / Post-Launch Iteration
+### 12. Operations / Post-Launch Iteration
 
 Operate the system, learn from real usage, and improve it.
 
@@ -304,10 +326,11 @@ Suggested minimum:
 4. Top workflows
 5. Basic UX sketch
 6. Security/privacy notes
-7. Architecture sketch
-8. Build checklist
-9. Minimal QA/security checks
-10. Launch/rollback note
-11. Post-launch notes after first use
+7. Compliance readiness notes if enterprise-targeted or customer-required
+8. Architecture sketch
+9. Build checklist
+10. Minimal QA/security checks
+11. Launch/rollback note
+12. Post-launch notes after first use
 
 Lightweight does not mean thought-free. It means appropriately brief.

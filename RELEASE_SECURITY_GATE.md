@@ -24,7 +24,8 @@ At minimum, capture:
 5. Secrets/config review
 6. Dependency posture
 7. Monitoring/audit readiness
-8. Approval decision
+8. Compliance-readiness status for enterprise-targeted products
+9. Approval decision
 
 ## Full Release Security Checklist
 
@@ -107,7 +108,21 @@ Confirm:
 - rollback/disable process exists
 - audit trail captures important actions
 
-### 9. Risk Acceptance
+### 9. Enterprise Compliance Readiness
+
+For enterprise-targeted products, confirm:
+
+- SOC 2 / ISO 27001 target status is documented
+- control register is current
+- evidence register is current
+- policy index is current
+- security-questionnaire answers are accurate
+- customer-facing compliance claims do not overstate reality
+- compliance gaps are tracked or explicitly accepted
+
+Guidance: `COMPLIANCE_READINESS_GUIDANCE.md`
+
+### 10. Risk Acceptance
 
 For unresolved risks, capture:
 
