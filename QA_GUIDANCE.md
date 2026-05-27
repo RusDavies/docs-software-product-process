@@ -141,6 +141,22 @@ Verify:
 
 Guidance: `DOCUMENTATION_GUIDANCE.md`
 
+### 10. SEO QA, Where Applicable
+
+For public web projects, verify:
+
+- intended pages are indexable
+- private/staging pages are not indexable
+- title/meta/canonical tags are correct
+- Open Graph/share previews work
+- sitemap and robots.txt are correct
+- structured data validates where used
+- semantic HTML and headings are sensible
+- mobile rendering works
+- performance/Core Web Vitals checks pass or exceptions are approved
+
+Guidance: `SEO_GUIDANCE.md`
+
 ## Lightweight Project Version
 
 For small projects:
@@ -151,7 +167,8 @@ For small projects:
 4. Accessibility basics
 5. Operational smoke checks
 6. Documentation smoke check
-7. Known issues list
+7. SEO smoke check for public web projects
+8. Known issues list
 
 ## Recommended Project Files
 
@@ -161,6 +178,7 @@ For small projects:
 - `docs/qa/accessibility-checks.md`
 - `docs/qa/release-qa-report.md`
 - `docs/documentation/documentation-qa-checklist.md`
+- `docs/seo/launch-seo-checklist.md`
 
 ## Definition of QA-Ready
 
@@ -168,7 +186,7 @@ QA is ready when:
 
 - acceptance criteria exist
 - test data/environment exists
-- security/UX/operations/documentation checks are known
+- security/UX/operations/documentation/SEO checks are known
 - risks and edge cases are identified
 
 ## Definition of QA-Done
@@ -177,6 +195,7 @@ QA is done when:
 
 - required checks pass or exceptions are approved
 - required documentation has been checked or exceptions are approved
+- SEO checks have passed or exceptions are approved where applicable
 - known issues are documented
 - release blockers are resolved
 - evidence is recorded

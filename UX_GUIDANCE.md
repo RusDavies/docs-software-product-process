@@ -192,6 +192,8 @@ Use service blueprints especially when humans, automation, and backend processes
 
 Define how information is organized and how users navigate it.
 
+For public web projects, align information architecture with `SEO_GUIDANCE.md` so important content can be discovered, crawled, understood, and maintained.
+
 Capture:
 
 - top-level navigation
@@ -199,6 +201,7 @@ Capture:
 - object model and relationships
 - naming conventions
 - search/filter/sort behavior
+- SEO/discovery implications for public pages
 - grouping and categorization rules
 - settings structure
 - permission-aware visibility
@@ -219,6 +222,7 @@ Define:
 
 - product terminology
 - labels and navigation text
+- page titles, descriptions, and share-preview copy for public web pages
 - empty states
 - error messages
 - confirmation text

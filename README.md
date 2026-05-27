@@ -73,12 +73,13 @@ Add:
 - `ENGINEERING_PRINCIPLES.md` — baseline engineering, security, privacy, and operations principles
 - `GOVERNANCE_AND_APPROVALS.md` — human approval boundaries, accepted-risk rules, and agent autonomy limits
 
-### Product, Design, and Documentation
+### Product, Design, Documentation, and SEO
 
 - `PRODUCT_FRAMING_GUIDANCE.md` — opportunity framing and problem definition
 - `REQUIREMENTS_GUIDANCE.md` — product, functional, non-functional, security, and operational requirements
 - `UX_GUIDANCE.md` — UX design process, trust UX, accessibility, validation, and UX readiness
 - `DOCUMENTATION_GUIDANCE.md` — user, admin, operator, developer, release, and documentation QA expectations
+- `SEO_GUIDANCE.md` — search/discovery, metadata, crawlability, technical SEO, and launch SEO checks for web products
 
 ### Security, Compliance, Architecture, and Planning
 
@@ -121,6 +122,12 @@ Starter artifacts live in `templates/`:
 - `templates/troubleshooting-guide.md`
 - `templates/documentation-plan.md`
 - `templates/documentation-qa-checklist.md`
+- `templates/seo-plan.md`
+- `templates/page-inventory.md`
+- `templates/metadata-plan.md`
+- `templates/technical-seo-checklist.md`
+- `templates/launch-seo-checklist.md`
+- `templates/post-launch-seo-review.md`
 
 Templates are deliberately plain Markdown. Copy them into a project and delete what does not apply. The punishment for using every section blindly is owning the resulting bureaucracy.
 
@@ -132,6 +139,7 @@ Some topics appear in multiple documents because they matter in multiple phases.
 - Release security decision source of truth: `RELEASE_SECURITY_GATE.md`
 - Enterprise compliance readiness source of truth: `COMPLIANCE_READINESS_GUIDANCE.md`
 - User/admin/operator documentation source of truth: `DOCUMENTATION_GUIDANCE.md`
+- Web SEO/discovery source of truth: `SEO_GUIDANCE.md`
 - Operational ownership and runbooks source of truth: `OPERATIONS_GUIDANCE.md`
 - Overall lifecycle source of truth: `SOFTWARE_PRODUCT_DEVELOPMENT_PROCESS.md`
 - Project-class/tailoring source of truth: `TAILORING_GUIDE.md`

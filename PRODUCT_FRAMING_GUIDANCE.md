@@ -58,6 +58,7 @@ Capture:
 - project goals
 - user success criteria
 - business/project success metrics
+- SEO/discovery goals for public web projects
 - strategic value
 - constraints
 - tradeoffs
@@ -87,6 +88,7 @@ Capture:
 - current tools
 - manual workarounds
 - competitor/comparable products
+- search/discovery alternatives for web projects
 - known frustrations
 - migration or adoption constraints
 

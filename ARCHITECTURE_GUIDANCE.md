@@ -11,6 +11,7 @@ Every serious project should define:
 - data model
 - APIs/contracts
 - deployment/runtime model
+- web crawl/index/metadata architecture where applicable
 - security/trust boundaries
 - observability and operations model
 - failure/recovery behavior
@@ -85,6 +86,7 @@ Capture:
 - configuration model
 - environment separation
 - build/release/run separation where appropriate
+- sitemap/robots/canonical generation for public web projects
 - infrastructure dependencies
 
 ### 6. Security Architecture
@@ -119,6 +121,7 @@ Capture:
 
 - logs
 - metrics
+- search/index/performance monitoring for public web projects
 - traces where useful
 - audit events
 - dashboards/status checks
