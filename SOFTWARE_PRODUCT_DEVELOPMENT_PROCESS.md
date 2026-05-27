@@ -135,14 +135,14 @@ Key outputs:
 - control register
 - evidence register
 - policy/document index
-- SOC 2 / ISO 27001 crosswalk where relevant
+- SOC 2 / ISO/IEC 27001 crosswalk where relevant
 - enterprise security questionnaire answers
 - audit-readiness checklist
 - compliance gap backlog
 
 Security checkpoint:
 
-- Do not claim SOC 2 attestation, ISO 27001 certification, or equivalent readiness unless scope, controls, evidence, and approval support that claim.
+- Do not claim SOC 2 attestation, ISO/IEC 27001 certification, or equivalent readiness unless scope, controls, evidence, and approval support that claim.
 
 Guidance: `COMPLIANCE_READINESS_GUIDANCE.md`
 

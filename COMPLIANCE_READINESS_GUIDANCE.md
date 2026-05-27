@@ -103,7 +103,7 @@ Capture:
 - management review approach
 - corrective-action tracking
 
-Common ISO 27001 evidence themes:
+Common ISO/IEC 27001 evidence themes:
 
 - asset inventory
 - risk assessment and treatment decisions
@@ -295,7 +295,7 @@ Prepare:
 
 For early enterprise-targeted products before formal audit:
 
-1. Define whether SOC 2, ISO 27001, or both are target outcomes.
+1. Define whether SOC 2, ISO/IEC 27001, or both are target outcomes.
 2. Create a control register.
 3. Create an evidence register.
 4. Create a policy index with current/planned status.

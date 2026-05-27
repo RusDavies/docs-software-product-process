@@ -112,7 +112,7 @@ Confirm:
 
 For enterprise-targeted products, confirm:
 
-- SOC 2 / ISO 27001 target status is documented
+- SOC 2 / ISO/IEC 27001 target status is documented
 - control register is current
 - evidence register is current
 - policy index is current

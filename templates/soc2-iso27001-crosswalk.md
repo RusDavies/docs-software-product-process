@@ -1,4 +1,4 @@
-# SOC 2 / ISO 27001 Crosswalk
+# SOC 2 / ISO/IEC 27001 Crosswalk
 
 This is a working crosswalk, not auditor-certified mapping. Validate final mappings with the auditor or compliance lead.
 
