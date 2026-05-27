@@ -12,13 +12,14 @@ Every project should move deliberately from idea to operation:
 4. Design security and privacy.
 5. Define compliance readiness where enterprise, regulated, or customer-required.
 6. Plan user, admin, operator, and developer documentation.
-7. Design the technical architecture.
-8. Plan implementation.
-9. Build the product and documentation.
-10. Verify quality, including documentation quality.
-11. Pass release, documentation, and security gates.
-12. Launch deliberately.
-13. Operate and improve it.
+7. Design SEO/discovery for web products.
+8. Design the technical architecture.
+9. Plan implementation.
+10. Build the product and documentation.
+11. Verify quality, including documentation and SEO quality.
+12. Pass release, documentation, SEO, and security gates.
+13. Launch deliberately.
+14. Operate and improve it.
 
 The process is modular. Small projects can use lightweight versions. Larger, riskier, public, customer-facing, enterprise-targeted, regulated, security-sensitive, or multi-role projects should use the full process.
 
@@ -166,7 +167,29 @@ Security checkpoint:
 
 Guidance: `DOCUMENTATION_GUIDANCE.md`
 
-### 7. Technical Architecture
+### 7. SEO / Discovery Design, Where Applicable
+
+For public web products, documentation sites, marketing pages, content sites, landing pages, and enterprise trust pages, design search/discovery before build.
+
+Key outputs:
+
+- SEO/discovery goals
+- target audiences and search intent
+- page inventory and URL strategy
+- metadata and share-preview plan
+- crawl/index/sitemap/robots/canonical approach
+- structured data plan where relevant
+- performance/Core Web Vitals expectations
+- analytics/search measurement plan
+- launch SEO QA checklist
+
+Security checkpoint:
+
+- SEO metadata, structured data, public content, and snippets must not leak private data, overclaim security/compliance status, or contradict approved documentation.
+
+Guidance: `SEO_GUIDANCE.md`
+
+### 8. Technical Architecture
 
 Define how the system is built, integrated, deployed, observed, and evolved.
 
@@ -188,7 +211,7 @@ Security checkpoint:
 
 Guidance: `ARCHITECTURE_GUIDANCE.md`
 
-### 8. Implementation Planning
+### 9. Implementation Planning
 
 Turn the design into an actionable delivery plan.
 
@@ -208,7 +231,7 @@ Security checkpoint:
 
 Guidance: `IMPLEMENTATION_PLANNING_GUIDANCE.md`
 
-### 9. Build / Implementation
+### 10. Build / Implementation
 
 Implement the product with quality controls and security expectations embedded in everyday work.
 
@@ -229,7 +252,7 @@ Security checkpoint:
 
 Guidance: `IMPLEMENTATION_GUIDANCE.md`
 
-### 10. Verification / QA
+### 11. Verification / QA
 
 Prove the product behaves acceptably before release.
 
@@ -242,6 +265,7 @@ Key outputs:
 - performance checks where relevant
 - security test results
 - documentation QA results
+- SEO QA results for web projects
 - known issues and accepted risks
 
 Security checkpoint:
@@ -250,7 +274,7 @@ Security checkpoint:
 
 Guidance: `QA_GUIDANCE.md`
 
-### 11. Release Security Gate
+### 12. Release Security Gate
 
 Before release, confirm security and operational readiness.
 
@@ -269,7 +293,7 @@ Security checkpoint:
 
 Guidance: `RELEASE_SECURITY_GATE.md`
 
-### 12. Launch / Release
+### 13. Launch / Release
 
 Release deliberately, with rollback and support ready.
 
@@ -277,6 +301,7 @@ Key outputs:
 
 - release notes
 - user/admin/operator documentation
+- SEO launch checklist for web projects
 - deployment checklist
 - rollback plan
 - monitoring dashboard or checks
@@ -290,7 +315,7 @@ Security checkpoint:
 
 Guidance: `RELEASE_GUIDANCE.md`
 
-### 13. Operations / Post-Launch Iteration
+### 14. Operations / Post-Launch Iteration
 
 Operate the system, learn from real usage, and improve it.
 
@@ -322,6 +347,7 @@ A product or major feature is ready for implementation when:
 - architecture is plausible and reviewed
 - implementation work is broken down
 - documentation needs and owners are identified
+- SEO/discovery needs are identified for web projects
 - required human approvals are recorded
 - major unknowns are either resolved or explicitly tracked
 
@@ -333,6 +359,7 @@ A product or major feature is ready for release when:
 - quality gates have passed or exceptions are approved
 - security review is complete
 - required documentation exists and has passed documentation QA or approved exceptions
+- web SEO checks have passed or exceptions are approved where applicable
 - operational monitoring exists
 - rollback/disable paths are known
 - support and incident paths are known
@@ -353,10 +380,11 @@ Suggested minimum:
 6. Security/privacy notes
 7. Compliance readiness notes if enterprise-targeted or customer-required
 8. Documentation notes for users/operators
-9. Architecture sketch
-10. Build checklist
-11. Minimal QA/security/documentation checks
-12. Launch/rollback note
-13. Post-launch notes after first use
+9. SEO/discovery notes for web projects
+10. Architecture sketch
+11. Build checklist
+12. Minimal QA/security/documentation/SEO checks
+13. Launch/rollback note
+14. Post-launch notes after first use
 
 Lightweight does not mean thought-free. It means appropriately brief.

@@ -85,6 +85,7 @@ Required:
 - release checklist
 - operations runbook
 - user/admin/operator documentation as applicable
+- SEO/discovery plan for public web projects
 - decision records for major tradeoffs
 
 Recommended documents:
@@ -201,6 +202,7 @@ Approval:
 | User/admin docs | Usage notes | If shared/user-facing | Required if user-facing | Required | Required | Required |
 | Operator docs/runbook | Optional | If operated | Required | Required | Required | Required |
 | Documentation QA | Smoke check | Required if shared | Required | Required | Required | Required |
+| SEO/discovery | Optional | If public web | Required for public web | Required for public web | Required for public web/trust pages | Required for public web |
 | Compliance readiness | Optional | Optional | If enterprise-targeted | If enterprise-targeted | Required | Required if regulated/customer-required |
 | Post-launch review | Optional | Recommended | Required | Required | Required | Required |
 
@@ -222,6 +224,7 @@ Escalate to a higher project class when any of these appear:
 - security monitoring, incident response, or access-control decisions
 - reliance by other projects or people
 - someone other than the creator needs to use, administer, support, or operate the product
+- the product has public web pages that should be found, indexed, shared, or trusted by prospective users/customers
 
 ## Minimum Evidence by Class
 
@@ -240,6 +243,7 @@ Class 3 evidence should include:
 - requirements and acceptance criteria
 - architecture/security/privacy notes
 - documentation plan and documentation QA results
+- SEO plan and launch SEO QA results for public web projects
 - QA results
 - release checklist
 - operations notes

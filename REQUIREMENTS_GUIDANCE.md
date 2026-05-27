@@ -65,6 +65,7 @@ Include:
 - performance
 - availability
 - reliability
+- SEO/discovery requirements for public web projects
 - scalability
 - maintainability
 - accessibility
@@ -127,6 +128,7 @@ Where relevant, capture:
 - vendor-risk/security-questionnaire requirements
 - audit evidence requirements
 - control ownership requirements
+- public metadata/SEO claim constraints where relevant
 - approvals required
 
 ### 8. Acceptance Criteria

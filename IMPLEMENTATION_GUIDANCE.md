@@ -124,7 +124,23 @@ Expect:
 
 Guidance: `DOCUMENTATION_GUIDANCE.md`
 
-### 9. Review
+### 9. Web SEO Implementation, Where Applicable
+
+For public web projects, implement:
+
+- stable URL patterns
+- page titles and meta descriptions
+- canonical links
+- Open Graph/share metadata
+- robots and sitemap behavior
+- structured data where planned
+- semantic HTML and heading structure
+- image alt text where appropriate
+- performance budgets and asset optimization
+
+Guidance: `SEO_GUIDANCE.md`
+
+### 10. Review
 
 Review should check:
 
@@ -134,6 +150,7 @@ Review should check:
 - test coverage
 - operational impact
 - documentation updates against the documentation plan
+- SEO/discovery impact for public web projects
 
 ## Lightweight Project Version
 
@@ -144,7 +161,8 @@ For small projects:
 3. Security/config review
 4. Minimal user/operator documentation notes
 5. Minimal operational notes
-6. Clean git status/commit
+6. SEO metadata/crawl notes for public web projects
+7. Clean git status/commit
 
 ## Recommended Project Files
 
@@ -157,6 +175,8 @@ For small projects:
 - `docs/user/quick-start.md`
 - `docs/user/troubleshooting.md`
 - `docs/documentation/documentation-plan.md`
+- `docs/seo/seo-plan.md`
+- `docs/seo/technical-seo-checklist.md`
 
 ## Definition of Implementation-Ready
 
@@ -167,6 +187,7 @@ Implementation is ready when:
 - security-sensitive areas are identified
 - implementation tasks are broken down
 - verification expectations are clear
+- SEO expectations are known for public web projects
 
 ## Definition of Implementation-Done
 
@@ -176,5 +197,6 @@ Implementation is done when:
 - tests/checks pass
 - security-sensitive behavior is reviewed
 - docs are updated
+- SEO implementation is complete where required
 - operational hooks exist where required
 - changes are committed cleanly

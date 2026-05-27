@@ -50,6 +50,7 @@ Confirm:
 - security gate complete
 - required user/admin/operator docs updated
 - documentation QA complete or exceptions approved
+- SEO launch checks complete for public web projects
 - support path ready
 
 ### 3. Deployment Plan
@@ -111,7 +112,21 @@ Confirm:
 
 Guidance: `DOCUMENTATION_GUIDANCE.md`
 
-### 8. Release Notes
+### 8. SEO Launch Readiness, Where Applicable
+
+For public web projects, confirm:
+
+- metadata and share previews are correct
+- sitemap/robots/canonical behavior is correct
+- intended pages are indexable
+- private/staging pages are protected from indexing
+- structured data validates where used
+- analytics/search measurement is ready or intentionally deferred
+- post-launch SEO review is scheduled
+
+Guidance: `SEO_GUIDANCE.md`
+
+### 9. Release Notes
 
 Include:
 
@@ -122,7 +137,7 @@ Include:
 - required actions
 - security/privacy notes where relevant
 
-### 9. Post-Launch Review
+### 10. Post-Launch Review
 
 Schedule review of:
 
@@ -133,6 +148,7 @@ Schedule review of:
 - support requests
 - operational toil
 - security findings
+- SEO/indexing/performance findings for public web projects
 
 ## Lightweight Project Version
 
@@ -142,8 +158,9 @@ For small projects:
 2. Deploy steps
 3. Smoke test checklist
 4. Documentation smoke check
-5. Rollback note
-6. Post-launch follow-up note
+5. SEO smoke check for public web projects
+6. Rollback note
+7. Post-launch follow-up note
 
 ## Recommended Project Files
 
@@ -152,6 +169,8 @@ For small projects:
 - `docs/release/rollback-plan.md`
 - `docs/release/release-notes.md`
 - `docs/documentation/documentation-qa-checklist.md`
+- `docs/seo/launch-seo-checklist.md`
+- `docs/seo/post-launch-seo-review.md`
 - `docs/release/post-launch-review.md`
 
 ## Definition of Release-Ready
@@ -163,6 +182,7 @@ A release is ready when:
 - rollback/disable path exists
 - monitoring/support are ready
 - required documentation is ready or exceptions are approved
+- SEO launch checks are complete or exceptions are approved where applicable
 - risks are accepted
 - approval is recorded
 
@@ -175,5 +195,6 @@ A release is done when:
 - monitoring is healthy
 - release notes are available where needed
 - documentation gaps are tracked
+- SEO follow-up items are tracked for public web projects
 - follow-up issues are tracked
 - post-launch review is scheduled or complete
