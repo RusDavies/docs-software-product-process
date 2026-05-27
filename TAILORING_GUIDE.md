@@ -84,6 +84,7 @@ Required:
 - QA plan and test evidence
 - release checklist
 - operations runbook
+- user/admin/operator documentation as applicable
 - decision records for major tradeoffs
 
 Recommended documents:
@@ -196,6 +197,10 @@ Approval:
 | Rollback/disable plan | Optional | Required | Required | Required | Required | Required |
 | Operations runbook | Optional | If operated | Required | Required | Required | Required |
 | Risk acceptance record | Optional | If risk accepted | Required when applicable | Required when applicable | Required when applicable | Required when applicable |
+| Documentation plan | Optional | Light | Required | Required | Required | Required |
+| User/admin docs | Usage notes | If shared/user-facing | Required if user-facing | Required | Required | Required |
+| Operator docs/runbook | Optional | If operated | Required | Required | Required | Required |
+| Documentation QA | Smoke check | Required if shared | Required | Required | Required | Required |
 | Compliance readiness | Optional | Optional | If enterprise-targeted | If enterprise-targeted | Required | Required if regulated/customer-required |
 | Post-launch review | Optional | Recommended | Required | Required | Required | Required |
 
@@ -216,6 +221,7 @@ Escalate to a higher project class when any of these appear:
 - agent-operated production actions
 - security monitoring, incident response, or access-control decisions
 - reliance by other projects or people
+- someone other than the creator needs to use, administer, support, or operate the product
 
 ## Minimum Evidence by Class
 
@@ -225,6 +231,7 @@ Class 2 evidence should include:
 
 - requirements or TODO completion notes
 - test/smoke-test output
+- user/admin/operator notes where shared or operated
 - known limitations
 - rollback/disable note
 
@@ -232,6 +239,7 @@ Class 3 evidence should include:
 
 - requirements and acceptance criteria
 - architecture/security/privacy notes
+- documentation plan and documentation QA results
 - QA results
 - release checklist
 - operations notes

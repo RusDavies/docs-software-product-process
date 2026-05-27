@@ -48,7 +48,8 @@ Confirm:
 - QA complete
 - UX review complete where relevant
 - security gate complete
-- docs updated
+- required user/admin/operator docs updated
+- documentation QA complete or exceptions approved
 - support path ready
 
 ### 3. Deployment Plan
@@ -96,7 +97,21 @@ Capture:
 - known troubleshooting steps
 - user communication where relevant
 
-### 7. Release Notes
+### 7. Documentation Readiness
+
+Confirm:
+
+- user guide / quick start exists where required
+- admin/configuration guide exists where required
+- operator runbook exists where required
+- troubleshooting guidance exists where required
+- release notes are accurate
+- security/privacy/compliance claims are approved
+- documentation QA checklist is complete
+
+Guidance: `DOCUMENTATION_GUIDANCE.md`
+
+### 8. Release Notes
 
 Include:
 
@@ -107,7 +122,7 @@ Include:
 - required actions
 - security/privacy notes where relevant
 
-### 8. Post-Launch Review
+### 9. Post-Launch Review
 
 Schedule review of:
 
@@ -126,8 +141,9 @@ For small projects:
 1. Release note
 2. Deploy steps
 3. Smoke test checklist
-4. Rollback note
-5. Post-launch follow-up note
+4. Documentation smoke check
+5. Rollback note
+6. Post-launch follow-up note
 
 ## Recommended Project Files
 
@@ -135,6 +151,7 @@ For small projects:
 - `docs/release/deployment-checklist.md`
 - `docs/release/rollback-plan.md`
 - `docs/release/release-notes.md`
+- `docs/documentation/documentation-qa-checklist.md`
 - `docs/release/post-launch-review.md`
 
 ## Definition of Release-Ready
@@ -145,6 +162,7 @@ A release is ready when:
 - deployment steps are known
 - rollback/disable path exists
 - monitoring/support are ready
+- required documentation is ready or exceptions are approved
 - risks are accepted
 - approval is recorded
 
@@ -156,5 +174,6 @@ A release is done when:
 - verification passed
 - monitoring is healthy
 - release notes are available where needed
+- documentation gaps are tracked
 - follow-up issues are tracked
 - post-launch review is scheduled or complete

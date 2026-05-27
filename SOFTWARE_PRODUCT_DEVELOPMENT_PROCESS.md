@@ -11,13 +11,14 @@ Every project should move deliberately from idea to operation:
 3. Design the user experience.
 4. Design security and privacy.
 5. Define compliance readiness where enterprise, regulated, or customer-required.
-6. Design the technical architecture.
-7. Plan implementation.
-8. Build the product.
-9. Verify quality.
-10. Pass release and security gates.
-11. Launch deliberately.
-12. Operate and improve it.
+6. Plan user, admin, operator, and developer documentation.
+7. Design the technical architecture.
+8. Plan implementation.
+9. Build the product and documentation.
+10. Verify quality, including documentation quality.
+11. Pass release, documentation, and security gates.
+12. Launch deliberately.
+13. Operate and improve it.
 
 The process is modular. Small projects can use lightweight versions. Larger, riskier, public, customer-facing, enterprise-targeted, regulated, security-sensitive, or multi-role projects should use the full process.
 
@@ -145,7 +146,27 @@ Security checkpoint:
 
 Guidance: `COMPLIANCE_READINESS_GUIDANCE.md`
 
-### 6. Technical Architecture
+### 6. Documentation Planning
+
+Define what users, admins, operators, developers, support staff, and enterprise reviewers need to understand before build and release.
+
+Key outputs:
+
+- documentation audience map
+- required user/admin/operator/developer docs
+- quick-start and configuration expectations
+- troubleshooting/recovery expectations
+- documentation acceptance criteria
+- documentation owner and maintenance plan
+- documentation QA plan
+
+Security checkpoint:
+
+- Security, privacy, safety, and compliance claims in documentation must be accurate and approved before release.
+
+Guidance: `DOCUMENTATION_GUIDANCE.md`
+
+### 7. Technical Architecture
 
 Define how the system is built, integrated, deployed, observed, and evolved.
 
@@ -167,7 +188,7 @@ Security checkpoint:
 
 Guidance: `ARCHITECTURE_GUIDANCE.md`
 
-### 7. Implementation Planning
+### 8. Implementation Planning
 
 Turn the design into an actionable delivery plan.
 
@@ -187,7 +208,7 @@ Security checkpoint:
 
 Guidance: `IMPLEMENTATION_PLANNING_GUIDANCE.md`
 
-### 8. Build / Implementation
+### 9. Build / Implementation
 
 Implement the product with quality controls and security expectations embedded in everyday work.
 
@@ -196,7 +217,7 @@ Key outputs:
 - code
 - tests
 - migrations
-- documentation
+- user/admin/operator/developer documentation
 - configuration
 - deployment artifacts
 - feature flags where useful
@@ -208,7 +229,7 @@ Security checkpoint:
 
 Guidance: `IMPLEMENTATION_GUIDANCE.md`
 
-### 9. Verification / QA
+### 10. Verification / QA
 
 Prove the product behaves acceptably before release.
 
@@ -220,6 +241,7 @@ Key outputs:
 - integration/regression tests
 - performance checks where relevant
 - security test results
+- documentation QA results
 - known issues and accepted risks
 
 Security checkpoint:
@@ -228,7 +250,7 @@ Security checkpoint:
 
 Guidance: `QA_GUIDANCE.md`
 
-### 10. Release Security Gate
+### 11. Release Security Gate
 
 Before release, confirm security and operational readiness.
 
@@ -247,13 +269,14 @@ Security checkpoint:
 
 Guidance: `RELEASE_SECURITY_GATE.md`
 
-### 11. Launch / Release
+### 12. Launch / Release
 
 Release deliberately, with rollback and support ready.
 
 Key outputs:
 
 - release notes
+- user/admin/operator documentation
 - deployment checklist
 - rollback plan
 - monitoring dashboard or checks
@@ -267,7 +290,7 @@ Security checkpoint:
 
 Guidance: `RELEASE_GUIDANCE.md`
 
-### 12. Operations / Post-Launch Iteration
+### 13. Operations / Post-Launch Iteration
 
 Operate the system, learn from real usage, and improve it.
 
@@ -298,6 +321,7 @@ A product or major feature is ready for implementation when:
 - security and privacy risks are identified
 - architecture is plausible and reviewed
 - implementation work is broken down
+- documentation needs and owners are identified
 - required human approvals are recorded
 - major unknowns are either resolved or explicitly tracked
 
@@ -308,6 +332,7 @@ A product or major feature is ready for release when:
 - implementation matches requirements and UX intent
 - quality gates have passed or exceptions are approved
 - security review is complete
+- required documentation exists and has passed documentation QA or approved exceptions
 - operational monitoring exists
 - rollback/disable paths are known
 - support and incident paths are known
@@ -327,10 +352,11 @@ Suggested minimum:
 5. Basic UX sketch
 6. Security/privacy notes
 7. Compliance readiness notes if enterprise-targeted or customer-required
-8. Architecture sketch
-9. Build checklist
-10. Minimal QA/security checks
-11. Launch/rollback note
-12. Post-launch notes after first use
+8. Documentation notes for users/operators
+9. Architecture sketch
+10. Build checklist
+11. Minimal QA/security/documentation checks
+12. Launch/rollback note
+13. Post-launch notes after first use
 
 Lightweight does not mean thought-free. It means appropriately brief.

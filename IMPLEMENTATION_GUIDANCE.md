@@ -115,9 +115,14 @@ Expect:
 - README
 - setup instructions
 - configuration reference
-- operational notes
-- security notes
+- user guide or quick start where user-facing
+- admin guide where configurable/administered
+- operational notes/runbook where operated
+- troubleshooting guidance where shared
+- security/privacy notes
 - architecture notes updated when implementation diverges
+
+Guidance: `DOCUMENTATION_GUIDANCE.md`
 
 ### 9. Review
 
@@ -128,7 +133,7 @@ Review should check:
 - security implications
 - test coverage
 - operational impact
-- documentation updates
+- documentation updates against the documentation plan
 
 ## Lightweight Project Version
 
@@ -137,8 +142,9 @@ For small projects:
 1. README/setup notes
 2. Basic tests or manual verification notes
 3. Security/config review
-4. Minimal operational notes
-5. Clean git status/commit
+4. Minimal user/operator documentation notes
+5. Minimal operational notes
+6. Clean git status/commit
 
 ## Recommended Project Files
 
@@ -148,6 +154,9 @@ For small projects:
 - `docs/implementation/configuration.md`
 - `docs/implementation/security-notes.md`
 - `docs/implementation/developer-notes.md`
+- `docs/user/quick-start.md`
+- `docs/user/troubleshooting.md`
+- `docs/documentation/documentation-plan.md`
 
 ## Definition of Implementation-Ready
 
