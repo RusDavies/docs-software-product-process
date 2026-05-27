@@ -2,7 +2,7 @@
 
 Workspace guidance for taking software products from idea to operation without skipping the thinking that prevents expensive stupidity later.
 
-The guidance is modular. The top-level process explains the flow; each sub-document expands one discipline or checkpoint. Small projects can use the lightweight versions. Serious, public, security-sensitive, multi-user, regulated, or production projects should treat the full guidance as required gates.
+The guidance is modular. The top-level process explains the flow; each sub-document expands one discipline or checkpoint. Small projects can use the lightweight versions. Serious, public, security-sensitive, multi-user, enterprise-targeted, regulated, or production projects should treat the full guidance as required gates.
 
 Start here instead of reading everything like a doomed compliance intern:
 
@@ -54,6 +54,16 @@ Use the full lifecycle:
 - `GOVERNANCE_AND_APPROVALS.md`
 - templates for evidence and approvals
 
+### Enterprise-Targeted Product
+
+If the product targets enterprise customers, assume SOC 2, ISO/IEC 27001, vendor-risk review, and security questionnaires will become part of the sales and trust path.
+
+Add:
+
+- `COMPLIANCE_READINESS_GUIDANCE.md`
+- compliance templates from `templates/`
+- control/evidence/policy tracking before customer pressure turns into archaeology with deadlines
+
 ## Core Documents
 
 ### Start / Navigation
@@ -69,9 +79,10 @@ Use the full lifecycle:
 - `REQUIREMENTS_GUIDANCE.md` — product, functional, non-functional, security, and operational requirements
 - `UX_GUIDANCE.md` — UX design process, trust UX, accessibility, validation, and UX readiness
 
-### Security, Architecture, and Planning
+### Security, Compliance, Architecture, and Planning
 
 - `SECURITY_GUIDANCE.md` — canonical security and privacy design process
+- `COMPLIANCE_READINESS_GUIDANCE.md` — SOC 2, ISO/IEC 27001, enterprise questionnaire, control, and evidence readiness
 - `ARCHITECTURE_GUIDANCE.md` — technical architecture and system design
 - `IMPLEMENTATION_PLANNING_GUIDANCE.md` — milestones, backlog breakdown, and delivery planning
 
@@ -96,6 +107,12 @@ Starter artifacts live in `templates/`:
 - `templates/release-checklist.md`
 - `templates/operations-runbook.md`
 - `templates/decision-record.md`
+- `templates/control-register.md`
+- `templates/evidence-register.md`
+- `templates/policy-index.md`
+- `templates/soc2-iso27001-crosswalk.md`
+- `templates/audit-readiness-checklist.md`
+- `templates/security-questionnaire.md`
 
 Templates are deliberately plain Markdown. Copy them into a project and delete what does not apply. The punishment for using every section blindly is owning the resulting bureaucracy.
 
@@ -105,6 +122,7 @@ Some topics appear in multiple documents because they matter in multiple phases.
 
 - Security/privacy design source of truth: `SECURITY_GUIDANCE.md`
 - Release security decision source of truth: `RELEASE_SECURITY_GATE.md`
+- Enterprise compliance readiness source of truth: `COMPLIANCE_READINESS_GUIDANCE.md`
 - Operational ownership and runbooks source of truth: `OPERATIONS_GUIDANCE.md`
 - Overall lifecycle source of truth: `SOFTWARE_PRODUCT_DEVELOPMENT_PROCESS.md`
 - Project-class/tailoring source of truth: `TAILORING_GUIDE.md`

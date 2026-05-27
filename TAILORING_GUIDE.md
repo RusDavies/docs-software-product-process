@@ -127,6 +127,40 @@ Approval:
 
 - human approval required for release, accepted risks, public communications, external integrations, data handling changes, destructive operations, and incident/customer-impact decisions
 
+### Class 4E: Enterprise-Targeted Product
+
+Use when the product targets enterprise, regulated-business, security-conscious B2B, or procurement-heavy customers that are likely to ask for SOC 2 attestation, ISO/IEC 27001 certification/alignment, vendor-risk review, or detailed security questionnaires.
+
+Class 4E inherits Class 4 and adds compliance-readiness expectations.
+
+Required:
+
+- compliance target: SOC 2, ISO/IEC 27001, both, or readiness only
+- documented compliance scope
+- control register
+- evidence register
+- policy/document index
+- enterprise security questionnaire answers
+- vendor/dependency register
+- access-review process
+- change-management evidence process
+- incident-response evidence process
+- customer-facing security posture summary
+
+Recommended:
+
+- SOC 2 / ISO 27001 crosswalk
+- audit-readiness checklist
+- Statement of Applicability planning if ISO 27001 certification is a real target
+- SOC 2 Type I/Type II roadmap if attestation is a real target
+- monthly evidence-readiness review until audit posture is mature
+
+Approval:
+
+- human approval required for compliance claims, audit scope, customer-facing security answers, accepted compliance gaps, formal auditor engagement, and any claim that the product is SOC 2 or ISO 27001 ready/certified.
+
+Guidance: `COMPLIANCE_READINESS_GUIDANCE.md`
+
 ### Class 5: Regulated / Safety-Critical / High-Risk
 
 Use when legal, medical, financial, safety, employment, child-related, disability, identity, surveillance, or high-impact automated decision-making concerns are present.
@@ -147,22 +181,23 @@ Approval:
 
 ## Tailoring Matrix
 
-| Artifact / Check | Class 1 | Class 2 | Class 3 | Class 4 | Class 5 |
-| --- | --- | --- | --- | --- | --- |
-| Problem statement | Required | Required | Required | Required | Required |
-| Requirements / acceptance criteria | Light | Required | Required | Required | Required |
-| UX/workflow notes | If UI | If UI | Required if user-facing | Required | Required |
-| Accessibility expectations | Basic if UI | Basic if UI | Required if UI | Required if UI | Required if UI |
-| Security/privacy notes | Basic | Required | Required | Required | Required |
-| Threat model | Optional | Optional unless risky | Recommended | Required | Required |
-| Architecture notes | Light | Required | Required | Required | Required |
-| Implementation plan | Optional | Light | Required | Required | Required |
-| QA evidence | Smoke test | Required | Required | Required | Required |
-| Release security gate | Optional | If shared/risky | Required before release | Required | Required |
-| Rollback/disable plan | Optional | Required | Required | Required | Required |
-| Operations runbook | Optional | If operated | Required | Required | Required |
-| Risk acceptance record | Optional | If risk accepted | Required when applicable | Required when applicable | Required when applicable |
-| Post-launch review | Optional | Recommended | Required | Required | Required |
+| Artifact / Check | Class 1 | Class 2 | Class 3 | Class 4 | Class 4E | Class 5 |
+| --- | --- | --- | --- | --- | --- | --- |
+| Problem statement | Required | Required | Required | Required | Required | Required |
+| Requirements / acceptance criteria | Light | Required | Required | Required | Required | Required |
+| UX/workflow notes | If UI | If UI | Required if user-facing | Required | Required | Required |
+| Accessibility expectations | Basic if UI | Basic if UI | Required if UI | Required if UI | Required if UI | Required if UI |
+| Security/privacy notes | Basic | Required | Required | Required | Required | Required |
+| Threat model | Optional | Optional unless risky | Recommended | Required | Required | Required |
+| Architecture notes | Light | Required | Required | Required | Required | Required |
+| Implementation plan | Optional | Light | Required | Required | Required | Required |
+| QA evidence | Smoke test | Required | Required | Required | Required | Required |
+| Release security gate | Optional | If shared/risky | Required before release | Required | Required | Required |
+| Rollback/disable plan | Optional | Required | Required | Required | Required | Required |
+| Operations runbook | Optional | If operated | Required | Required | Required | Required |
+| Risk acceptance record | Optional | If risk accepted | Required when applicable | Required when applicable | Required when applicable | Required when applicable |
+| Compliance readiness | Optional | Optional | If enterprise-targeted | If enterprise-targeted | Required | Required if regulated/customer-required |
+| Post-launch review | Optional | Recommended | Required | Required | Required | Required |
 
 ## Escalation Triggers
 
@@ -170,6 +205,8 @@ Escalate to a higher project class when any of these appear:
 
 - real users beyond the creator
 - public internet exposure
+- enterprise customers or security-conscious B2B procurement
+- customer requests for SOC 2, ISO/IEC 27001, vendor-risk review, or security questionnaire evidence
 - customer or personal data
 - secrets, credentials, auth, or authorization
 - payment, legal, medical, employment, disability, child-related, or safety implications
@@ -199,7 +236,7 @@ Class 3 evidence should include:
 - release checklist
 - operations notes
 
-Class 4 and 5 evidence should include:
+Class 4 evidence should include:
 
 - all Class 3 evidence
 - release security gate result
@@ -207,6 +244,18 @@ Class 4 and 5 evidence should include:
 - monitoring/incident readiness
 - rollback validation or clear rollback procedure
 - post-launch review schedule
+
+Class 4E evidence should also include:
+
+- compliance target and scope
+- control register
+- evidence register
+- policy index
+- SOC 2 / ISO 27001 crosswalk where both are target outcomes
+- audit-readiness checklist
+- enterprise security questionnaire answers
+
+Class 5 evidence should include all Class 4 evidence plus any required compliance/legal/safety-review evidence.
 
 ## Agent Use
 

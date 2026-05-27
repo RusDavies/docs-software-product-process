@@ -32,9 +32,10 @@ Humans must own decisions about:
 - product goals and priorities
 - target users and market positioning
 - release approval
-- accepted security/privacy/operational risk
+- accepted security/privacy/operational/compliance risk
 - legal, medical, financial, employment, child-related, disability, or safety-sensitive direction
 - public statements and external communications
+- enterprise compliance claims, including SOC 2 and ISO/IEC 27001 readiness, attestation, certification, or alignment
 - data retention, deletion, sharing, or consent policy
 - production access grants
 - destructive or irreversible actions
@@ -104,9 +105,23 @@ Evidence:
 - privacy notes
 - unresolved findings
 
+### Compliance Claim Approval
+
+Required before making customer-facing or public claims about SOC 2, ISO/IEC 27001, audit readiness, certification, attestation, or enterprise compliance posture.
+
+Evidence:
+
+- compliance target and scope
+- control register
+- evidence register
+- policy index
+- gaps and accepted risks
+- reviewer/approver
+- exact claim text or customer-facing answer
+
 ### Release Approval
 
-Required before launching Class 3+ shared systems and all Class 4/5 systems.
+Required before launching Class 3+ shared systems and all Class 4/4E/5 systems.
 
 Evidence:
 
