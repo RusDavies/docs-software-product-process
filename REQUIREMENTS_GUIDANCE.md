@@ -11,6 +11,8 @@ Every project should define:
 - non-functional requirements
 - security and privacy requirements
 - operational requirements
+- digital estate requirements
+- AI-agent operational requirements, where applicable
 - acceptance criteria
 - constraints and dependencies
 
@@ -115,7 +117,38 @@ Include:
 - incident response
 - operator ratio expectations
 
-### 7. Compliance and Policy Requirements
+### 7. Digital Estate Requirements
+
+Define the product's operational footprint before it becomes a scavenger hunt with invoices.
+
+Include:
+
+- domains and DNS zones
+- cloud accounts, SaaS tenants, repositories, registries, and package/distribution accounts
+- environments and deployment targets
+- certificates, keys, secrets, and renewal expectations
+- external services, dependencies, and billing owners
+- data stores, backup locations, and retention obligations
+- ownership, access review, and handover expectations
+- decommissioning expectations
+
+### 8. AI-Agent Operational Requirements, Where Applicable
+
+If approved AI agents may help inspect, diagnose, document, maintain, or operate the product, define the boundary as a product requirement instead of hoping future automation develops manners.
+
+Include:
+
+- read-only vs write-capable agent roles
+- allowed diagnostic, reporting, maintenance, and remediation actions
+- actions that require human approval
+- actions agents must never perform
+- least-privilege access requirements
+- audit logging for agent-initiated actions
+- safe rollback/undo requirements for agent-performed changes
+- interfaces agents should use, such as APIs, CLIs, runbooks, or admin tools
+- sensitive data exposure limits for agent workflows
+
+### 9. Compliance and Policy Requirements
 
 Where relevant, capture:
 
@@ -131,7 +164,7 @@ Where relevant, capture:
 - public metadata/SEO claim constraints where relevant
 - approvals required
 
-### 8. Acceptance Criteria
+### 10. Acceptance Criteria
 
 Make requirements verifiable.
 

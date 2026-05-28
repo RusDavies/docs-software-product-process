@@ -7,9 +7,11 @@ Operations guidance defines how a product behaves after launch, when users and e
 Every operated product should define:
 
 - ownership
+- digital estate management
 - monitoring
 - alerting
 - automation
+- AI-agent operational boundaries where applicable
 - backups and recovery
 - maintenance
 - vulnerability handling
@@ -27,14 +29,15 @@ A useful test: could one competent person operate 50 projects like this?
 At minimum, capture:
 
 1. Owner/operator
-2. Health checks
-3. Monitoring/logging
-4. Alerting rules
-5. Backup/restore expectations
-6. Maintenance tasks
-7. Vulnerability update process
-8. Incident path
-9. Automation opportunities
+2. Digital estate register
+3. Health checks
+4. Monitoring/logging
+5. Alerting rules
+6. Backup/restore expectations
+7. Maintenance tasks
+8. Vulnerability update process
+9. Incident path
+10. Automation and AI-agent operation opportunities
 
 ## Full Operations Checklist
 
@@ -49,7 +52,23 @@ Capture:
 - escalation path
 - approval boundaries
 
-### 2. Monitoring and Observability
+### 2. Digital Estate Management
+
+Capture and maintain the estate the product depends on, because “where is that hosted?” should not become a séance.
+
+Capture:
+
+- domains, DNS records, certificates, and renewal dates
+- repositories, package registries, artifact stores, and release accounts
+- cloud accounts, SaaS tenants, identity providers, and admin consoles
+- environments, deployment targets, and infrastructure owners
+- secrets, keys, service accounts, and credential owners
+- databases, object stores, backup locations, and retention/deletion responsibilities
+- third-party services, billing owners, contracts, and support contacts
+- access review cadence and offboarding/handover process
+- decommissioning checklist for retired services
+
+### 3. Monitoring and Observability
 
 Capture:
 
@@ -61,7 +80,7 @@ Capture:
 - audit events
 - dashboards/status pages
 
-### 3. Alerting
+### 4. Alerting
 
 Alerts should be actionable. Noise is just denial-of-service with a ringtone.
 
@@ -74,7 +93,7 @@ Capture:
 - suppression rules
 - escalation thresholds
 
-### 4. Operational Automation
+### 5. Operational Automation
 
 Automate routine work:
 
@@ -89,7 +108,7 @@ Automate routine work:
 - access review reminders
 - vulnerability intake reminders
 
-### 5. Safe Automation Boundaries
+### 6. Safe Automation and AI-Agent Boundaries
 
 Define:
 
@@ -99,8 +118,14 @@ Define:
 - required audit logs
 - rollback/undo options
 - least-privilege credentials
+- which approved AI agents, if any, may inspect, diagnose, document, maintain, or remediate
+- which interfaces agents should use, such as dashboards, APIs, CLIs, runbooks, ticketing, or deployment tools
+- which agent actions are read-only, write-capable, external-facing, destructive, privacy-sensitive, or irreversible
+- how human approvals are captured before risky agent actions
+- how agent actions are identified in logs, audit trails, tickets, and release records
+- how agent access is reviewed, revoked, and rotated
 
-### 6. Backups and Recovery
+### 7. Backups and Recovery
 
 Capture:
 
@@ -111,7 +136,7 @@ Capture:
 - restore testing schedule
 - recovery time/recovery point expectations where relevant
 
-### 7. Maintenance
+### 8. Maintenance
 
 Capture:
 
@@ -123,7 +148,7 @@ Capture:
 - certificate/domain renewals
 - documentation reviews
 
-### 8. Vulnerability and Security Operations
+### 9. Vulnerability and Security Operations
 
 Capture:
 
@@ -135,7 +160,7 @@ Capture:
 - audit review cadence
 - abuse monitoring
 
-### 9. Incident Response
+### 10. Incident Response
 
 Capture:
 
@@ -148,7 +173,7 @@ Capture:
 - recovery steps
 - post-incident review
 
-### 10. Post-Launch Feedback and Iteration
+### 11. Post-Launch Feedback and Iteration
 
 Review:
 
@@ -168,15 +193,17 @@ Turn findings into backlog items.
 For small projects:
 
 1. Owner/support note
-2. Health check/logging note
-3. Backup note
-4. Maintenance checklist
-5. Incident contact/path
-6. Automation wishlist
+2. Digital estate note
+3. Health check/logging note
+4. Backup note
+5. Maintenance checklist
+6. Incident contact/path
+7. Automation/agent-operation wishlist
 
 ## Recommended Project Files
 
 - `docs/operations/runbook.md`
+- `docs/operations/digital-estate-register.md`
 - `docs/operations/monitoring.md`
 - `docs/operations/alerts.md`
 - `docs/operations/backup-restore.md`
@@ -184,6 +211,7 @@ For small projects:
 - `docs/operations/vulnerability-management.md`
 - `docs/operations/incident-response.md`
 - `docs/operations/automation.md`
+- `docs/operations/agent-operation-boundaries.md`
 - `docs/operations/post-launch-review.md`
 
 ## Definition of Operations-Ready
@@ -191,10 +219,12 @@ For small projects:
 A product is operations-ready when:
 
 - ownership is clear
+- digital estate inventory is maintained enough to operate, renew, transfer, or decommission the product
 - health/monitoring exists
 - alerts are actionable
 - backups/recovery are defined where relevant
 - routine automation is planned or implemented
+- AI-agent operation boundaries are documented where agents may assist operation
 - incident path exists
 - maintenance responsibilities are known
 
@@ -203,7 +233,9 @@ A product is operations-ready when:
 Operations is never truly done, because entropy has tenure. For a release, operations is done when:
 
 - monitoring and alerts are live
+- estate ownership, renewals, access, and critical dependencies are known
 - routine tasks are automated or scheduled
+- agent-accessible operational paths are least-privilege, auditable, and approval-gated where risky
 - runbooks exist
 - maintenance/security review cadence is defined
 - post-launch findings are added to the backlog
