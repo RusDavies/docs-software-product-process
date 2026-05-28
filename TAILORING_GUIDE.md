@@ -17,7 +17,7 @@ Tailoring answers:
 
 ### Class 0: Throw-Away / Disposable
 
-Use only when the product owner explicitly decides the work is disposable and accepts that it will not receive normal maintenance or AI-agent operation readiness.
+Use only when the product owner explicitly decides the work is disposable and accepts that it will not receive normal maintenance, digital estate management, or AI-agent operation readiness.
 
 Throw-away work is:
 
@@ -38,14 +38,33 @@ Required:
 - product-owner approval of throw-away classification
 - explicit deletion/rebuild expectation
 - short safety/privacy note
+- no long-lived secrets, persistent data, external exposure, or continuing cost check
 - direct inspection or smoke test before calling done
 
-Usually optional:
+Excluded by default:
 
+- digital estate management
 - AI-agent operation design
 - operations runbook
+- post-launch review
+- monitoring and alerting
+- backup/restore planning, except a deletion/rebuild note
 - release security gate
+- compliance readiness
+- SEO/discovery planning
+- formal documentation plan and documentation QA
+- formal UX artifacts
 - formal architecture docs
+- support process
+- maintenance schedule
+- vulnerability management cadence; delete/rebuild instead of patching
+- risk-register machinery beyond the explicit accepted risk that the work is disposable and unmaintained
+
+Still optional when useful:
+
+- tiny architecture note for disposable work with multiple moving parts
+- short usage note for the creator or reviewer
+- one-off smoke test/check script
 
 Escalate immediately if the work gains users, credentials, external integrations, persistent data, scheduled jobs, deployment, ongoing maintenance expectations, or reliance by another person/project.
 
@@ -234,11 +253,15 @@ Approval:
 | Security/privacy notes | Basic | Basic | Required | Required | Required | Required | Required |
 | Threat model | Optional | Optional | Optional unless risky | Recommended | Required | Required | Required |
 | Architecture notes | Optional | Light | Required | Required | Required | Required | Required |
+| Digital estate management | Excluded unless classification breaks | If maintained/deployable | Required unless exempted | Required | Required | Required | Required |
 | Implementation plan | Optional | Optional | Light | Required | Required | Required | Required |
 | QA evidence | Smoke test | Smoke test | Required | Required | Required | Required | Required |
 | Release security gate | Optional | Optional | If shared/risky | Required before release | Required | Required | Required |
 | Rollback/disable plan | Delete/rebuild note | Optional | Required | Required | Required | Required | Required |
 | Operations runbook | Optional | Optional | If operated | Required | Required | Required | Required |
+| Monitoring/alerting | Excluded | Optional | If operated | Required | Required | Required | Required |
+| Backup/restore planning | Delete/rebuild note only | Optional | If data exists | Required if data exists | Required if data exists | Required if data exists | Required if data exists |
+| Maintenance / vulnerability cadence | Excluded; delete/rebuild | Optional | Required | Required | Required | Required | Required |
 | Risk acceptance record | Throw-away approval | Optional | If risk accepted | Required when applicable | Required when applicable | Required when applicable | Required when applicable |
 | Documentation plan | Optional | Optional | Light | Required | Required | Required | Required |
 | User/admin docs | Optional | Usage notes | If shared/user-facing | Required if user-facing | Required | Required | Required |

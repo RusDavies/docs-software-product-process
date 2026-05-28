@@ -17,7 +17,9 @@ Start here instead of reading everything like a doomed compliance intern:
 
 ### Throw-Away / Disposable
 
-Use only when the product owner explicitly says the work is disposable and accepts that it will not receive normal maintenance or AI-agent operation readiness. If it is deployable, exposed, shared, depended upon, connected to external systems, stores data, uses credentials, costs money, or will survive beyond the experiment, it is not throw-away unless that risk is explicitly accepted.
+Use only when the product owner explicitly says the work is disposable and accepts that it will not receive normal maintenance, digital estate management, or AI-agent operation readiness. If it is deployable, exposed, shared, depended upon, connected to external systems, stores data, uses credentials, costs money, or will survive beyond the experiment, it is not throw-away unless that risk is explicitly accepted.
+
+Class 0 keeps only the small safety wrapper: disposable-work statement, owner approval, delete/rebuild expectation, basic safety/privacy check, no long-lived secrets/data/exposure/cost check, and smoke-test or inspection evidence. Long-term product machinery such as operations runbooks, estate registers, monitoring, backup/restore plans, compliance readiness, SEO, formal documentation QA, support processes, maintenance schedules, and AI-agent operation design is excluded by default.
 
 ### Tiny / Personal
 
