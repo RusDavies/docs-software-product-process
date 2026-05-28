@@ -15,7 +15,7 @@ Every serious project should define:
 - web crawl/index/metadata architecture where applicable
 - security/trust boundaries
 - observability and operations model
-- approved AI-agent operational interfaces where applicable
+- approved AI-agent operational interfaces unless explicitly throw-away or product-owner exempted
 - failure/recovery behavior
 
 ## Minimum Expectations
@@ -30,7 +30,7 @@ At minimum, capture:
 6. Digital estate footprint
 7. Trust boundaries and access model
 8. Observability/operations model
-9. AI-agent operation model where applicable
+9. AI-agent operation model unless explicitly throw-away or product-owner exempted
 10. Key tradeoffs and risks
 
 ## Full Architecture Checklist

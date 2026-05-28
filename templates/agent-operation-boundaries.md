@@ -10,6 +10,8 @@
 
 ## Agent Operation Decision
 
+- Classification: throw-away / AI-agent-operable / product-owner exempted
+- If throw-away or exempted, who approved that decision and why?
 - Are AI agents allowed to operate or assist operation of this product? yes/no/limited
 - Approved agent identities or classes:
 - Human escalation path:

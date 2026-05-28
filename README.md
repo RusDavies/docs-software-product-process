@@ -15,7 +15,11 @@ Start here instead of reading everything like a doomed compliance intern:
 
 ## Quick Start by Project Size
 
-### Tiny / Personal / Throwaway
+### Throw-Away / Disposable
+
+Use only when the product owner explicitly says the work is disposable and accepts that it will not receive normal maintenance or AI-agent operation readiness. If it is deployable, exposed, shared, depended upon, connected to external systems, stores data, uses credentials, costs money, or will survive beyond the experiment, it is not throw-away unless that risk is explicitly accepted.
+
+### Tiny / Personal
 
 Use:
 
@@ -156,6 +160,6 @@ Other documents may include phase-specific checkpoints, but should not redefine 
 
 ## Operating Model
 
-Security, privacy, accessibility, observability, maintainability, digital estate stewardship, AI-agent operability where appropriate, and automated operations are first-class concerns. They appear both as dedicated documents and as checkpoints throughout the process.
+Security, privacy, accessibility, observability, maintainability, digital estate stewardship, AI-agent operability by default unless explicitly throw-away or product-owner exempted, and automated operations are first-class concerns. They appear both as dedicated documents and as checkpoints throughout the process.
 
 The desired end state is boring software: understandable, secure by default, observable, recoverable, and automated enough that one competent operator could oversee many projects without living inside a pager-shaped coffin.

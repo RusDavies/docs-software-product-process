@@ -15,9 +15,43 @@ Tailoring answers:
 
 ## Project Classes
 
-### Class 1: Tiny / Personal / Throwaway
+### Class 0: Throw-Away / Disposable
 
-Use for scripts, experiments, one-off internal helpers, prototypes, and notes that do not affect users, production data, money, public output, or security-sensitive workflows.
+Use only when the product owner explicitly decides the work is disposable and accepts that it will not receive normal maintenance or AI-agent operation readiness.
+
+Throw-away work is:
+
+- not intended for production use
+- not exposed to other users, systems, customers, or the public internet
+- not relied on for ongoing workflows
+- free of long-lived credentials, domains, certificates, scheduled jobs, persistent data stores, billing dependencies, and external integrations
+- safe to delete or rebuild without operational consequence
+- explicitly outside normal maintenance expectations, including security patching
+
+Boundary rule:
+
+If it is deployable, exposed, shared, depended upon, connected to external systems, stores data, uses credentials, costs money, or will survive beyond the experiment, it is not throw-away unless the product owner explicitly says so and accepts the risk.
+
+Required:
+
+- disposable-work statement
+- product-owner approval of throw-away classification
+- explicit deletion/rebuild expectation
+- short safety/privacy note
+- direct inspection or smoke test before calling done
+
+Usually optional:
+
+- AI-agent operation design
+- operations runbook
+- release security gate
+- formal architecture docs
+
+Escalate immediately if the work gains users, credentials, external integrations, persistent data, scheduled jobs, deployment, ongoing maintenance expectations, or reliance by another person/project.
+
+### Class 1: Tiny / Personal
+
+Use for scripts, experiments, one-off internal helpers, prototypes, and notes that do not affect users, production data, money, public output, or security-sensitive workflows, but are not explicitly classified as throw-away.
 
 Required:
 
@@ -25,6 +59,7 @@ Required:
 - basic usage notes
 - obvious safety/privacy notes
 - direct inspection or smoke test before calling done
+- lightweight AI-agent operation boundary note if the work is deployable, scheduled, credentialed, shared, or expected to survive
 
 Recommended:
 
@@ -41,6 +76,8 @@ Usually optional:
 
 Escalate if the work starts touching real users, secrets, external systems, production data, or irreversible actions.
 
+AI-agent operation design is not automatically optional merely because work is small. If the work is not Class 0 throw-away and will need maintenance, include at least enough structure for future agent-assisted inspection and patching.
+
 ### Class 2: Small Internal Tool
 
 Use for internal tools used by one person or a small trusted group, with limited blast radius and no public-facing release.
@@ -55,6 +92,7 @@ Required:
 - implementation checklist
 - basic QA evidence
 - rollback/disable note
+- AI-agent operation boundary note, unless explicitly product-owner exempted
 
 Recommended documents:
 
@@ -63,6 +101,7 @@ Recommended documents:
 - `ARCHITECTURE_GUIDANCE.md`
 - `IMPLEMENTATION_GUIDANCE.md`
 - `QA_GUIDANCE.md`
+- `AI_AGENT_OPERATION_GUIDANCE.md`
 - relevant templates from `templates/`
 
 Approval:
@@ -84,6 +123,7 @@ Required:
 - QA plan and test evidence
 - release checklist
 - operations runbook
+- AI-agent operation boundaries
 - user/admin/operator documentation as applicable
 - SEO/discovery plan for public web projects
 - decision records for major tradeoffs
@@ -93,6 +133,7 @@ Recommended documents:
 - all core guidance docs except items clearly irrelevant to the product
 - `RELEASE_SECURITY_GATE.md` before launch
 - `OPERATIONS_GUIDANCE.md` before ongoing use
+- `AI_AGENT_OPERATION_GUIDANCE.md` before ongoing use
 
 Approval:
 
@@ -113,6 +154,7 @@ Required:
 - rollback/disable plan
 - monitoring and incident path
 - operations runbook
+- AI-agent operation boundaries
 - accepted-risk record where needed
 - post-launch review
 
@@ -183,28 +225,29 @@ Approval:
 
 ## Tailoring Matrix
 
-| Artifact / Check | Class 1 | Class 2 | Class 3 | Class 4 | Class 4E | Class 5 |
-| --- | --- | --- | --- | --- | --- | --- |
-| Problem statement | Required | Required | Required | Required | Required | Required |
-| Requirements / acceptance criteria | Light | Required | Required | Required | Required | Required |
-| UX/workflow notes | If UI | If UI | Required if user-facing | Required | Required | Required |
-| Accessibility expectations | Basic if UI | Basic if UI | Required if UI | Required if UI | Required if UI | Required if UI |
-| Security/privacy notes | Basic | Required | Required | Required | Required | Required |
-| Threat model | Optional | Optional unless risky | Recommended | Required | Required | Required |
-| Architecture notes | Light | Required | Required | Required | Required | Required |
-| Implementation plan | Optional | Light | Required | Required | Required | Required |
-| QA evidence | Smoke test | Required | Required | Required | Required | Required |
-| Release security gate | Optional | If shared/risky | Required before release | Required | Required | Required |
-| Rollback/disable plan | Optional | Required | Required | Required | Required | Required |
-| Operations runbook | Optional | If operated | Required | Required | Required | Required |
-| Risk acceptance record | Optional | If risk accepted | Required when applicable | Required when applicable | Required when applicable | Required when applicable |
-| Documentation plan | Optional | Light | Required | Required | Required | Required |
-| User/admin docs | Usage notes | If shared/user-facing | Required if user-facing | Required | Required | Required |
-| Operator docs/runbook | Optional | If operated | Required | Required | Required | Required |
-| Documentation QA | Smoke check | Required if shared | Required | Required | Required | Required |
-| SEO/discovery | Optional | If public web | Required for public web | Required for public web | Required for public web/trust pages | Required for public web |
-| Compliance readiness | Optional | Optional | If enterprise-targeted | If enterprise-targeted | Required | Required if regulated/customer-required |
-| Post-launch review | Optional | Recommended | Required | Required | Required | Required |
+| Artifact / Check | Class 0 | Class 1 | Class 2 | Class 3 | Class 4 | Class 4E | Class 5 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Problem statement | Disposable statement | Required | Required | Required | Required | Required | Required |
+| Requirements / acceptance criteria | Optional | Light | Required | Required | Required | Required | Required |
+| UX/workflow notes | Optional | If UI | If UI | Required if user-facing | Required | Required | Required |
+| Accessibility expectations | Optional | Basic if UI | Basic if UI | Required if UI | Required if UI | Required if UI | Required if UI |
+| Security/privacy notes | Basic | Basic | Required | Required | Required | Required | Required |
+| Threat model | Optional | Optional | Optional unless risky | Recommended | Required | Required | Required |
+| Architecture notes | Optional | Light | Required | Required | Required | Required | Required |
+| Implementation plan | Optional | Optional | Light | Required | Required | Required | Required |
+| QA evidence | Smoke test | Smoke test | Required | Required | Required | Required | Required |
+| Release security gate | Optional | Optional | If shared/risky | Required before release | Required | Required | Required |
+| Rollback/disable plan | Delete/rebuild note | Optional | Required | Required | Required | Required | Required |
+| Operations runbook | Optional | Optional | If operated | Required | Required | Required | Required |
+| Risk acceptance record | Throw-away approval | Optional | If risk accepted | Required when applicable | Required when applicable | Required when applicable | Required when applicable |
+| Documentation plan | Optional | Optional | Light | Required | Required | Required | Required |
+| User/admin docs | Optional | Usage notes | If shared/user-facing | Required if user-facing | Required | Required | Required |
+| Operator docs/runbook | Optional | Optional | If operated | Required | Required | Required | Required |
+| AI-agent operation boundaries | Optional by explicit classification | If maintained/deployable | Required unless exempted | Required unless exempted | Required unless exempted | Required unless exempted | Required unless exempted |
+| Documentation QA | Smoke check | Smoke check | Required if shared | Required | Required | Required | Required |
+| SEO/discovery | Optional | Optional | If public web | Required for public web | Required for public web | Required for public web/trust pages | Required for public web |
+| Compliance readiness | Optional | Optional | Optional | If enterprise-targeted | If enterprise-targeted | Required | Required if regulated/customer-required |
+| Post-launch review | Optional | Optional | Recommended | Required | Required | Required | Required |
 
 ## Escalation Triggers
 
@@ -273,7 +316,7 @@ Class 5 evidence should include all Class 4 evidence plus any required complianc
 
 Agents should use the smallest project class that fits the risk, then escalate when new facts increase risk.
 
-Agents may generally proceed autonomously with internal, reversible Class 1 and low-risk Class 2 work.
+Agents may generally proceed autonomously with internal, reversible Class 0, Class 1, and low-risk Class 2 work, but Class 0 requires an explicit product-owner throw-away classification before normal maintenance and AI-agent operation readiness are skipped.
 
 Agents must pause for human approval when work involves:
 

@@ -11,7 +11,7 @@ Every operated product should define:
 - monitoring
 - alerting
 - automation
-- AI-agent operational boundaries where applicable
+- AI-agent operational boundaries unless explicitly throw-away or product-owner exempted
 - backups and recovery
 - maintenance
 - vulnerability handling
@@ -224,7 +224,7 @@ A product is operations-ready when:
 - alerts are actionable
 - backups/recovery are defined where relevant
 - routine automation is planned or implemented
-- AI-agent operation boundaries are documented where agents may assist operation
+- AI-agent operation boundaries are documented unless explicitly throw-away or product-owner exempted
 - incident path exists
 - maintenance responsibilities are known
 
