@@ -18,6 +18,8 @@ Every operated product should define:
 - incident response
 - post-launch iteration
 
+Pure software libraries/packages are not operated products just because they are maintained. They need maintainer ownership, vulnerability intake, release integrity, compatibility testing, and security patching, but they do not need runtime operations runbooks, monitoring, alerting, backup/restore plans, or incident operations unless they also ship an operated service, daemon, scheduled job, data store, telemetry backend, update service, or similar runtime component.
+
 ## Operating Ideal
 
 The ideal state is that the system mostly looks after itself. Routine monitoring, maintenance, recovery, reporting, and housekeeping should be automated. Human intervention should be exceptional: approvals, ambiguous decisions, incidents, major changes, product direction, and risk acceptance.

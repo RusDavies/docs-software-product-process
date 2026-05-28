@@ -7,11 +7,12 @@ The guidance is modular. The top-level process explains the flow; each sub-docum
 Start here instead of reading everything like a doomed compliance intern:
 
 1. Classify the project with `TAILORING_GUIDE.md`.
-2. Follow the lifecycle spine in `SOFTWARE_PRODUCT_DEVELOPMENT_PROCESS.md`.
-3. Use the relevant discipline guide when that phase becomes active.
-4. Copy starter artifacts from `templates/` when useful.
-5. Use `GOVERNANCE_AND_APPROVALS.md` when decisions, approvals, risk acceptance, releases, or agent boundaries matter.
-6. Use `DIGITAL_ESTATE_GUIDANCE.md` and `AI_AGENT_OPERATION_GUIDANCE.md` when the product needs a clear operating footprint or may be operated with approved AI-agent assistance.
+2. Select any target profile, such as software library/package, that changes which process parts apply.
+3. Follow the lifecycle spine in `SOFTWARE_PRODUCT_DEVELOPMENT_PROCESS.md`.
+4. Use the relevant discipline guide when that phase becomes active.
+5. Copy starter artifacts from `templates/` when useful.
+6. Use `GOVERNANCE_AND_APPROVALS.md` when decisions, approvals, risk acceptance, releases, or agent boundaries matter.
+7. Use `DIGITAL_ESTATE_GUIDANCE.md` and `AI_AGENT_OPERATION_GUIDANCE.md` when the product needs a clear operating footprint or may be operated with approved AI-agent assistance.
 
 ## Quick Start by Project Size
 
@@ -49,6 +50,12 @@ Use:
 - selected templates
 
 Add `GOVERNANCE_AND_APPROVALS.md` if the tool touches external systems, shared users, sensitive data, destructive actions, or release approval.
+
+### Software Library / Package
+
+Use the software-library target profile in `TAILORING_GUIDE.md` for reusable libraries, SDKs, framework modules, or packages that other software consumes but that do not themselves run as operated services.
+
+Libraries keep the security, compatibility, test, documentation, release, provenance, maintainer, vulnerability-intake, and security-patching parts of the process. They exclude normal runtime operations machinery by default: no operations runbook, monitoring/alerting, backup/restore plan, runtime incident process, or AI-agent runtime-operation design unless the library also ships an operated service, daemon, scheduled job, data store, telemetry backend, update service, or other runtime component.
 
 ### Serious / Production / Public / Regulated Product
 

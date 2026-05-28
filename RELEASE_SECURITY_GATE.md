@@ -2,6 +2,8 @@
 
 The release security gate is the explicit checkpoint before a product, feature, or major change ships. It exists because “we’ll secure it later” is how later becomes incident response.
 
+For software libraries/packages, this gate focuses on dependency posture, supply-chain integrity, package contents, signing/provenance, secure defaults, misuse resistance, vulnerability disclosure, and security-patch readiness. Runtime operations checks apply only when the library also ships an operated service or runtime component.
+
 ## Purpose
 
 Before release, confirm:

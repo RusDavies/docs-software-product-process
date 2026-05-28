@@ -2,6 +2,8 @@
 
 Release guidance defines how to ship deliberately instead of yeeting code into production and hoping the gods of DNS are merciful.
 
+For software libraries/packages, release guidance applies mainly to versioning, changelogs, package publishing, provenance/signing, compatibility notes, security advisories, and rollback/yank/deprecation paths. Runtime deployment, monitoring, backup/restore, and operations handoff sections apply only if the library also ships an operated runtime component.
+
 ## Purpose
 
 Every release should define:

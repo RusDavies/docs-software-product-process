@@ -23,7 +23,7 @@ Every project should move deliberately from idea to operation:
 
 The process is modular. Small projects can use lightweight versions. Larger, riskier, public, customer-facing, enterprise-targeted, regulated, security-sensitive, or multi-role projects should use the full process.
 
-Before applying the full process, classify the project with `TAILORING_GUIDE.md`. Class 0 throw-away work is an explicit product-owner classification and excludes normal maintenance, digital estate management, AI-agent operation design, and other long-term product machinery unless the classification breaks. Use `GOVERNANCE_AND_APPROVALS.md` when approvals, accepted risk, release authority, or agent autonomy boundaries matter.
+Before applying the full process, classify the project and select any target profile with `TAILORING_GUIDE.md`. Class 0 throw-away work is an explicit product-owner classification and excludes normal maintenance, digital estate management, AI-agent operation design, and other long-term product machinery unless the classification breaks. Software library/package targets keep security, compatibility, release, documentation, provenance, vulnerability-intake, and patch-maintenance concerns, but exclude normal runtime operations concerns unless the library also ships an operated runtime component. Use `GOVERNANCE_AND_APPROVALS.md` when approvals, accepted risk, release authority, or agent autonomy boundaries matter.
 
 ## Process Principles
 
