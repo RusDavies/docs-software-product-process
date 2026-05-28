@@ -18,6 +18,8 @@ Every operated product should maintain an estate view covering:
 
 Class 0 throw-away/disposable work is exempt from digital estate management by default. If the work has domains, DNS, certificates, repositories that must persist, release accounts, cloud/SaaS tenants, long-lived credentials, persistent data stores, billing dependencies, or external integrations, the throw-away classification is probably wrong and should be escalated or explicitly risk-accepted by the product owner.
 
+Pure software libraries/packages usually need only limited estate tracking: source repository, package registry/project ownership, publishing accounts, release/signing credentials, maintainer ownership, and security-contact paths. They do not need a full operated-product estate register unless they also include an operated service, daemon, scheduled job, data store, telemetry backend, update service, or other runtime component.
+
 If nobody can answer “what do we own, where does it run, who pays for it, who can access it, and what expires next?”, the product is not operationally mature. It is just vibing in production, which is adorable until it becomes expensive.
 
 ## Minimum Expectations

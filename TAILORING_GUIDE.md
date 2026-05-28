@@ -8,6 +8,7 @@ Tailoring answers:
 
 - how much documentation is required
 - which checks are mandatory
+- which target profile applies
 - who must approve the work
 - what evidence should be kept
 - where agents can proceed autonomously
@@ -242,6 +243,54 @@ Approval:
 
 - humans own product direction, policy decisions, accepted risk, and release decisions. Agents may prepare evidence but must not quietly become a lawyer, doctor, regulator, or chaos goblin with commit access.
 
+## Target Profiles
+
+Project classes describe risk and process weight. Target profiles describe what kind of thing is being built. Apply the relevant target profile in addition to the class.
+
+### Software Library / Package
+
+Use for reusable code libraries, SDKs, framework modules, command packages, language packages, or shared internal packages that are consumed by other software but do not themselves operate as a running service.
+
+A software library target has security and release-integrity concerns, but no normal runtime operations concerns unless it also ships a hosted service, daemon, scheduled job, data store, or externally operated component. Libraries still need maintenance for security fixes and compatibility, but they do not need monitoring dashboards, alert routing, backup/restore plans, incident runbooks, or AI-agent runtime-operation design for a non-existent runtime. Let us not page someone for a function call. Society has suffered enough.
+
+Required:
+
+- library purpose and supported use cases
+- public API / compatibility contract
+- versioning and deprecation policy
+- supported runtimes/platforms/language versions
+- dependency and supply-chain security review
+- secure coding and misuse/abuse-case review
+- test suite and compatibility evidence
+- release/build/publishing process
+- package signing, provenance, or artifact integrity expectations where relevant
+- vulnerability intake and security patch process
+- maintainer/release-owner model
+- user/developer documentation
+
+Excluded by default unless the library also includes an operated runtime component:
+
+- operations runbook
+- monitoring and alerting
+- backup/restore planning
+- runtime incident process
+- post-launch operations review
+- AI-agent runtime-operation boundaries
+- service-level support process
+- digital estate management beyond repository, package registry, signing/release credentials, and maintainer ownership
+
+Escalate out of the pure library target if the project adds any hosted service, telemetry backend, license server, update service, persistent data store, scheduled automation, production credentials, customer-specific operation, or runtime component that someone must operate.
+
+Recommended documents:
+
+- `REQUIREMENTS_GUIDANCE.md`
+- `SECURITY_GUIDANCE.md`
+- `ARCHITECTURE_GUIDANCE.md` for API, dependency, and package/release architecture
+- `IMPLEMENTATION_GUIDANCE.md`
+- `QA_GUIDANCE.md`
+- `RELEASE_GUIDANCE.md`
+- `RELEASE_SECURITY_GATE.md` for public or security-sensitive libraries
+
 ## Tailoring Matrix
 
 | Artifact / Check | Class 0 | Class 1 | Class 2 | Class 3 | Class 4 | Class 4E | Class 5 |
@@ -271,6 +320,20 @@ Approval:
 | SEO/discovery | Optional | Optional | If public web | Required for public web | Required for public web | Required for public web/trust pages | Required for public web |
 | Compliance readiness | Optional | Optional | Optional | If enterprise-targeted | If enterprise-targeted | Required | Required if regulated/customer-required |
 | Post-launch review | Optional | Optional | Recommended | Required | Required | Required | Required |
+
+## Target Profile Overrides
+
+| Artifact / Check | Software Library / Package |
+| --- | --- |
+| Operations runbook | Excluded unless the library ships an operated runtime component |
+| Monitoring/alerting | Excluded unless the library ships an operated runtime component |
+| Backup/restore planning | Excluded unless the library owns persistent data or operated storage |
+| Runtime incident process | Excluded unless the library ships or depends on an operated runtime service |
+| AI-agent operation boundaries | Excluded for pure libraries; required only for operated runtime components or release/publishing automation where agents may act |
+| Digital estate management | Limited to repository, package registry, release/signing credentials, maintainer ownership, and publishing accounts |
+| Maintenance / vulnerability cadence | Required: dependency updates, compatibility updates, vulnerability intake, and security patch releases |
+| Release security gate | Required for public, security-sensitive, or widely consumed libraries; otherwise class-driven |
+| Documentation | Developer/API docs required; operator docs excluded unless an operated runtime exists |
 
 ## Escalation Triggers
 

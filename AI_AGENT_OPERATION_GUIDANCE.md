@@ -35,6 +35,8 @@ If work is deployable, exposed, shared, depended upon, connected to external sys
 
 Anything not explicitly throw-away still needs maintenance, even if only security patching. Therefore, non-throw-away products should be designed from the start to enable AI-agent operation, even when the first release only documents the boundaries and does not implement agent-facing automation yet.
 
+Pure software libraries/packages are a separate target profile: they need security maintenance, vulnerability intake, release integrity, and compatibility work, but no AI-agent runtime-operation design unless they also ship an operated service, daemon, scheduled job, data store, telemetry backend, update service, or similar runtime component. If agents may assist library release/publishing automation, document those release-action boundaries separately from runtime operations.
+
 Practical rule: design for AI-agent operation when agent assistance can reduce operational toil or improve responsiveness without weakening human control, security, privacy, auditability, or recovery. If those protections cannot be met, document the exemption and the compensating human operations model.
 
 ## Minimum Expectations
