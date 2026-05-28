@@ -37,6 +37,8 @@ Important baseline principles include:
 - least privilege
 - 12-factor app design where appropriate
 - operational automation by default
+- digital estate stewardship
+- AI-operable by design where appropriate
 - observability from the start
 - reproducibility and portability
 - resilient failure modes
@@ -74,12 +76,14 @@ Key outputs:
 - non-functional requirements
 - security and privacy requirements
 - operational requirements
+- digital estate requirements
+- AI-agent operational requirements, where applicable
 - acceptance criteria
 - constraints and dependencies
 
 Security checkpoint:
 
-- Security, privacy, compliance, auditability, abuse resistance, and operational safety are requirements, not garnish.
+- Security, privacy, compliance, auditability, abuse resistance, digital estate stewardship, agent-operability boundaries, and operational safety are requirements, not garnish.
 
 Guidance: `REQUIREMENTS_GUIDANCE.md`
 
@@ -203,11 +207,16 @@ Key outputs:
 - trust boundaries
 - observability model
 - operational automation model
+- digital estate inventory
+- ownership and account map
+- dependency/service map
+- environment and deployment inventory
+- privileged access model for humans and approved agents
 - failure/recovery model
 
 Security checkpoint:
 
-- Architecture must show authentication, authorization, network boundaries, ingress/egress, secrets, data flows, audit points, and privileged operations.
+- Architecture must show authentication, authorization, network boundaries, ingress/egress, secrets, data flows, audit points, privileged operations, digital estate ownership, and any AI-agent operational interfaces or autonomy boundaries.
 
 Guidance: `ARCHITECTURE_GUIDANCE.md`
 
@@ -322,8 +331,12 @@ Operate the system, learn from real usage, and improve it.
 Key outputs:
 
 - operational runbook
+- maintained digital estate register
+- service/account/domain ownership map
+- account, domain, certificate, secret, and dependency renewal schedule
 - alerting rules
 - automation jobs
+- agent-operable runbooks and safe automation boundaries, where applicable
 - backup/restore process
 - maintenance schedule
 - vulnerability intake path
@@ -361,6 +374,10 @@ A product or major feature is ready for release when:
 - required documentation exists and has passed documentation QA or approved exceptions
 - web SEO checks have passed or exceptions are approved where applicable
 - operational monitoring exists
+- digital estate inventory is complete enough for operation
+- ownership, renewal, access, and incident paths are known
+- AI-agent operational boundaries are documented where agents may assist operation
+- agent-accessible tools/APIs are least-privilege, observable, and approval-gated for risky actions
 - rollback/disable paths are known
 - support and incident paths are known
 - known risks are documented

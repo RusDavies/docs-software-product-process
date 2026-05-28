@@ -11,9 +11,11 @@ Every serious project should define:
 - data model
 - APIs/contracts
 - deployment/runtime model
+- digital estate footprint
 - web crawl/index/metadata architecture where applicable
 - security/trust boundaries
 - observability and operations model
+- approved AI-agent operational interfaces where applicable
 - failure/recovery behavior
 
 ## Minimum Expectations
@@ -25,9 +27,11 @@ At minimum, capture:
 3. Data model
 4. API/integration model
 5. Deployment model
-6. Trust boundaries and access model
-7. Observability/operations model
-8. Key tradeoffs and risks
+6. Digital estate footprint
+7. Trust boundaries and access model
+8. Observability/operations model
+9. AI-agent operation model where applicable
+10. Key tradeoffs and risks
 
 ## Full Architecture Checklist
 
@@ -89,7 +93,19 @@ Capture:
 - sitemap/robots/canonical generation for public web projects
 - infrastructure dependencies
 
-### 6. Security Architecture
+### 6. Digital Estate Architecture
+
+Capture:
+
+- domains, DNS zones, and certificate dependencies
+- source repositories, package registries, artifact stores, and release accounts
+- cloud accounts, SaaS tenants, identity providers, and administrative consoles
+- environments, deployment targets, and infrastructure ownership
+- external dependencies, service accounts, billing owners, and renewal obligations
+- data stores, backup destinations, retention locations, and deletion/decommissioning paths
+- ownership and handover model for each estate component
+
+### 7. Security Architecture
 
 Capture:
 
@@ -102,7 +118,7 @@ Capture:
 - audit points
 - abuse mitigations
 
-### 7. Operational Automation Architecture
+### 8. Operational Automation Architecture
 
 Capture:
 
@@ -115,7 +131,21 @@ Capture:
 - alert routing
 - human approval boundaries
 
-### 8. Observability Architecture
+### 9. AI-Agent Operation Architecture, Where Applicable
+
+Capture:
+
+- approved agent roles and autonomy boundaries
+- read-only diagnostic interfaces
+- write-capable maintenance interfaces, if any
+- human approval gates for risky, external, destructive, privacy-sensitive, or irreversible actions
+- least-privilege credentials and scoped tool access for agents
+- agent-visible runbooks, status pages, APIs, CLIs, logs, and dashboards
+- audit trail for agent observations, recommendations, approvals, and actions
+- rollback/undo paths for agent-performed changes
+- explicit no-go zones for agent access or automation
+
+### 10. Observability Architecture
 
 Capture:
 
@@ -128,7 +158,7 @@ Capture:
 - alert conditions
 - privacy-safe diagnostics
 
-### 9. Resilience and Failure Modes
+### 11. Resilience and Failure Modes
 
 Capture:
 
@@ -139,7 +169,7 @@ Capture:
 - rollback/disable paths
 - disaster recovery expectations
 
-### 10. Tradeoffs and Alternatives
+### 12. Tradeoffs and Alternatives
 
 Capture:
 
@@ -158,8 +188,10 @@ For small projects:
 2. Data model notes
 3. API/integration notes
 4. Security boundary notes
-5. Deployment/config notes
-6. Monitoring/backup notes
+5. Digital estate notes
+6. Deployment/config notes
+7. Monitoring/backup notes
+8. Agent-operation boundary notes if agents will help operate the project
 
 ## Recommended Project Files
 
@@ -168,7 +200,9 @@ For small projects:
 - `docs/architecture/data-model.md`
 - `docs/architecture/api-contracts.md`
 - `docs/architecture/deployment.md`
+- `docs/architecture/digital-estate.md`
 - `docs/architecture/security-architecture.md`
+- `docs/architecture/agent-operation.md`
 - `docs/architecture/observability.md`
 - `docs/architecture/operational-automation.md`
 - `docs/architecture/decision-records/`
@@ -180,7 +214,9 @@ Architecture is ready when:
 - major components and boundaries are clear
 - data and API models are plausible
 - deployment/runtime assumptions are documented
+- digital estate ownership and dependencies are documented
 - security and trust boundaries are visible
+- agent-operation boundaries are documented where applicable
 - operational automation and observability are planned
 - major tradeoffs are understood
 

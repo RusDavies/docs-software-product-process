@@ -30,6 +30,14 @@ What crosses a security, privacy, network, or permission boundary?
 
 Runtime, configuration, environments, infrastructure dependencies, and Podman/container assumptions where relevant.
 
+## Digital Estate
+
+Domains, DNS, certificates, repositories, package/distribution accounts, cloud/SaaS tenants, identity providers, data stores, backup locations, billing owners, renewal dates, and operational owners.
+
+## AI-Agent Operation Model
+
+Approved agent roles, read-only/write-capable boundaries, allowed interfaces, approval gates, audit requirements, least-privilege access, rollback/undo expectations, and no-go zones.
+
 ## Observability
 
 Logs, metrics, health checks, audit events, dashboards, and alerts.

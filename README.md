@@ -11,6 +11,7 @@ Start here instead of reading everything like a doomed compliance intern:
 3. Use the relevant discipline guide when that phase becomes active.
 4. Copy starter artifacts from `templates/` when useful.
 5. Use `GOVERNANCE_AND_APPROVALS.md` when decisions, approvals, risk acceptance, releases, or agent boundaries matter.
+6. Use `DIGITAL_ESTATE_GUIDANCE.md` and `AI_AGENT_OPERATION_GUIDANCE.md` when the product needs a clear operating footprint or may be operated with approved AI-agent assistance.
 
 ## Quick Start by Project Size
 
@@ -87,6 +88,8 @@ Add:
 - `COMPLIANCE_READINESS_GUIDANCE.md` — SOC 2, ISO/IEC 27001, enterprise questionnaire, control, and evidence readiness
 - `ARCHITECTURE_GUIDANCE.md` — technical architecture and system design
 - `IMPLEMENTATION_PLANNING_GUIDANCE.md` — milestones, backlog breakdown, and delivery planning
+- `DIGITAL_ESTATE_GUIDANCE.md` — domains, accounts, environments, credentials, dependencies, renewals, ownership, and decommissioning
+- `AI_AGENT_OPERATION_GUIDANCE.md` — safe, auditable, least-privilege operation by approved AI agents
 
 ### Build, Verify, Release, Operate
 
@@ -108,6 +111,8 @@ Starter artifacts live in `templates/`:
 - `templates/qa-plan.md`
 - `templates/release-checklist.md`
 - `templates/operations-runbook.md`
+- `templates/digital-estate-register.md`
+- `templates/agent-operation-boundaries.md`
 - `templates/decision-record.md`
 - `templates/control-register.md`
 - `templates/evidence-register.md`
@@ -141,6 +146,8 @@ Some topics appear in multiple documents because they matter in multiple phases.
 - User/admin/operator documentation source of truth: `DOCUMENTATION_GUIDANCE.md`
 - Web SEO/discovery source of truth: `SEO_GUIDANCE.md`
 - Operational ownership and runbooks source of truth: `OPERATIONS_GUIDANCE.md`
+- Digital estate ownership and renewal source of truth: `DIGITAL_ESTATE_GUIDANCE.md`
+- AI-agent operational boundary source of truth: `AI_AGENT_OPERATION_GUIDANCE.md`
 - Overall lifecycle source of truth: `SOFTWARE_PRODUCT_DEVELOPMENT_PROCESS.md`
 - Project-class/tailoring source of truth: `TAILORING_GUIDE.md`
 - Approval and agent-boundary source of truth: `GOVERNANCE_AND_APPROVALS.md`
@@ -149,6 +156,6 @@ Other documents may include phase-specific checkpoints, but should not redefine 
 
 ## Operating Model
 
-Security, privacy, accessibility, observability, maintainability, and automated operations are first-class concerns. They appear both as dedicated documents and as checkpoints throughout the process.
+Security, privacy, accessibility, observability, maintainability, digital estate stewardship, AI-agent operability where appropriate, and automated operations are first-class concerns. They appear both as dedicated documents and as checkpoints throughout the process.
 
 The desired end state is boring software: understandable, secure by default, observable, recoverable, and automated enough that one competent operator could oversee many projects without living inside a pager-shaped coffin.
