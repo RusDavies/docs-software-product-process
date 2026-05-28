@@ -38,7 +38,7 @@ Important baseline principles include:
 - 12-factor app design where appropriate
 - operational automation by default
 - digital estate stewardship
-- AI-operable by design where appropriate
+- AI-operable by design unless explicitly throw-away or product-owner exempted
 - observability from the start
 - reproducibility and portability
 - resilient failure modes
@@ -77,7 +77,7 @@ Key outputs:
 - security and privacy requirements
 - operational requirements
 - digital estate requirements
-- AI-agent operational requirements, where applicable
+- AI-agent operational requirements unless explicitly throw-away or product-owner exempted
 - acceptance criteria
 - constraints and dependencies
 
@@ -376,7 +376,7 @@ A product or major feature is ready for release when:
 - operational monitoring exists
 - digital estate inventory is complete enough for operation
 - ownership, renewal, access, and incident paths are known
-- AI-agent operational boundaries are documented where agents may assist operation
+- AI-agent operational boundaries are documented unless the product owner explicitly classified the work as throw-away or approved an exemption
 - agent-accessible tools/APIs are least-privilege, observable, and approval-gated for risky actions
 - rollback/disable paths are known
 - support and incident paths are known

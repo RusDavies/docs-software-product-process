@@ -4,7 +4,11 @@ AI-agent operation guidance defines how approved agents may inspect, diagnose, d
 
 ## Purpose
 
-Products that may be operated with AI-agent assistance should define:
+Products should be designed for AI-agent operation by default unless the product owner explicitly classifies the work as throw-away or explicitly approves an exemption.
+
+AI-agent operation design does not mean every product must immediately implement autonomous remediation. It means the product should avoid closing off safe future operation by approved agents. At minimum, operated products should make inspection, diagnosis, maintenance planning, approval, execution, verification, and rollback legible enough that agents can assist without archaeological fieldwork and bolt cutters.
+
+Products designed for AI-agent operation should define:
 
 - approved agent roles
 - allowed and forbidden actions
@@ -18,11 +22,26 @@ Products that may be operated with AI-agent assistance should define:
 
 The goal is not to let agents “do everything”. The goal is to make routine operation legible, bounded, auditable, and safe enough that agents can help without bypassing human judgment.
 
+## Applicability Rule
+
+For software products, AI-agent operability is the default design expectation.
+
+The product owner may opt out only by making one of these decisions explicit:
+
+- **Throw-away / disposable classification:** the work is not intended for production, shared use, ongoing workflows, persistent data, external integrations, long-lived credentials, domains, scheduled jobs, or continued maintenance.
+- **Product-owner exemption:** the work is a product, but the owner explicitly accepts that AI-agent operation design will not be required for a specific reason, such as unusual sensitivity, incompatible legal/compliance constraints, or a conscious decision that the extra design surface is not worth it.
+
+If work is deployable, exposed, shared, depended upon, connected to external systems, stores data, uses credentials, costs money, or will survive beyond the experiment, it is not throw-away unless the product owner explicitly says so and accepts the maintenance/security risk.
+
+Anything not explicitly throw-away still needs maintenance, even if only security patching. Therefore, non-throw-away products should be designed from the start to enable AI-agent operation, even when the first release only documents the boundaries and does not implement agent-facing automation yet.
+
+Practical rule: design for AI-agent operation when agent assistance can reduce operational toil or improve responsiveness without weakening human control, security, privacy, auditability, or recovery. If those protections cannot be met, document the exemption and the compensating human operations model.
+
 ## Minimum Expectations
 
 At minimum, capture:
 
-1. Whether AI agents may operate the product at all
+1. Whether the product is throw-away, AI-agent-operable, or product-owner exempted
 2. Approved agent roles and owners
 3. Read-only inspection paths
 4. Write-capable actions, if any

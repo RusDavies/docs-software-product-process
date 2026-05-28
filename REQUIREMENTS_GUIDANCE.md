@@ -12,7 +12,7 @@ Every project should define:
 - security and privacy requirements
 - operational requirements
 - digital estate requirements
-- AI-agent operational requirements, where applicable
+- AI-agent operational requirements unless explicitly throw-away or product-owner exempted
 - acceptance criteria
 - constraints and dependencies
 
