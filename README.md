@@ -12,13 +12,14 @@ Start here instead of reading everything like a doomed compliance intern:
 4. Use the relevant discipline guide when that phase becomes active.
 5. Copy starter artifacts from `templates/` when useful.
 6. Use `GOVERNANCE_AND_APPROVALS.md` when decisions, approvals, risk acceptance, releases, or agent boundaries matter.
-7. Use `DIGITAL_ESTATE_GUIDANCE.md` and `AI_AGENT_OPERATION_GUIDANCE.md` when the product needs a clear operating footprint or may be operated with approved AI-agent assistance.
+7. Use `PRODUCT_OPERATIONAL_ESTATE_GUIDANCE.md` and `AI_AGENT_OPERATION_GUIDANCE.md` when the product needs a clear operating footprint or may be operated with approved AI-agent assistance.
+8. Use `DIGITAL_ESTATE_MANAGEMENT_GUIDANCE.md` when a product has non-corporate end users whose digital assets, accounts, memories, identity, access paths, or death/incapacity instructions may matter.
 
 ## Quick Start by Project Size
 
 ### Throw-Away / Disposable
 
-Use only when the product owner explicitly says the work is disposable and accepts that it will not receive normal maintenance, digital estate management, or AI-agent operation readiness. If it is deployable, exposed, shared, depended upon, connected to external systems, stores data, uses credentials, costs money, or will survive beyond the experiment, it is not throw-away unless that risk is explicitly accepted.
+Use only when the product owner explicitly says the work is disposable and accepts that it will not receive normal maintenance, product operational estate management, or AI-agent operation readiness. If it is deployable, exposed, shared, depended upon, connected to external systems, stores data, uses credentials, costs money, or will survive beyond the experiment, it is not throw-away unless that risk is explicitly accepted.
 
 Class 0 keeps only the small safety wrapper: disposable-work statement, owner approval, delete/rebuild expectation, basic safety/privacy check, no long-lived secrets/data/exposure/cost check, and smoke-test or inspection evidence. Long-term product machinery such as operations runbooks, estate registers, monitoring, backup/restore plans, compliance readiness, SEO, formal documentation QA, support processes, maintenance schedules, and AI-agent operation design is excluded by default.
 
@@ -91,6 +92,7 @@ Add:
 
 - `PRODUCT_FRAMING_GUIDANCE.md` — opportunity framing and problem definition
 - `REQUIREMENTS_GUIDANCE.md` — product, functional, non-functional, security, and operational requirements
+- `DIGITAL_ESTATE_MANAGEMENT_GUIDANCE.md` — user-facing Digital Estate Management for personal/family assets, legacy access, and death/incapacity planning
 - `UX_GUIDANCE.md` — UX design process, trust UX, accessibility, validation, and UX readiness
 - `DOCUMENTATION_GUIDANCE.md` — user, admin, operator, developer, release, and documentation QA expectations
 - `SEO_GUIDANCE.md` — search/discovery, metadata, crawlability, technical SEO, and launch SEO checks for web products
@@ -101,7 +103,7 @@ Add:
 - `COMPLIANCE_READINESS_GUIDANCE.md` — SOC 2, ISO/IEC 27001, enterprise questionnaire, control, and evidence readiness
 - `ARCHITECTURE_GUIDANCE.md` — technical architecture and system design
 - `IMPLEMENTATION_PLANNING_GUIDANCE.md` — milestones, backlog breakdown, and delivery planning
-- `DIGITAL_ESTATE_GUIDANCE.md` — domains, accounts, environments, credentials, dependencies, renewals, ownership, and decommissioning
+- `PRODUCT_OPERATIONAL_ESTATE_GUIDANCE.md` — product/operator estate: domains, accounts, environments, credentials, dependencies, renewals, ownership, and decommissioning
 - `AI_AGENT_OPERATION_GUIDANCE.md` — safe, auditable, least-privilege operation by approved AI agents
 
 ### Build, Verify, Release, Operate
@@ -124,7 +126,9 @@ Starter artifacts live in `templates/`:
 - `templates/qa-plan.md`
 - `templates/release-checklist.md`
 - `templates/operations-runbook.md`
-- `templates/digital-estate-register.md`
+- `templates/product-operational-estate-register.md`
+- `templates/digital-estate-management-requirements.md`
+- `templates/digital-estate-user-inventory.md`
 - `templates/agent-operation-boundaries.md`
 - `templates/decision-record.md`
 - `templates/control-register.md`
@@ -159,7 +163,8 @@ Some topics appear in multiple documents because they matter in multiple phases.
 - User/admin/operator documentation source of truth: `DOCUMENTATION_GUIDANCE.md`
 - Web SEO/discovery source of truth: `SEO_GUIDANCE.md`
 - Operational ownership and runbooks source of truth: `OPERATIONS_GUIDANCE.md`
-- Digital estate ownership and renewal source of truth: `DIGITAL_ESTATE_GUIDANCE.md`
+- Product operational estate ownership and renewal source of truth: `PRODUCT_OPERATIONAL_ESTATE_GUIDANCE.md`
+- User-facing Digital Estate Management source of truth: `DIGITAL_ESTATE_MANAGEMENT_GUIDANCE.md`
 - AI-agent operational boundary source of truth: `AI_AGENT_OPERATION_GUIDANCE.md`
 - Overall lifecycle source of truth: `SOFTWARE_PRODUCT_DEVELOPMENT_PROCESS.md`
 - Project-class/tailoring source of truth: `TAILORING_GUIDE.md`
@@ -167,8 +172,14 @@ Some topics appear in multiple documents because they matter in multiple phases.
 
 Other documents may include phase-specific checkpoints, but should not redefine those policies in incompatible ways.
 
+## Terminology Guardrails
+
+- **Digital Estate Management** means user-facing planning for personal/family digital assets, legacy access, trusted people, and death/incapacity instructions.
+- **Product Operational Estate Management** means operator-facing continuity for the product itself: domains, DNS, certificates, repositories, cloud/SaaS accounts, secrets, billing, backups, handover, and decommissioning.
+- **Digital Asset Management / DAM** means corporate/media/content asset-library management: reusable files, brand assets, approvals, licensing, distribution, and content governance.
+
 ## Operating Model
 
-Security, privacy, accessibility, observability, maintainability, digital estate stewardship, AI-agent operability by default unless explicitly throw-away or product-owner exempted, and automated operations are first-class concerns. They appear both as dedicated documents and as checkpoints throughout the process.
+Security, privacy, accessibility, observability, maintainability, product operational estate stewardship, AI-agent operability by default unless explicitly throw-away or product-owner exempted, and automated operations are first-class concerns. They appear both as dedicated documents and as checkpoints throughout the process.
 
 The desired end state is boring software: understandable, secure by default, observable, recoverable, and automated enough that one competent operator could oversee many projects without living inside a pager-shaped coffin.

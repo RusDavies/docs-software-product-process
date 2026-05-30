@@ -30,9 +30,13 @@ What crosses a security, privacy, network, or permission boundary?
 
 Runtime, configuration, environments, infrastructure dependencies, and Podman/container assumptions where relevant.
 
-## Digital Estate
+## Product Operational Estate
 
 Domains, DNS, certificates, repositories, package/distribution accounts, cloud/SaaS tenants, identity providers, data stores, backup locations, billing owners, renewal dates, and operational owners.
+
+## Digital Estate Management, Where Applicable
+
+If this product supports user-facing Digital Estate Management, summarize the architecture for asset inventories, disposition instructions, trusted people, export/delegated/survivor workflows, consent/authority boundaries, audit logging, and inventory/secret separation.
 
 ## AI-Agent Operation Model
 

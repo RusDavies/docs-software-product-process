@@ -28,7 +28,7 @@ For software products, AI-agent operability is the default design expectation.
 
 The product owner may opt out only by making one of these decisions explicit:
 
-- **Throw-away / disposable classification:** the work is not intended for production, shared use, ongoing workflows, persistent data, external integrations, long-lived credentials, domains, scheduled jobs, digital estate management, or continued maintenance.
+- **Throw-away / disposable classification:** the work is not intended for production, shared use, ongoing workflows, persistent data, external integrations, long-lived credentials, domains, scheduled jobs, product operational estate management, or continued maintenance.
 - **Product-owner exemption:** the work is a product, but the owner explicitly accepts that AI-agent operation design will not be required for a specific reason, such as unusual sensitivity, incompatible legal/compliance constraints, or a conscious decision that the extra design surface is not worth it.
 
 If work is deployable, exposed, shared, depended upon, connected to external systems, stores data, uses credentials, costs money, or will survive beyond the experiment, it is not throw-away unless the product owner explicitly says so and accepts the maintenance/security risk.

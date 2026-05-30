@@ -11,7 +11,8 @@ Every project should define:
 - non-functional requirements
 - security and privacy requirements
 - operational requirements
-- digital estate requirements
+- product operational estate requirements
+- Digital Estate Management requirements where applicable
 - AI-agent operational requirements unless explicitly throw-away or product-owner exempted
 - acceptance criteria
 - constraints and dependencies
@@ -117,7 +118,7 @@ Include:
 - incident response
 - operator ratio expectations
 
-### 7. Digital Estate Requirements
+### 7. Product Operational Estate Requirements
 
 Define the product's operational footprint before it becomes a scavenger hunt with invoices.
 
@@ -132,7 +133,27 @@ Include:
 - ownership, access review, and handover expectations
 - decommissioning expectations
 
-### 8. AI-Agent Operational Requirements, Where Applicable
+### 8. Digital Estate Management Requirements, Where Applicable
+
+For products with non-corporate end users, assess whether the product should help users plan, document, protect, or administer digital assets after death or incapacity.
+
+Include:
+
+- applicability decision: applies, not applicable, or deferred
+- user digital asset categories: financial, sentimental, identity, legal, health/family, creator/business, device/access infrastructure, AI/data, or other
+- user asset inventory requirements
+- disposition instructions: preserve, transfer, export, memorialize, delete, close, sell, or seek professional review
+- trusted-person roles: executor, digital helper, family member, advisor, technical custodian, or professional fiduciary
+- distinction between consent, legal authority, and technical access
+- inventory/secret separation requirements
+- export, delegated access, emergency access, death/incapacity, and inactivity workflows where applicable
+- audit, notification, delay, revocation, and support requirements for trusted-contact workflows
+- privacy requirements for private communications, third-party data, sensitive media, and family-dispute contexts
+- limits and disclaimers around platform rules, local law, transferability, provider cooperation, and professional advice
+
+Guidance: `DIGITAL_ESTATE_MANAGEMENT_GUIDANCE.md`
+
+### 9. AI-Agent Operational Requirements, Where Applicable
 
 If approved AI agents may help inspect, diagnose, document, maintain, or operate the product, define the boundary as a product requirement instead of hoping future automation develops manners.
 
@@ -148,7 +169,7 @@ Include:
 - interfaces agents should use, such as APIs, CLIs, runbooks, or admin tools
 - sensitive data exposure limits for agent workflows
 
-### 9. Compliance and Policy Requirements
+### 10. Compliance and Policy Requirements
 
 Where relevant, capture:
 
@@ -164,7 +185,7 @@ Where relevant, capture:
 - public metadata/SEO claim constraints where relevant
 - approvals required
 
-### 10. Acceptance Criteria
+### 11. Acceptance Criteria
 
 Make requirements verifiable.
 
@@ -196,6 +217,7 @@ For small projects:
 - `docs/requirements/non-functional-requirements.md`
 - `docs/requirements/security-privacy-requirements.md`
 - `docs/requirements/operational-requirements.md`
+- `docs/requirements/digital-estate-management-requirements.md`, where applicable
 - `docs/requirements/acceptance-criteria.md`
 
 ## Definition of Requirements-Ready

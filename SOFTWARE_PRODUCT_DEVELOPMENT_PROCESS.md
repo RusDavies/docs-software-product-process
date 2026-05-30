@@ -23,7 +23,7 @@ Every project should move deliberately from idea to operation:
 
 The process is modular. Small projects can use lightweight versions. Larger, riskier, public, customer-facing, enterprise-targeted, regulated, security-sensitive, or multi-role projects should use the full process.
 
-Before applying the full process, classify the project and select any target profile with `TAILORING_GUIDE.md`. Class 0 throw-away work is an explicit product-owner classification and excludes normal maintenance, digital estate management, AI-agent operation design, and other long-term product machinery unless the classification breaks. Software library/package targets keep security, compatibility, release, documentation, provenance, vulnerability-intake, and patch-maintenance concerns, but exclude normal runtime operations concerns unless the library also ships an operated runtime component. Use `GOVERNANCE_AND_APPROVALS.md` when approvals, accepted risk, release authority, or agent autonomy boundaries matter.
+Before applying the full process, classify the project and select any target profile with `TAILORING_GUIDE.md`. Class 0 throw-away work is an explicit product-owner classification and excludes normal maintenance, product operational estate management, AI-agent operation design, and other long-term product machinery unless the classification breaks. Software library/package targets keep security, compatibility, release, documentation, provenance, vulnerability-intake, and patch-maintenance concerns, but exclude normal runtime operations concerns unless the library also ships an operated runtime component. Use `GOVERNANCE_AND_APPROVALS.md` when approvals, accepted risk, release authority, or agent autonomy boundaries matter.
 
 ## Process Principles
 
@@ -37,7 +37,8 @@ Important baseline principles include:
 - least privilege
 - 12-factor app design where appropriate
 - operational automation by default
-- digital estate stewardship
+- product operational estate stewardship
+- Digital Estate Management assessment for non-corporate/end-user products
 - AI-operable by design unless explicitly throw-away or product-owner exempted
 - observability from the start
 - reproducibility and portability
@@ -58,10 +59,12 @@ Key outputs:
 - assumptions and risks
 - initial success criteria
 - explicit non-goals
+- Digital Estate Management applicability decision for products with non-corporate users, personal assets, family/creator/identity data, or death/incapacity access implications
 
 Security checkpoint:
 
 - Identify sensitive data, obvious abuse cases, trust boundaries, external dependencies, and potential harms.
+- For consumer, family, creator, life-admin, personal archive, AI-memory, finance, crypto, or personal-data products, decide whether Digital Estate Management applies.
 
 Guidance: `PRODUCT_FRAMING_GUIDANCE.md`
 
@@ -76,16 +79,17 @@ Key outputs:
 - non-functional requirements
 - security and privacy requirements
 - operational requirements
-- digital estate requirements
+- product operational estate requirements
+- Digital Estate Management requirements where applicable
 - AI-agent operational requirements unless explicitly throw-away or product-owner exempted
 - acceptance criteria
 - constraints and dependencies
 
 Security checkpoint:
 
-- Security, privacy, compliance, auditability, abuse resistance, digital estate stewardship, agent-operability boundaries, and operational safety are requirements, not garnish.
+- Security, privacy, compliance, auditability, abuse resistance, product operational estate stewardship, Digital Estate Management applicability, agent-operability boundaries, and operational safety are requirements, not garnish.
 
-Guidance: `REQUIREMENTS_GUIDANCE.md`
+Guidance: `REQUIREMENTS_GUIDANCE.md`, `DIGITAL_ESTATE_MANAGEMENT_GUIDANCE.md`
 
 ### 3. UX / Product Design
 
@@ -101,12 +105,14 @@ Key outputs:
 - accessibility expectations
 - UX acceptance criteria
 - UX approval
+- Digital Estate Management workflows where applicable: user asset inventory, disposition instructions, trusted people, export, review reminders, and death/incapacity paths
 
 Security checkpoint:
 
 - Design permission-aware states, trust UX, safe confirmations, audit visibility, recovery flows, and clear explanations for risky or automated actions.
+- For Digital Estate Management features, clearly distinguish legal authority, consent, trusted-contact status, and technical access.
 
-Guidance: `UX_GUIDANCE.md`
+Guidance: `UX_GUIDANCE.md`, `DIGITAL_ESTATE_MANAGEMENT_GUIDANCE.md`
 
 ### 4. Security and Privacy Design
 
@@ -123,12 +129,14 @@ Key outputs:
 - logging and audit model
 - privacy review
 - security acceptance criteria
+- Digital Estate Management security/privacy review where applicable, including inventory/secret separation, trusted-contact access, export, survivor workflows, and third-party privacy
 
 Security checkpoint:
 
 - Security design should be reviewed before implementation begins for serious projects.
+- Digital Estate Management features must not become password dumps, impersonation workflows, or terms-of-service bypass instructions.
 
-Guidance: `SECURITY_GUIDANCE.md`
+Guidance: `SECURITY_GUIDANCE.md`, `DIGITAL_ESTATE_MANAGEMENT_GUIDANCE.md`
 
 ### 5. Compliance Readiness, Where Applicable
 
@@ -207,7 +215,7 @@ Key outputs:
 - trust boundaries
 - observability model
 - operational automation model
-- digital estate inventory
+- product operational estate inventory
 - ownership and account map
 - dependency/service map
 - environment and deployment inventory
@@ -216,7 +224,7 @@ Key outputs:
 
 Security checkpoint:
 
-- Architecture must show authentication, authorization, network boundaries, ingress/egress, secrets, data flows, audit points, privileged operations, digital estate ownership, and any AI-agent operational interfaces or autonomy boundaries.
+- Architecture must show authentication, authorization, network boundaries, ingress/egress, secrets, data flows, audit points, privileged operations, product operational estate ownership, and any AI-agent operational interfaces or autonomy boundaries.
 
 Guidance: `ARCHITECTURE_GUIDANCE.md`
 
@@ -316,13 +324,15 @@ Key outputs:
 - monitoring dashboard or checks
 - support path
 - known limitations
+- Digital Estate Management release evidence where applicable, including tested export/delegated/survivor workflows and accurate user-facing limitations
 - post-launch review date
 
 Security checkpoint:
 
 - Confirm credentials, configuration, exposure, monitoring, audit, backups, and incident response are ready.
+- For Digital Estate Management features, confirm inventory/secret separation, authority/consent boundaries, export/delegated access auditability, and no overpromised legal/provider outcomes.
 
-Guidance: `RELEASE_GUIDANCE.md`
+Guidance: `RELEASE_GUIDANCE.md`, `DIGITAL_ESTATE_MANAGEMENT_GUIDANCE.md`
 
 ### 14. Operations / Post-Launch Iteration
 
@@ -331,7 +341,7 @@ Operate the system, learn from real usage, and improve it.
 Key outputs:
 
 - operational runbook
-- maintained digital estate register
+- maintained product operational estate register
 - service/account/domain ownership map
 - account, domain, certificate, secret, and dependency renewal schedule
 - alerting rules
@@ -374,8 +384,9 @@ A product or major feature is ready for release when:
 - required documentation exists and has passed documentation QA or approved exceptions
 - web SEO checks have passed or exceptions are approved where applicable
 - operational monitoring exists
-- digital estate inventory is complete enough for operation
+- product operational estate inventory is complete enough for operation
 - ownership, renewal, access, and incident paths are known
+- Digital Estate Management applicability is recorded, and applicable user-facing estate workflows meet approved requirements
 - AI-agent operational boundaries are documented unless the product owner explicitly classified the work as throw-away or approved an exemption
 - agent-accessible tools/APIs are least-privilege, observable, and approval-gated for risky actions
 - rollback/disable paths are known

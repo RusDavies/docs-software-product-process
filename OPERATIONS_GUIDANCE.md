@@ -7,7 +7,7 @@ Operations guidance defines how a product behaves after launch, when users and e
 Every operated product should define:
 
 - ownership
-- digital estate management
+- product operational estate management
 - monitoring
 - alerting
 - automation
@@ -31,7 +31,7 @@ A useful test: could one competent person operate 50 projects like this?
 At minimum, capture:
 
 1. Owner/operator
-2. Digital estate register
+2. Product operational estate register
 3. Health checks
 4. Monitoring/logging
 5. Alerting rules
@@ -54,7 +54,7 @@ Capture:
 - escalation path
 - approval boundaries
 
-### 2. Digital Estate Management
+### 2. Product Operational Estate Management
 
 Capture and maintain the estate the product depends on, because “where is that hosted?” should not become a séance.
 
@@ -221,7 +221,7 @@ For small projects:
 A product is operations-ready when:
 
 - ownership is clear
-- digital estate inventory is maintained enough to operate, renew, transfer, or decommission the product
+- product operational estate inventory is maintained enough to operate, renew, transfer, or decommission the product
 - health/monitoring exists
 - alerts are actionable
 - backups/recovery are defined where relevant

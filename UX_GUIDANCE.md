@@ -543,3 +543,22 @@ A project or feature is UX-done when:
 - analytics or feedback paths are in place, where appropriate
 - launch feedback has been reviewed or scheduled
 - new UX follow-up items have been added to the backlog
+
+## Digital Estate Management UX, Where Applicable
+
+For products that help non-corporate users prepare or administer personal digital assets, design Digital Estate Management as a deliberate workflow rather than a settings-page junk drawer.
+
+Consider:
+
+- a user-facing digital estate inventory
+- asset categories and asset-specific disposition instructions
+- trusted-person and role-management flows
+- review reminders after life events, inactivity, or major account changes
+- export packages for users, executors, advisors, fiduciaries, or family members
+- emergency or survivor workflows with delay, notification, revocation, and audit where appropriate
+- clear explanations of the limits imposed by platform rules, local law, provider processes, and professional advice
+- privacy-first handling of private communications, sensitive media, third-party data, and family-dispute contexts
+
+The UX must distinguish legal authority, consent, trusted-contact status, and technical access. Blurring those together is how a helpful feature becomes an unauthorized-access machine wearing a cardigan.
+
+Guidance: `DIGITAL_ESTATE_MANAGEMENT_GUIDANCE.md`
