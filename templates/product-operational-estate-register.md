@@ -1,10 +1,14 @@
-# Digital Estate Register
+# Product Operational Estate Register
+
+This register tracks the product's own operational footprint: domains, DNS, certificates, repositories, registries, provider accounts, environments, secrets locations, billing, renewals, access review, handover, and decommissioning.
+
+For user-facing personal/family digital assets and legacy access planning, use Digital Estate Management guidance instead.
 
 ## Product / Project
 
 - Name:
 - Owner:
-- Estate register owner:
+- Operational estate register owner:
 - Last reviewed:
 - Next review:
 

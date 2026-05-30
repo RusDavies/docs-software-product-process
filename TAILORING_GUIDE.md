@@ -18,7 +18,7 @@ Tailoring answers:
 
 ### Class 0: Throw-Away / Disposable
 
-Use only when the product owner explicitly decides the work is disposable and accepts that it will not receive normal maintenance, digital estate management, or AI-agent operation readiness.
+Use only when the product owner explicitly decides the work is disposable and accepts that it will not receive normal maintenance, product operational estate management, or AI-agent operation readiness.
 
 Throw-away work is:
 
@@ -44,7 +44,7 @@ Required:
 
 Excluded by default:
 
-- digital estate management
+- product operational estate management
 - AI-agent operation design
 - operations runbook
 - post-launch review
@@ -277,7 +277,8 @@ Excluded by default unless the library also includes an operated runtime compone
 - post-launch operations review
 - AI-agent runtime-operation boundaries
 - service-level support process
-- digital estate management beyond repository, package registry, signing/release credentials, and maintainer ownership
+- product operational estate management beyond repository, package registry, signing/release credentials, and maintainer ownership
+- Digital Estate Management unless the package directly supports personal/family digital estate workflows
 
 Escalate out of the pure library target if the project adds any hosted service, telemetry backend, license server, update service, persistent data store, scheduled automation, production credentials, customer-specific operation, or runtime component that someone must operate.
 
@@ -302,7 +303,8 @@ Recommended documents:
 | Security/privacy notes | Basic | Basic | Required | Required | Required | Required | Required |
 | Threat model | Optional | Optional | Optional unless risky | Recommended | Required | Required | Required |
 | Architecture notes | Optional | Light | Required | Required | Required | Required | Required |
-| Digital estate management | Excluded unless classification breaks | If maintained/deployable | Required unless exempted | Required | Required | Required | Required |
+| Product operational estate management | Excluded unless classification breaks | If maintained/deployable | Required unless exempted | Required | Required | Required | Required |
+| Digital Estate Management | Excluded unless classification breaks | Assess if non-corporate/end-user assets exist | Assess; implement if applicable | Assess; implement if applicable | Assess; implement if applicable | Assess; implement if applicable | Required if personal/family/creator/life-admin assets or death/incapacity workflows exist |
 | Implementation plan | Optional | Optional | Light | Required | Required | Required | Required |
 | QA evidence | Smoke test | Smoke test | Required | Required | Required | Required | Required |
 | Release security gate | Optional | Optional | If shared/risky | Required before release | Required | Required | Required |
@@ -330,7 +332,8 @@ Recommended documents:
 | Backup/restore planning | Excluded unless the library owns persistent data or operated storage |
 | Runtime incident process | Excluded unless the library ships or depends on an operated runtime service |
 | AI-agent operation boundaries | Excluded for pure libraries; required only for operated runtime components or release/publishing automation where agents may act |
-| Digital estate management | Limited to repository, package registry, release/signing credentials, maintainer ownership, and publishing accounts |
+| Product operational estate management | Limited to repository, package registry, release/signing credentials, maintainer ownership, and publishing accounts |
+| Digital Estate Management | Not applicable unless the package directly implements personal/family digital estate workflows |
 | Maintenance / vulnerability cadence | Required: dependency updates, compatibility updates, vulnerability intake, and security patch releases |
 | Release security gate | Required for public, security-sensitive, or widely consumed libraries; otherwise class-driven |
 | Documentation | Developer/API docs required; operator docs excluded unless an operated runtime exists |

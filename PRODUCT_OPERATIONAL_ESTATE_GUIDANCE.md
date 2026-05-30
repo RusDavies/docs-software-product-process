@@ -1,6 +1,8 @@
-# Digital Estate Guidance
+# Product Operational Estate Guidance
 
-Digital estate guidance defines the owned and depended-on assets that must be known, renewed, secured, transferred, or retired for a product to keep operating.
+Product operational estate guidance defines the owned and depended-on assets that must be known, renewed, secured, transferred, or retired for a product to keep operating.
+
+This is not user-facing **Digital Estate Management**. For personal/family digital assets, legacy access, and death/incapacity planning, see `DIGITAL_ESTATE_MANAGEMENT_GUIDANCE.md`.
 
 ## Purpose
 
@@ -16,7 +18,7 @@ Every operated product should maintain an estate view covering:
 - third-party services, billing owners, contracts, and support contacts
 - access review, handover, and decommissioning expectations
 
-Class 0 throw-away/disposable work is exempt from digital estate management by default. If the work has domains, DNS, certificates, repositories that must persist, release accounts, cloud/SaaS tenants, long-lived credentials, persistent data stores, billing dependencies, or external integrations, the throw-away classification is probably wrong and should be escalated or explicitly risk-accepted by the product owner.
+Class 0 throw-away/disposable work is exempt from product operational estate management by default. If the work has domains, DNS, certificates, repositories that must persist, release accounts, cloud/SaaS tenants, long-lived credentials, persistent data stores, billing dependencies, or external integrations, the throw-away classification is probably wrong and should be escalated or explicitly risk-accepted by the product owner.
 
 Pure software libraries/packages usually need only limited estate tracking: source repository, package registry/project ownership, publishing accounts, release/signing credentials, maintainer ownership, and security-contact paths. They do not need a full operated-product estate register unless they also include an operated service, daemon, scheduled job, data store, telemetry backend, update service, or other runtime component.
 
@@ -37,7 +39,7 @@ At minimum, capture:
 9. Renewal and access review cadence
 10. Decommissioning notes
 
-## Full Digital Estate Checklist
+## Full Product Operational Estate Checklist
 
 ### 1. Ownership and Register Maintenance
 
@@ -146,7 +148,7 @@ For small projects:
 
 ## Recommended Project Files
 
-- `docs/operations/digital-estate-register.md`
+- `docs/operations/product-operational-estate-register.md`
 - `docs/architecture/digital-estate.md`
 - `docs/operations/maintenance.md`
 - `docs/security/access-review.md`

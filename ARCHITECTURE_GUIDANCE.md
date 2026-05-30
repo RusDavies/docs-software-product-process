@@ -11,7 +11,7 @@ Every serious project should define:
 - data model
 - APIs/contracts
 - deployment/runtime model
-- digital estate footprint
+- product operational estate footprint
 - web crawl/index/metadata architecture where applicable
 - security/trust boundaries
 - observability and operations model
@@ -27,7 +27,7 @@ At minimum, capture:
 3. Data model
 4. API/integration model
 5. Deployment model
-6. Digital estate footprint
+6. Product operational estate footprint
 7. Trust boundaries and access model
 8. Observability/operations model
 9. AI-agent operation model unless explicitly throw-away or product-owner exempted
@@ -93,7 +93,7 @@ Capture:
 - sitemap/robots/canonical generation for public web projects
 - infrastructure dependencies
 
-### 6. Digital Estate Architecture
+### 6. Product Operational Estate Architecture
 
 Capture:
 
@@ -188,7 +188,7 @@ For small projects:
 2. Data model notes
 3. API/integration notes
 4. Security boundary notes
-5. Digital estate notes
+5. Product operational estate notes
 6. Deployment/config notes
 7. Monitoring/backup notes
 8. Agent-operation boundary notes if agents will help operate the project
@@ -214,7 +214,7 @@ Architecture is ready when:
 - major components and boundaries are clear
 - data and API models are plausible
 - deployment/runtime assumptions are documented
-- digital estate ownership and dependencies are documented
+- product operational estate ownership and dependencies are documented
 - security and trust boundaries are visible
 - agent-operation boundaries are documented where applicable
 - operational automation and observability are planned

@@ -236,3 +236,24 @@ Security is done for release when:
 - secrets and config are reviewed
 - release gate approval is recorded
 - post-launch security monitoring and maintenance are planned
+
+## Digital Estate Management Security and Privacy, Where Applicable
+
+Digital Estate Management features need explicit security and privacy review because they often touch access paths, trusted contacts, family members, private communications, financial assets, crypto, identity, and death/incapacity workflows.
+
+Required review topics include:
+
+- separation of asset inventory metadata, disposition instructions, and raw secrets
+- whether the product is explicitly designed to store credentials, keys, seed phrases, recovery codes, or private instructions
+- strong authentication and MFA for ordinary and delegated access
+- consent, legal authority, and trusted-contact boundaries
+- notification, delay, revocation, and audit controls for emergency or survivor workflows
+- export controls and audit evidence
+- private communications, sensitive media, and third-party data handling
+- safeguards against impersonation-by-design
+- language that avoids terms-of-service bypass advice or overpromised provider cooperation
+- high-risk warnings for crypto, private keys, recovery codes, hardware wallets, irreversible transfers, and platform-locked property
+
+The default stance is: an inventory is not a password dump. If a product stores secrets, it needs a vault-grade design and explicit approval for that scope.
+
+Guidance: `DIGITAL_ESTATE_MANAGEMENT_GUIDANCE.md`

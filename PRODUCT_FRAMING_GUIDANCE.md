@@ -178,3 +178,15 @@ A project is framing-ready when:
 ## Definition of Framing-Done
 
 Product framing is done when the relevant human agrees this is the right problem to pursue next.
+
+## Digital Estate Management Applicability
+
+During opportunity framing, assess whether Digital Estate Management applies. It may apply when the product serves non-corporate users and stores, indexes, administers, or meaningfully depends on personal digital assets, access paths, memories, identity, family records, creator income, financial/crypto assets, or long-lived AI/data records.
+
+Record one of:
+
+- **Applies** — the product needs user-facing Digital Estate Management requirements.
+- **Not applicable** — the product does not manage personal/family/creator/legacy assets or death/incapacity workflows.
+- **Deferred** — applicability depends on a later product scope decision.
+
+Guidance: `DIGITAL_ESTATE_MANAGEMENT_GUIDANCE.md`
