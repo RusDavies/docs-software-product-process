@@ -1,6 +1,6 @@
-# Workspace UX Guidance
+# Software Product UX Guidance
 
-This document sets the baseline UX design process for all future workspace projects. It is meant to keep projects from drifting straight from “idea” to “screens and code” without doing the thinking that makes software usable. Humans, famously, are bad at reading our minds. Design work is how we compensate.
+This document sets the baseline UX design process for software product projects. It is meant to keep projects from drifting straight from “idea” to “screens and code” without doing the thinking that makes software usable. Humans, famously, are bad at reading our minds. Design work is how we compensate.
 
 ## Purpose
 
@@ -332,7 +332,7 @@ Define or reference:
 - notification/toast rules
 - empty/error/success state patterns
 
-For workspace projects, prefer consistency across projects unless there is a strong product reason to diverge.
+For software product projects, prefer consistency across projects unless there is a strong product reason to diverge.
 
 ### 13. Usability Testing
 

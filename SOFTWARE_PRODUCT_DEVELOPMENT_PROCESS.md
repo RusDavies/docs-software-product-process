@@ -1,6 +1,6 @@
 # Software Product Development Process
 
-This document defines the workspace baseline process for developing software products. It is intended for projects that may become real, used, operated, maintained, or exposed to other humans — an alarming number of ways for software to become inconvenient.
+This document defines the baseline process for developing software products. It is intended for projects that may become real, used, operated, maintained, or exposed to other humans — an alarming number of ways for software to become inconvenient.
 
 ## Purpose
 
