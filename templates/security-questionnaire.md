@@ -48,6 +48,18 @@ Use this as a source of truthful standard answers. Do not inflate claims to soun
 - Incident response process:
 - Customer notification posture:
 
+## Security Advisories / CSAF / VEX
+
+- Security contact / vulnerability reporting path:
+- Human-readable security/trust posture:
+- Machine-readable advisory posture: Not applicable / Deferred / Preparing / Publishing
+- CSAF provider metadata URL, if published:
+- `security.txt` CSAF link, if published:
+- VEX/OpenVEX statement posture:
+- Advisory signing/integrity posture:
+- Advisory revision/correction process:
+- Current limitations / non-claims:
+
 ## Business Continuity
 
 - Backups:
