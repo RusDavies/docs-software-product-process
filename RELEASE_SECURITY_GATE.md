@@ -27,7 +27,8 @@ At minimum, capture:
 6. Dependency posture
 7. Monitoring/audit readiness
 8. Compliance-readiness status for enterprise-targeted products
-9. Approval decision
+9. CSAF/VEX advisory-provider readiness decision for SaaS, security, infrastructure, developer-tool, library/package, or enterprise-targeted products
+10. Approval decision
 
 ## Full Release Security Checklist
 
@@ -110,7 +111,20 @@ Confirm:
 - rollback/disable process exists
 - audit trail captures important actions
 
-### 9. Enterprise Compliance Readiness
+### 9. Security Advisory / CSAF-VEX Readiness
+
+For SaaS, security products, developer tools, infrastructure products, libraries/packages, agents, appliances, and enterprise-targeted products, confirm:
+
+- the release has been checked for whether it needs a customer security advisory, vulnerability notice, VEX statement, or trust-center/security-status update
+- existing customer-facing security advisories remain accurate after the release
+- CSAF/VEX provider readiness is explicitly marked not applicable, deferred, preparing, or publishing
+- no CSAF/VEX/OpenVEX/PSIRT/ProductCERT claim is made unless owners, metadata, validation, publication path, and revision/correction process are in place
+- `provider-metadata.json`, `security.txt` CSAF links, signing/integrity, schema validation, and advisory storage are checked where the product publishes CSAF/VEX
+- tenant/customer confidential information is not exposed in product-wide advisories
+
+Template: `templates/csaf-provider-readiness.md`
+
+### 10. Enterprise Compliance Readiness
 
 For enterprise-targeted products, confirm:
 
@@ -124,7 +138,7 @@ For enterprise-targeted products, confirm:
 
 Guidance: `COMPLIANCE_READINESS_GUIDANCE.md`
 
-### 10. Risk Acceptance
+### 11. Risk Acceptance
 
 For unresolved risks, capture:
 
@@ -145,8 +159,9 @@ For small projects:
 2. Dependency check
 3. Secrets/config check
 4. Auth/access check
-5. Open risk list
-6. Human approval
+5. CSAF/VEX applicability check where relevant
+6. Open risk list
+7. Human approval
 
 ## Recommended Project Files
 
@@ -154,6 +169,7 @@ For small projects:
 - `docs/release/security-checklist.md`
 - `docs/release/risk-acceptance.md`
 - `docs/release/dependency-review.md`
+- `docs/release/csaf-provider-readiness.md` where applicable
 - `docs/release/config-review.md`
 
 ## Definition of Security-Gate-Ready

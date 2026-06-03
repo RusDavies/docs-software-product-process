@@ -6,6 +6,7 @@
 - [x] Run consistency pass across guidance docs for terminology, navigation, phase numbering, and ambiguous references.
 - [x] Add SEO/discovery guidance for web projects, including templates and process/release/QA gates.
 - [x] Split Product Operational Estate Management from user-facing Digital Estate Management, add Digital Estate Management process guidance, and add starter templates.
+- [x] Add CSAF/VEX provider-readiness guidance for SaaS/security/infrastructure/developer products that may need to publish machine-readable advisories about themselves.
 
 ## Open
 
@@ -13,6 +14,6 @@
 
 ## Burndown
 
-- Done: 4
+- Done: 5
 - Open: 1
-- Total: 5
+- Total: 6

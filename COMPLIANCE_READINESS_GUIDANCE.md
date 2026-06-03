@@ -46,6 +46,7 @@ At minimum, define:
 12. Security-monitoring and audit-log evidence
 13. Backup/business-continuity expectations
 14. Customer-facing security posture summary
+15. CSAF/VEX provider-readiness decision for products expected to publish machine-readable security advisories
 
 ## SOC 2 Readiness Track
 
@@ -141,6 +142,7 @@ Prepare answers for:
 - subprocessors/vendors
 - penetration testing or security testing
 - compliance roadmap and current status
+- CSAF/VEX/OpenVEX/security-advisory publication posture where the product is a SaaS, security product, infrastructure product, developer tool, library/package, or otherwise expected to publish machine-readable advisories
 
 Do not overclaim. “Planned,” “implemented,” “partially implemented,” and “not applicable” are better than inventing compliance fan fiction.
 
@@ -290,6 +292,7 @@ Prepare:
 - responsible disclosure/security contact
 - incident notification posture
 - standard questionnaire answers
+- CSAF/VEX/OpenVEX advisory publication posture where applicable
 
 ## Lightweight Enterprise Version
 
@@ -301,7 +304,8 @@ For early enterprise-targeted products before formal audit:
 4. Create a policy index with current/planned status.
 5. Document key gaps and remediation backlog.
 6. Prepare honest customer-facing security answers.
-7. Revisit monthly until audit readiness is real.
+7. Record CSAF/VEX provider-readiness posture for products expected to publish machine-readable security advisories.
+8. Revisit monthly until audit readiness is real.
 
 ## Recommended Project Files
 
@@ -312,6 +316,7 @@ For early enterprise-targeted products before formal audit:
 - `docs/compliance/soc2-iso27001-crosswalk.md`
 - `docs/compliance/audit-readiness-checklist.md`
 - `docs/compliance/security-questionnaire.md`
+- `docs/security/csaf-provider-readiness.md` where applicable
 - `docs/security/risk-register.md`
 - `docs/security/accepted-risks.md`
 
@@ -327,6 +332,7 @@ A project is compliance-ready when:
 - policy gaps are tracked
 - risk treatment is documented
 - customer-facing claims are accurate
+- CSAF/VEX/security-advisory claims are supported by provider-readiness evidence where applicable
 - audit/certification next steps are clear
 
 ## Definition of Compliance-Done
@@ -339,4 +345,5 @@ Compliance readiness is done when:
 - access, change, incident, vendor, and risk processes are operating
 - unresolved risks are explicitly accepted or remediated
 - customer-facing security claims match reality
+- CSAF/VEX/security-advisory publication posture matches implemented capability
 - formal auditor/certification work, if targeted, has a defined owner and plan
