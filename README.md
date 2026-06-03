@@ -137,7 +137,7 @@ Starter artifacts live in `templates/`:
 - `templates/soc2-iso27001-crosswalk.md`
 - `templates/audit-readiness-checklist.md`
 - `templates/security-questionnaire.md`
-- `templates/csaf-provider-readiness.md`
+- `templates/csaf-vex-advisory-readiness.md`
 - `templates/user-guide.md`
 - `templates/admin-guide.md`
 - `templates/quick-start.md`
@@ -177,7 +177,7 @@ Other documents may include phase-specific checkpoints, but should not redefine 
 
 - **Digital Estate Management** means user-facing planning for personal/family digital assets, legacy access, trusted people, and death/incapacity instructions.
 - **Product Operational Estate Management** means operator-facing continuity for the product itself: domains, DNS, certificates, repositories, cloud/SaaS accounts, secrets, billing, backups, handover, and decommissioning.
-- **CSAF/VEX Provider Readiness** means the product has explicitly decided whether it will publish machine-readable security advisories about itself, and if so has the owner, metadata, validation, signing/integrity, publication, correction, and customer-claim evidence to support that.
+- **CSAF/VEX Advisory Readiness** means the product has explicitly decided whether it must ingest machine-readable or vendor-published security advisories from its own vendors, suppliers, dependencies, cloud providers, managed services, model providers, or open-source components, and whether it will publish machine-readable security advisories about itself. Where applicable, it has owners, sources, mapping, triage, validation, signing/integrity, publication, correction, and customer-claim evidence to support that.
 - **Digital Asset Management / DAM** means corporate/media/content asset-library management: reusable files, brand assets, approvals, licensing, distribution, and content governance.
 
 ## Operating Model

@@ -27,7 +27,7 @@ At minimum, capture:
 6. Dependency posture
 7. Monitoring/audit readiness
 8. Compliance-readiness status for enterprise-targeted products
-9. CSAF/VEX advisory-provider readiness decision for SaaS, security, infrastructure, developer-tool, library/package, or enterprise-targeted products
+9. CSAF/VEX advisory readiness decision for SaaS, security, infrastructure, developer-tool, library/package, or enterprise-targeted products
 10. Approval decision
 
 ## Full Release Security Checklist
@@ -115,14 +115,15 @@ Confirm:
 
 For SaaS, security products, developer tools, infrastructure products, libraries/packages, agents, appliances, and enterprise-targeted products, confirm:
 
-- the release has been checked for whether it needs a customer security advisory, vulnerability notice, VEX statement, or trust-center/security-status update
+- the release has been checked against relevant vendor, supplier, dependency, cloud-provider, managed-service, model-provider, and open-source advisories
+- inbound advisories have been triaged for affected components/services, exploitability, mitigation, patch urgency, release hold, customer notice, VEX/not-affected statement, or outbound advisory update
 - existing customer-facing security advisories remain accurate after the release
-- CSAF/VEX provider readiness is explicitly marked not applicable, deferred, preparing, or publishing
-- no CSAF/VEX/OpenVEX/PSIRT/ProductCERT claim is made unless owners, metadata, validation, publication path, and revision/correction process are in place
-- `provider-metadata.json`, `security.txt` CSAF links, signing/integrity, schema validation, and advisory storage are checked where the product publishes CSAF/VEX
+- CSAF/VEX advisory readiness is explicitly marked not applicable, deferred, ingesting, preparing to publish, publishing, or both ingesting and publishing
+- no CSAF/VEX/OpenVEX/PSIRT/ProductCERT ingestion or publication claim is made unless owners, sources, metadata, validation, intake/publication paths, and revision/correction processes are in place
+- vendor-advisory sources, affected-product mapping, triage evidence, `provider-metadata.json`, `security.txt` CSAF links, signing/integrity, schema validation, and advisory storage are checked where the product ingests or publishes CSAF/VEX
 - tenant/customer confidential information is not exposed in product-wide advisories
 
-Template: `templates/csaf-provider-readiness.md`
+Template: `templates/csaf-vex-advisory-readiness.md`
 
 ### 10. Enterprise Compliance Readiness
 
@@ -169,7 +170,7 @@ For small projects:
 - `docs/release/security-checklist.md`
 - `docs/release/risk-acceptance.md`
 - `docs/release/dependency-review.md`
-- `docs/release/csaf-provider-readiness.md` where applicable
+- `docs/release/csaf-vex-advisory-readiness.md` where applicable
 - `docs/release/config-review.md`
 
 ## Definition of Security-Gate-Ready

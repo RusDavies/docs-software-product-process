@@ -52,10 +52,13 @@ Use this as a source of truthful standard answers. Do not inflate claims to soun
 
 - Security contact / vulnerability reporting path:
 - Human-readable security/trust posture:
-- Machine-readable advisory posture: Not applicable / Deferred / Preparing / Publishing
+- Machine-readable advisory posture: Not applicable / Deferred / Ingesting / Preparing to publish / Publishing / Both ingesting and publishing
+- Vendor/dependency advisory sources monitored:
+- Advisory ingestion owner and triage path:
+- Affected-product/component mapping approach:
+- VEX/not-affected decision posture:
 - CSAF provider metadata URL, if published:
 - `security.txt` CSAF link, if published:
-- VEX/OpenVEX statement posture:
 - Advisory signing/integrity posture:
 - Advisory revision/correction process:
 - Current limitations / non-claims:
