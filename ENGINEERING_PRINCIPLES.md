@@ -1,6 +1,6 @@
 # Engineering Principles
 
-These principles are baseline defaults for workspace software projects. They are not magic commandments carved into a cloud architecture diagram. Projects may tailor or deviate from them, but meaningful deviations should be explicit and justified.
+These principles are baseline defaults for software product projects. They are not magic commandments carved into a cloud architecture diagram. Projects may tailor or deviate from them, but meaningful deviations should be explicit and justified.
 
 ## Purpose
 

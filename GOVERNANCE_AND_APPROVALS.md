@@ -1,6 +1,6 @@
 # Governance and Approvals
 
-This document defines who controls product direction, risk acceptance, release decisions, and agent autonomy across workspace projects.
+This document defines who controls product direction, risk acceptance, release decisions, and agent autonomy across software product projects.
 
 ## Purpose
 
@@ -43,7 +43,7 @@ Humans must own decisions about:
 
 ### Agent-Owned or Agent-Executable Work
 
-Agents may generally do the following without additional approval when scoped to the workspace and low risk:
+Agents may generally do the following without additional approval when scoped to the project environment and low risk:
 
 - read and summarize project files
 - create or improve internal documentation
