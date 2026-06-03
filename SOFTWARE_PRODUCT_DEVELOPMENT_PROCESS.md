@@ -129,7 +129,7 @@ Key outputs:
 - logging and audit model
 - privacy review
 - security acceptance criteria
-- CSAF/VEX provider-readiness decision where the product is a SaaS, security product, infrastructure product, developer tool, library/package, or enterprise-targeted product expected to publish machine-readable advisories about itself
+- CSAF/VEX advisory-readiness decision where the product is a SaaS, security product, infrastructure product, developer tool, library/package, or enterprise-targeted product expected to ingest vendor advisories or publish machine-readable advisories about itself
 - Digital Estate Management security/privacy review where applicable, including inventory/secret separation, trusted-contact access, export, survivor workflows, and third-party privacy
 
 Security checkpoint:
@@ -156,7 +156,7 @@ Key outputs:
 
 Security checkpoint:
 
-- Do not claim SOC 2 attestation, ISO/IEC 27001 certification, CSAF/VEX advisory-provider support, or equivalent readiness unless scope, controls, evidence, validation, and approval support that claim.
+- Do not claim SOC 2 attestation, ISO/IEC 27001 certification, CSAF/VEX advisory ingestion/publication support, or equivalent readiness unless scope, controls, evidence, validation, and approval support that claim.
 
 Guidance: `COMPLIANCE_READINESS_GUIDANCE.md`
 

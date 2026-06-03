@@ -183,19 +183,21 @@ Capture:
 
 ### 12. Security Advisory and CSAF/VEX Readiness
 
-For SaaS, security products, developer tools, infrastructure products, libraries/packages, agents, appliances, and enterprise-targeted products, decide whether the product must publish machine-readable security advisories about itself.
+For SaaS, security products, developer tools, infrastructure products, libraries/packages, agents, appliances, and enterprise-targeted products, decide whether the product must ingest machine-readable or vendor-published security advisories from its own vendors and dependencies, publish machine-readable security advisories about itself, or both.
 
 Capture:
 
-- whether CSAF/VEX provider readiness applies, is deferred, or is not applicable
+- whether CSAF/VEX advisory readiness applies, is deferred, ingest-only, provider-only, or both ingesting and publishing
 - human-readable trust/security posture that should exist before machine-readable advisory claims
+- vendor/dependency advisory sources, owners, polling/monitoring approach, and failure handling
+- advisory-to-product mapping across vendors, dependencies, SBOM components, services, environments, versions, and customer-impact categories
 - vulnerability intake, triage, remediation, approval, and publication owners
-- advisory issuance policy: what triggers a CSAF advisory, VEX statement, correction, withdrawal, or customer notice
+- advisory ingestion and issuance policy: what inbound advisories trigger triage, VEX/not-affected decisions, mitigations, release holds, CSAF advisories, VEX statements, corrections, withdrawals, or customer notices
 - `provider-metadata.json`, `security.txt`, signing/integrity, hosting, retention, and revision-history expectations where applicable
-- schema validation and sample advisory evidence before claiming CSAF/VEX support
+- schema validation and sample advisory evidence before claiming CSAF/VEX ingestion or publication support
 - separation between product-wide advisories and tenant/customer confidential information
 
-Use `templates/csaf-provider-readiness.md` when this applies. Do not claim CSAF, VEX, OpenVEX, PSIRT, ProductCERT, or machine-readable advisory support until the process, metadata, validation, owners, and publication path exist.
+Use `templates/csaf-vex-advisory-readiness.md` when this applies. Do not claim CSAF, VEX, OpenVEX, PSIRT, ProductCERT, or machine-readable advisory ingestion/publication support until the process, sources, metadata, validation, owners, intake path, and publication path exist where applicable.
 
 ### 13. Security Acceptance Criteria
 
@@ -230,7 +232,7 @@ For small projects:
 - `docs/security/audit-logging.md`
 - `docs/security/privacy-review.md`
 - `docs/security/security-acceptance-criteria.md`
-- `docs/security/csaf-provider-readiness.md` where applicable
+- `docs/security/csaf-vex-advisory-readiness.md` where applicable
 - `docs/security/risk-acceptance.md`
 
 ## Definition of Security-Ready

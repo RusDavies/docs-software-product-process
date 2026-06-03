@@ -9,7 +9,8 @@ What is being released?
 - [ ] Requirements satisfied or exceptions approved
 - [ ] QA evidence reviewed
 - [ ] Security/privacy review complete
-- [ ] CSAF/VEX advisory-provider applicability checked where relevant
+- [ ] CSAF/VEX advisory ingestion/publication applicability checked where relevant
+- [ ] Relevant vendor/dependency advisories reviewed for release impact where applicable
 - [ ] Release security gate complete where required
 - [ ] Monitoring/support path ready
 - [ ] Rollback/disable plan ready

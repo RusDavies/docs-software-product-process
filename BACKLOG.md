@@ -6,7 +6,8 @@
 - [x] Run consistency pass across guidance docs for terminology, navigation, phase numbering, and ambiguous references.
 - [x] Add SEO/discovery guidance for web projects, including templates and process/release/QA gates.
 - [x] Split Product Operational Estate Management from user-facing Digital Estate Management, add Digital Estate Management process guidance, and add starter templates.
-- [x] Add CSAF/VEX provider-readiness guidance for SaaS/security/infrastructure/developer products that may need to publish machine-readable advisories about themselves.
+- [x] Add CSAF/VEX advisory-readiness guidance for SaaS/security/infrastructure/developer products that may need to publish machine-readable advisories about themselves.
+- [x] Broaden CSAF/VEX advisory readiness to cover inbound vendor/dependency advisory ingestion, triage, affected-product mapping, VEX/not-affected decisions, and release/customer-notice triggers.
 
 ## Open
 
@@ -14,6 +15,6 @@
 
 ## Burndown
 
-- Done: 5
+- Done: 6
 - Open: 1
-- Total: 6
+- Total: 7
