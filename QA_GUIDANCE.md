@@ -119,7 +119,8 @@ Verify where relevant:
 Verify:
 
 - health checks
-- logs/metrics
+- logs/metrics/traces/audit events
+- failure diagnosability from documented signals
 - alerts
 - backups
 - restore process

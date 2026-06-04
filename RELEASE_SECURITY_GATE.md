@@ -106,6 +106,7 @@ Confirm:
 Confirm:
 
 - security-relevant logs exist
+- important failures are diagnosable from documented signals
 - alerts exist for important failures/abuse where relevant
 - incident contact/path is known
 - rollback/disable process exists

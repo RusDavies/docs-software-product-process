@@ -18,6 +18,10 @@ How to tell whether the system is healthy.
 
 Signals, thresholds, dashboards, alert routes, and noise-control notes.
 
+## Observability / Debugging
+
+How operators inspect logs, metrics, traces, audit events, job/queue state, dependency health, and correlation IDs during failures. Link to the observability/debuggability plan if separate.
+
 ## Routine Operations
 
 Maintenance, dependency updates, backups, reports, and housekeeping.
@@ -28,9 +32,9 @@ Backup location, frequency, restore procedure, and validation schedule.
 
 ## Common Failures
 
-| Symptom | Likely Cause | Action | Escalation |
-| --- | --- | --- | --- |
-|  |  |  |  |
+| Symptom | Likely Cause | Diagnostic Checks | Evidence to Preserve | Action | Escalation |
+| --- | --- | --- | --- | --- | --- |
+|  |  |  |  |  |  |
 
 ## Incident Response
 

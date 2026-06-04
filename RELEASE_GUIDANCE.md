@@ -84,7 +84,7 @@ Verify:
 
 - service health
 - core workflows
-- logs/metrics
+- logs/metrics/traces/audit events
 - background jobs
 - integrations
 - permissions
@@ -94,7 +94,7 @@ Verify:
 
 Capture:
 
-- dashboards/checks
+- dashboards/checks/diagnostic views
 - alerts
 - support contact/path
 - known troubleshooting steps
@@ -147,6 +147,7 @@ Schedule review of:
 - bugs
 - user feedback
 - metrics
+- alert quality and diagnostic gaps
 - support requests
 - operational toil
 - security findings
