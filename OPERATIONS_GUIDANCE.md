@@ -33,7 +33,7 @@ At minimum, capture:
 1. Owner/operator
 2. Product operational estate register
 3. Health checks
-4. Monitoring/logging
+4. Monitoring, observability, and debuggability
 5. Alerting rules
 6. Backup/restore expectations
 7. Maintenance tasks
@@ -70,17 +70,21 @@ Capture:
 - access review cadence and offboarding/handover process
 - decommissioning checklist for retired services
 
-### 3. Monitoring and Observability
+### 3. Monitoring, Observability, and Debuggability
 
-Capture:
+Use `OBSERVABILITY_DEBUGGABILITY_GUIDANCE.md` for detailed operator visibility and failure-investigation design. Capture:
 
 - health checks
 - readiness checks
-- logs
+- critical journeys and failure modes
+- logs and diagnostic events
 - metrics
-- traces where useful
+- traces/correlation where useful
 - audit events
-- dashboards/status pages
+- dashboards/status pages and diagnostic views
+- dependency, queue, job, and data-freshness visibility
+- incident evidence capture expectations
+- privacy-safe diagnostics and redaction rules
 
 ### 4. Alerting
 
@@ -207,6 +211,8 @@ For small projects:
 - `docs/operations/runbook.md`
 - `docs/operations/digital-estate-register.md`
 - `docs/operations/monitoring.md`
+- `docs/operations/observability.md`
+- `docs/operations/debugging-guide.md`
 - `docs/operations/alerts.md`
 - `docs/operations/backup-restore.md`
 - `docs/operations/maintenance.md`
@@ -223,6 +229,7 @@ A product is operations-ready when:
 - ownership is clear
 - product operational estate inventory is maintained enough to operate, renew, transfer, or decommission the product
 - health/monitoring exists
+- operators can debug and scope important failures from documented signals
 - alerts are actionable
 - backups/recovery are defined where relevant
 - routine automation is planned or implemented
@@ -234,7 +241,7 @@ A product is operations-ready when:
 
 Operations is never truly done, because entropy has tenure. For a release, operations is done when:
 
-- monitoring and alerts are live
+- monitoring, diagnostic views, and alerts are live
 - estate ownership, renewals, access, and critical dependencies are known
 - routine tasks are automated or scheduled
 - agent-accessible operational paths are least-privilege, auditable, and approval-gated where risky

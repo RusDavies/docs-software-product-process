@@ -23,7 +23,7 @@ At minimum, implementation should include:
 3. Tests for critical behavior
 4. Security-conscious coding
 5. Configuration separated from code
-6. Logging/observability basics
+6. Logging/observability/debuggability basics
 7. Review before release
 
 ## Full Implementation Checklist
@@ -87,13 +87,15 @@ Expect:
 - contract tests where useful
 - acceptance tests for core workflows where practical
 
-### 6. Observability
+### 6. Observability and Debuggability
 
 Expect:
 
 - structured logs where useful
+- stable error codes and categories for important failures
 - health checks
 - metrics for critical paths
+- trace/correlation propagation where useful
 - audit logs for meaningful actions
 - clear error messages without leaking sensitive details
 
@@ -118,6 +120,7 @@ Expect:
 - user guide or quick start where user-facing
 - admin guide where configurable/administered
 - operational notes/runbook where operated
+- observability/debuggability notes where failures need investigation
 - troubleshooting guidance where shared
 - security/privacy notes
 - architecture notes updated when implementation diverges

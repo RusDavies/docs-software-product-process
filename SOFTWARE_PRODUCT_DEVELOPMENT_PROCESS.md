@@ -13,7 +13,7 @@ Every project should move deliberately from idea to operation:
 5. Define compliance readiness where enterprise, regulated, or customer-required.
 6. Plan user, admin, operator, and developer documentation.
 7. Design SEO/discovery for web products.
-8. Design the technical architecture.
+8. Design the technical architecture, including observability and debuggability.
 9. Plan implementation.
 10. Build the product and documentation.
 11. Verify quality, including documentation and SEO quality.
@@ -40,7 +40,7 @@ Important baseline principles include:
 - product operational estate stewardship
 - Digital Estate Management assessment for non-corporate/end-user products
 - AI-operable by design unless explicitly throw-away or product-owner exempted
-- observability from the start
+- observability and debuggability from the start
 - reproducibility and portability
 - resilient failure modes
 - human approval for high-risk actions
@@ -214,7 +214,7 @@ Key outputs:
 - API/contracts
 - deployment model
 - trust boundaries
-- observability model
+- observability and debuggability model
 - operational automation model
 - product operational estate inventory
 - ownership and account map
@@ -227,7 +227,7 @@ Security checkpoint:
 
 - Architecture must show authentication, authorization, network boundaries, ingress/egress, secrets, data flows, audit points, privileged operations, product operational estate ownership, and any AI-agent operational interfaces or autonomy boundaries.
 
-Guidance: `ARCHITECTURE_GUIDANCE.md`
+Guidance: `ARCHITECTURE_GUIDANCE.md`, `OBSERVABILITY_DEBUGGABILITY_GUIDANCE.md`
 
 ### 9. Implementation Planning
 
@@ -239,6 +239,7 @@ Key outputs:
 - backlog breakdown
 - sequencing and dependencies
 - test strategy
+- observability/debuggability implementation tasks
 - release strategy
 - staffing/ownership assumptions
 - risk register
@@ -277,6 +278,7 @@ Prove the product behaves acceptably before release.
 Key outputs:
 
 - functional test results
+- observability/debuggability QA results for critical failures
 - UX QA results
 - accessibility checks
 - integration/regression tests
@@ -303,7 +305,7 @@ Key outputs:
 - unresolved finding list
 - release approval
 - rollback/disable plan
-- monitoring and incident path
+- monitoring, observability, and incident path
 
 Security checkpoint:
 
@@ -346,6 +348,8 @@ Key outputs:
 - service/account/domain ownership map
 - account, domain, certificate, secret, and dependency renewal schedule
 - alerting rules
+- monitoring dashboards/status views
+- debugging and incident evidence paths
 - automation jobs
 - agent-operable runbooks and safe automation boundaries, where applicable
 - backup/restore process
@@ -358,7 +362,7 @@ Security checkpoint:
 
 - Maintain patching, access reviews, audit reviews, incident learning, dependency updates, and abuse monitoring.
 
-Guidance: `OPERATIONS_GUIDANCE.md`
+Guidance: `OPERATIONS_GUIDANCE.md`, `OBSERVABILITY_DEBUGGABILITY_GUIDANCE.md`
 
 ## Definition of Product-Ready for Build
 

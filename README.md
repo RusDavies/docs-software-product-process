@@ -12,8 +12,9 @@ Start here instead of reading everything like a doomed compliance intern:
 4. Use the relevant discipline guide when that phase becomes active.
 5. Copy starter artifacts from `templates/` when useful.
 6. Use `GOVERNANCE_AND_APPROVALS.md` when decisions, approvals, risk acceptance, releases, or agent boundaries matter.
-7. Use `PRODUCT_OPERATIONAL_ESTATE_GUIDANCE.md` and `AI_AGENT_OPERATION_GUIDANCE.md` when the product needs a clear operating footprint or may be operated with approved AI-agent assistance.
-8. Use `DIGITAL_ESTATE_MANAGEMENT_GUIDANCE.md` when a product has non-corporate end users whose digital assets, accounts, memories, identity, access paths, or death/incapacity instructions may matter.
+7. Use `OBSERVABILITY_DEBUGGABILITY_GUIDANCE.md` when operators, support staff, or incident teams need to understand failures and product health.
+8. Use `PRODUCT_OPERATIONAL_ESTATE_GUIDANCE.md` and `AI_AGENT_OPERATION_GUIDANCE.md` when the product needs a clear operating footprint or may be operated with approved AI-agent assistance.
+9. Use `DIGITAL_ESTATE_MANAGEMENT_GUIDANCE.md` when a product has non-corporate end users whose digital assets, accounts, memories, identity, access paths, or death/incapacity instructions may matter.
 
 ## Quick Start by Project Size
 
@@ -102,6 +103,7 @@ Add:
 - `SECURITY_GUIDANCE.md` — canonical security and privacy design process
 - `COMPLIANCE_READINESS_GUIDANCE.md` — SOC 2, ISO/IEC 27001, enterprise questionnaire, control, and evidence readiness
 - `ARCHITECTURE_GUIDANCE.md` — technical architecture and system design
+- `OBSERVABILITY_DEBUGGABILITY_GUIDANCE.md` — operator visibility, diagnostics, failure reconstruction, and incident evidence design
 - `IMPLEMENTATION_PLANNING_GUIDANCE.md` — milestones, backlog breakdown, and delivery planning
 - `PRODUCT_OPERATIONAL_ESTATE_GUIDANCE.md` — product/operator estate: domains, accounts, environments, credentials, dependencies, renewals, ownership, and decommissioning
 - `AI_AGENT_OPERATION_GUIDANCE.md` — safe, auditable, least-privilege operation by approved AI agents
@@ -126,6 +128,7 @@ Starter artifacts live in `templates/`:
 - `templates/qa-plan.md`
 - `templates/release-checklist.md`
 - `templates/operations-runbook.md`
+- `templates/observability-debuggability-plan.md`
 - `templates/product-operational-estate-register.md`
 - `templates/digital-estate-management-requirements.md`
 - `templates/digital-estate-user-inventory.md`
@@ -164,6 +167,7 @@ Some topics appear in multiple documents because they matter in multiple phases.
 - User/admin/operator documentation source of truth: `DOCUMENTATION_GUIDANCE.md`
 - Web SEO/discovery source of truth: `SEO_GUIDANCE.md`
 - Operational ownership and runbooks source of truth: `OPERATIONS_GUIDANCE.md`
+- Observability/debuggability source of truth: `OBSERVABILITY_DEBUGGABILITY_GUIDANCE.md`
 - Product operational estate ownership and renewal source of truth: `PRODUCT_OPERATIONAL_ESTATE_GUIDANCE.md`
 - User-facing Digital Estate Management source of truth: `DIGITAL_ESTATE_MANAGEMENT_GUIDANCE.md`
 - AI-agent operational boundary source of truth: `AI_AGENT_OPERATION_GUIDANCE.md`

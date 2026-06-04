@@ -14,7 +14,7 @@ Every serious project should define:
 - product operational estate footprint
 - web crawl/index/metadata architecture where applicable
 - security/trust boundaries
-- observability and operations model
+- observability/debuggability and operations model
 - approved AI-agent operational interfaces unless explicitly throw-away or product-owner exempted
 - failure/recovery behavior
 
@@ -29,7 +29,7 @@ At minimum, capture:
 5. Deployment model
 6. Product operational estate footprint
 7. Trust boundaries and access model
-8. Observability/operations model
+8. Observability/debuggability and operations model
 9. AI-agent operation model unless explicitly throw-away or product-owner exempted
 10. Key tradeoffs and risks
 
@@ -145,17 +145,20 @@ Capture:
 - rollback/undo paths for agent-performed changes
 - explicit no-go zones for agent access or automation
 
-### 10. Observability Architecture
+### 10. Observability and Debuggability Architecture
 
-Capture:
+Use `OBSERVABILITY_DEBUGGABILITY_GUIDANCE.md` for the detailed design. Capture:
 
-- logs
+- operator questions the system must answer
+- critical journeys and failure modes to instrument
+- structured logs and diagnostic events
 - metrics
 - search/index/performance monitoring for public web projects
-- traces where useful
+- traces/correlation where useful
 - audit events
-- dashboards/status checks
-- alert conditions
+- dashboards/status checks and diagnostic interfaces
+- alert conditions linked to runbooks
+- incident evidence capture
 - privacy-safe diagnostics
 
 ### 11. Resilience and Failure Modes
@@ -204,6 +207,7 @@ For small projects:
 - `docs/architecture/security-architecture.md`
 - `docs/architecture/agent-operation.md`
 - `docs/architecture/observability.md`
+- `docs/architecture/debuggability.md`
 - `docs/architecture/operational-automation.md`
 - `docs/architecture/decision-records/`
 
@@ -217,7 +221,7 @@ Architecture is ready when:
 - product operational estate ownership and dependencies are documented
 - security and trust boundaries are visible
 - agent-operation boundaries are documented where applicable
-- operational automation and observability are planned
+- operational automation, observability, and debuggability are planned
 - major tradeoffs are understood
 
 ## Definition of Architecture-Done

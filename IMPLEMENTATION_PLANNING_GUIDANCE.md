@@ -86,7 +86,8 @@ Include normal backlog items for:
 Include normal backlog items for:
 
 - health checks
-- metrics/logging
+- metrics/logging/tracing/audit events
+- failure-mode diagnostics
 - backups
 - restore checks
 - housekeeping jobs
@@ -155,7 +156,7 @@ Planning is ready when:
 
 - work is broken into actionable items
 - sequencing is sensible
-- security and operations are represented
+- security, observability/debuggability, and operations are represented
 - verification is planned
 - risks and blockers are visible
 

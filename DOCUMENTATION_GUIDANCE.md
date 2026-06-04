@@ -92,7 +92,7 @@ For operated systems, document:
 - backup and restore
 - incident response
 - rollback/disable procedure
-- common failures and remediation
+- common failures, diagnostics, and remediation
 - automation boundaries
 - support handoffs
 
@@ -167,7 +167,7 @@ Before release, verify:
 - terminology is consistent
 - security/privacy claims are accurate
 - accessibility basics are met
-- operator runbooks match real procedures
+- operator runbooks match real procedures and diagnostic paths
 - release notes match the release
 
 Docs that confidently explain the wrong product are worse than no docs. At least no docs are honest about being useless.
