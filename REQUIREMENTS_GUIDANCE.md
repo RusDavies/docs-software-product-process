@@ -151,7 +151,7 @@ Include:
 - privacy requirements for private communications, third-party data, sensitive media, and family-dispute contexts
 - limits and disclaimers around platform rules, local law, transferability, provider cooperation, and professional advice
 
-Guidance: `DIGITAL_ESTATE_MANAGEMENT_GUIDANCE.md`
+Guidance: [`DIGITAL_ESTATE_MANAGEMENT_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/DIGITAL_ESTATE_MANAGEMENT_GUIDANCE.md)
 
 ### 9. AI-Agent Operational Requirements, Where Applicable
 

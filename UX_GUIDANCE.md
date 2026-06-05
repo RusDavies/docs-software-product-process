@@ -192,7 +192,7 @@ Use service blueprints especially when humans, automation, and backend processes
 
 Define how information is organized and how users navigate it.
 
-For public web projects, align information architecture with `SEO_GUIDANCE.md` so important content can be discovered, crawled, understood, and maintained.
+For public web projects, align information architecture with [`SEO_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/SEO_GUIDANCE.md) so important content can be discovered, crawled, understood, and maintained.
 
 Capture:
 
@@ -561,4 +561,4 @@ Consider:
 
 The UX must distinguish legal authority, consent, trusted-contact status, and technical access. Blurring those together is how a helpful feature becomes an unauthorized-access machine wearing a cardigan.
 
-Guidance: `DIGITAL_ESTATE_MANAGEMENT_GUIDANCE.md`
+Guidance: [`DIGITAL_ESTATE_MANAGEMENT_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/DIGITAL_ESTATE_MANAGEMENT_GUIDANCE.md)

@@ -197,7 +197,7 @@ Capture:
 - schema validation and sample advisory evidence before claiming CSAF/VEX ingestion or publication support
 - separation between product-wide advisories and tenant/customer confidential information
 
-Use `templates/csaf-vex-advisory-readiness.md` when this applies. Do not claim CSAF, VEX, OpenVEX, PSIRT, ProductCERT, or machine-readable advisory ingestion/publication support until the process, sources, metadata, validation, owners, intake path, and publication path exist where applicable.
+Use [`templates/csaf-vex-advisory-readiness.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/templates/csaf-vex-advisory-readiness.md) when this applies. Do not claim CSAF, VEX, OpenVEX, PSIRT, ProductCERT, or machine-readable advisory ingestion/publication support until the process, sources, metadata, validation, owners, intake path, and publication path exist where applicable.
 
 ### 13. Security Acceptance Criteria
 
@@ -276,4 +276,4 @@ Required review topics include:
 
 The default stance is: an inventory is not a password dump. If a product stores secrets, it needs a vault-grade design and explicit approval for that scope.
 
-Guidance: `DIGITAL_ESTATE_MANAGEMENT_GUIDANCE.md`
+Guidance: [`DIGITAL_ESTATE_MANAGEMENT_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/DIGITAL_ESTATE_MANAGEMENT_GUIDANCE.md)

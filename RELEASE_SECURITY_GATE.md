@@ -124,7 +124,7 @@ For SaaS, security products, developer tools, infrastructure products, libraries
 - vendor-advisory sources, affected-product mapping, triage evidence, `provider-metadata.json`, `security.txt` CSAF links, signing/integrity, schema validation, and advisory storage are checked where the product ingests or publishes CSAF/VEX
 - tenant/customer confidential information is not exposed in product-wide advisories
 
-Template: `templates/csaf-vex-advisory-readiness.md`
+Template: [`templates/csaf-vex-advisory-readiness.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/templates/csaf-vex-advisory-readiness.md)
 
 ### 10. Enterprise Compliance Readiness
 
@@ -138,7 +138,7 @@ For enterprise-targeted products, confirm:
 - customer-facing compliance claims do not overstate reality
 - compliance gaps are tracked or explicitly accepted
 
-Guidance: `COMPLIANCE_READINESS_GUIDANCE.md`
+Guidance: [`COMPLIANCE_READINESS_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/COMPLIANCE_READINESS_GUIDANCE.md)
 
 ### 11. Risk Acceptance
 

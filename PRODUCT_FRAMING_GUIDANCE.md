@@ -189,4 +189,4 @@ Record one of:
 - **Not applicable** — the product does not manage personal/family/creator/legacy assets or death/incapacity workflows.
 - **Deferred** — applicability depends on a later product scope decision.
 
-Guidance: `DIGITAL_ESTATE_MANAGEMENT_GUIDANCE.md`
+Guidance: [`DIGITAL_ESTATE_MANAGEMENT_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/DIGITAL_ESTATE_MANAGEMENT_GUIDANCE.md)

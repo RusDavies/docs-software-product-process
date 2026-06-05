@@ -147,7 +147,7 @@ Capture:
 
 ### 10. Observability and Debuggability Architecture
 
-Use `OBSERVABILITY_DEBUGGABILITY_GUIDANCE.md` for the detailed design. Capture:
+Use [`OBSERVABILITY_DEBUGGABILITY_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/OBSERVABILITY_DEBUGGABILITY_GUIDANCE.md) for the detailed design. Capture:
 
 - operator questions the system must answer
 - critical journeys and failure modes to instrument

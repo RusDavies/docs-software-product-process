@@ -140,7 +140,7 @@ Verify:
 - links, examples, and screenshots are current where used
 - security/privacy/compliance claims are accurate and approved
 
-Guidance: `DOCUMENTATION_GUIDANCE.md`
+Guidance: [`DOCUMENTATION_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/DOCUMENTATION_GUIDANCE.md)
 
 ### 10. SEO QA, Where Applicable
 
@@ -156,7 +156,7 @@ For public web projects, verify:
 - mobile rendering works
 - performance/Core Web Vitals checks pass or exceptions are approved
 
-Guidance: `SEO_GUIDANCE.md`
+Guidance: [`SEO_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/SEO_GUIDANCE.md)
 
 ## Lightweight Project Version
 
