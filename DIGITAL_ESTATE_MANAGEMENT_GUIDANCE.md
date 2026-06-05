@@ -18,7 +18,7 @@ Product Operational Estate Management is about keeping the product itself operab
 
 Product question: **Can another competent operator keep this product alive or shut it down safely?**
 
-See `PRODUCT_OPERATIONAL_ESTATE_GUIDANCE.md`.
+See [`PRODUCT_OPERATIONAL_ESTATE_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/PRODUCT_OPERATIONAL_ESTATE_GUIDANCE.md).
 
 ### Digital Asset Management / DAM
 

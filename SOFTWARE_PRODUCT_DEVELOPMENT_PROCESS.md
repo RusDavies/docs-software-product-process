@@ -23,11 +23,11 @@ Every project should move deliberately from idea to operation:
 
 The process is modular. Small projects can use lightweight versions. Larger, riskier, public, customer-facing, enterprise-targeted, regulated, security-sensitive, or multi-role projects should use the full process.
 
-Before applying the full process, classify the project and select any target profile with `TAILORING_GUIDE.md`. Class 0 throw-away work is an explicit product-owner classification and excludes normal maintenance, product operational estate management, AI-agent operation design, and other long-term product machinery unless the classification breaks. Software library/package targets keep security, compatibility, release, documentation, provenance, vulnerability-intake, and patch-maintenance concerns, but exclude normal runtime operations concerns unless the library also ships an operated runtime component. Use `GOVERNANCE_AND_APPROVALS.md` when approvals, accepted risk, release authority, or agent autonomy boundaries matter.
+Before applying the full process, classify the project and select any target profile with [`TAILORING_GUIDE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/TAILORING_GUIDE.md). Class 0 throw-away work is an explicit product-owner classification and excludes normal maintenance, product operational estate management, AI-agent operation design, and other long-term product machinery unless the classification breaks. Software library/package targets keep security, compatibility, release, documentation, provenance, vulnerability-intake, and patch-maintenance concerns, but exclude normal runtime operations concerns unless the library also ships an operated runtime component. Use [`GOVERNANCE_AND_APPROVALS.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/GOVERNANCE_AND_APPROVALS.md) when approvals, accepted risk, release authority, or agent autonomy boundaries matter.
 
 ## Process Principles
 
-All phases should apply `ENGINEERING_PRINCIPLES.md`. Project teams may tailor or deviate from principles, but deviations should be explicit and justified.
+All phases should apply [`ENGINEERING_PRINCIPLES.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/ENGINEERING_PRINCIPLES.md). Project teams may tailor or deviate from principles, but deviations should be explicit and justified.
 
 Important baseline principles include:
 
@@ -66,7 +66,7 @@ Security checkpoint:
 - Identify sensitive data, obvious abuse cases, trust boundaries, external dependencies, and potential harms.
 - For consumer, family, creator, life-admin, personal archive, AI-memory, finance, crypto, or personal-data products, decide whether Digital Estate Management applies.
 
-Guidance: `PRODUCT_FRAMING_GUIDANCE.md`
+Guidance: [`PRODUCT_FRAMING_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/PRODUCT_FRAMING_GUIDANCE.md)
 
 ### 2. Product Requirements
 
@@ -89,7 +89,7 @@ Security checkpoint:
 
 - Security, privacy, compliance, auditability, abuse resistance, product operational estate stewardship, Digital Estate Management applicability, agent-operability boundaries, and operational safety are requirements, not garnish.
 
-Guidance: `REQUIREMENTS_GUIDANCE.md`, `DIGITAL_ESTATE_MANAGEMENT_GUIDANCE.md`
+Guidance: [`REQUIREMENTS_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/REQUIREMENTS_GUIDANCE.md), [`DIGITAL_ESTATE_MANAGEMENT_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/DIGITAL_ESTATE_MANAGEMENT_GUIDANCE.md)
 
 ### 3. UX / Product Design
 
@@ -112,7 +112,7 @@ Security checkpoint:
 - Design permission-aware states, trust UX, safe confirmations, audit visibility, recovery flows, and clear explanations for risky or automated actions.
 - For Digital Estate Management features, clearly distinguish legal authority, consent, trusted-contact status, and technical access.
 
-Guidance: `UX_GUIDANCE.md`, `DIGITAL_ESTATE_MANAGEMENT_GUIDANCE.md`
+Guidance: [`UX_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/UX_GUIDANCE.md), [`DIGITAL_ESTATE_MANAGEMENT_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/DIGITAL_ESTATE_MANAGEMENT_GUIDANCE.md)
 
 ### 4. Security and Privacy Design
 
@@ -137,7 +137,7 @@ Security checkpoint:
 - Security design should be reviewed before implementation begins for serious projects.
 - Digital Estate Management features must not become password dumps, impersonation workflows, or terms-of-service bypass instructions.
 
-Guidance: `SECURITY_GUIDANCE.md`, `DIGITAL_ESTATE_MANAGEMENT_GUIDANCE.md`
+Guidance: [`SECURITY_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/SECURITY_GUIDANCE.md), [`DIGITAL_ESTATE_MANAGEMENT_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/DIGITAL_ESTATE_MANAGEMENT_GUIDANCE.md)
 
 ### 5. Compliance Readiness, Where Applicable
 
@@ -158,7 +158,7 @@ Security checkpoint:
 
 - Do not claim SOC 2 attestation, ISO/IEC 27001 certification, CSAF/VEX advisory ingestion/publication support, or equivalent readiness unless scope, controls, evidence, validation, and approval support that claim.
 
-Guidance: `COMPLIANCE_READINESS_GUIDANCE.md`
+Guidance: [`COMPLIANCE_READINESS_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/COMPLIANCE_READINESS_GUIDANCE.md)
 
 ### 6. Documentation Planning
 
@@ -178,7 +178,7 @@ Security checkpoint:
 
 - Security, privacy, safety, and compliance claims in documentation must be accurate and approved before release.
 
-Guidance: `DOCUMENTATION_GUIDANCE.md`
+Guidance: [`DOCUMENTATION_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/DOCUMENTATION_GUIDANCE.md)
 
 ### 7. SEO / Discovery Design, Where Applicable
 
@@ -200,7 +200,7 @@ Security checkpoint:
 
 - SEO metadata, structured data, public content, and snippets must not leak private data, overclaim security/compliance status, or contradict approved documentation.
 
-Guidance: `SEO_GUIDANCE.md`
+Guidance: [`SEO_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/SEO_GUIDANCE.md)
 
 ### 8. Technical Architecture
 
@@ -227,7 +227,7 @@ Security checkpoint:
 
 - Architecture must show authentication, authorization, network boundaries, ingress/egress, secrets, data flows, audit points, privileged operations, product operational estate ownership, and any AI-agent operational interfaces or autonomy boundaries.
 
-Guidance: `ARCHITECTURE_GUIDANCE.md`, `OBSERVABILITY_DEBUGGABILITY_GUIDANCE.md`
+Guidance: [`ARCHITECTURE_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/ARCHITECTURE_GUIDANCE.md), [`OBSERVABILITY_DEBUGGABILITY_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/OBSERVABILITY_DEBUGGABILITY_GUIDANCE.md)
 
 ### 9. Implementation Planning
 
@@ -248,7 +248,7 @@ Security checkpoint:
 
 - Security and operational tasks must appear in the normal backlog, not a haunted appendix.
 
-Guidance: `IMPLEMENTATION_PLANNING_GUIDANCE.md`
+Guidance: [`IMPLEMENTATION_PLANNING_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/IMPLEMENTATION_PLANNING_GUIDANCE.md)
 
 ### 10. Build / Implementation
 
@@ -269,7 +269,7 @@ Security checkpoint:
 
 - Apply secure coding, least privilege, input validation, authorization checks, dependency hygiene, secret scanning, logging hygiene, and review of risky changes.
 
-Guidance: `IMPLEMENTATION_GUIDANCE.md`
+Guidance: [`IMPLEMENTATION_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/IMPLEMENTATION_GUIDANCE.md)
 
 ### 11. Verification / QA
 
@@ -292,7 +292,7 @@ Security checkpoint:
 
 - Test authorization boundaries, abuse cases, input handling, dependency posture, audit logs, and risky workflows.
 
-Guidance: `QA_GUIDANCE.md`
+Guidance: [`QA_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/QA_GUIDANCE.md)
 
 ### 12. Release Security Gate
 
@@ -311,7 +311,7 @@ Security checkpoint:
 
 - High-risk findings must be fixed, explicitly accepted, or the release should not proceed. Revolutionary stuff, apparently.
 
-Guidance: `RELEASE_SECURITY_GATE.md`
+Guidance: [`RELEASE_SECURITY_GATE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/RELEASE_SECURITY_GATE.md)
 
 ### 13. Launch / Release
 
@@ -335,7 +335,7 @@ Security checkpoint:
 - Confirm credentials, configuration, exposure, monitoring, audit, backups, and incident response are ready.
 - For Digital Estate Management features, confirm inventory/secret separation, authority/consent boundaries, export/delegated access auditability, and no overpromised legal/provider outcomes.
 
-Guidance: `RELEASE_GUIDANCE.md`, `DIGITAL_ESTATE_MANAGEMENT_GUIDANCE.md`
+Guidance: [`RELEASE_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/RELEASE_GUIDANCE.md), [`DIGITAL_ESTATE_MANAGEMENT_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/DIGITAL_ESTATE_MANAGEMENT_GUIDANCE.md)
 
 ### 14. Operations / Post-Launch Iteration
 
@@ -362,7 +362,7 @@ Security checkpoint:
 
 - Maintain patching, access reviews, audit reviews, incident learning, dependency updates, and abuse monitoring.
 
-Guidance: `OPERATIONS_GUIDANCE.md`, `OBSERVABILITY_DEBUGGABILITY_GUIDANCE.md`
+Guidance: [`OPERATIONS_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/OPERATIONS_GUIDANCE.md), [`OBSERVABILITY_DEBUGGABILITY_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/OBSERVABILITY_DEBUGGABILITY_GUIDANCE.md)
 
 ## Definition of Product-Ready for Build
 
@@ -401,7 +401,7 @@ A product or major feature is ready for release when:
 
 ## Lightweight Project Version
 
-For small internal projects, confirm the project class in `TAILORING_GUIDE.md`, then use only the artifacts justified by risk and complexity.
+For small internal projects, confirm the project class in [`TAILORING_GUIDE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/TAILORING_GUIDE.md), then use only the artifacts justified by risk and complexity.
 
 Suggested minimum:
 

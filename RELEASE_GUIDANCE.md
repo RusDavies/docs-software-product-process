@@ -112,7 +112,7 @@ Confirm:
 - security/privacy/compliance claims are approved
 - documentation QA checklist is complete
 
-Guidance: `DOCUMENTATION_GUIDANCE.md`
+Guidance: [`DOCUMENTATION_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/DOCUMENTATION_GUIDANCE.md)
 
 ### 8. SEO Launch Readiness, Where Applicable
 
@@ -126,7 +126,7 @@ For public web projects, confirm:
 - analytics/search measurement is ready or intentionally deferred
 - post-launch SEO review is scheduled
 
-Guidance: `SEO_GUIDANCE.md`
+Guidance: [`SEO_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/SEO_GUIDANCE.md)
 
 ### 9. Release Notes
 

@@ -72,7 +72,7 @@ Capture:
 
 ### 3. Monitoring, Observability, and Debuggability
 
-Use `OBSERVABILITY_DEBUGGABILITY_GUIDANCE.md` for detailed operator visibility and failure-investigation design. Capture:
+Use [`OBSERVABILITY_DEBUGGABILITY_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/OBSERVABILITY_DEBUGGABILITY_GUIDANCE.md) for detailed operator visibility and failure-investigation design. Capture:
 
 - health checks
 - readiness checks

@@ -2,7 +2,7 @@
 
 Product operational estate guidance defines the owned and depended-on assets that must be known, renewed, secured, transferred, or retired for a product to keep operating.
 
-This is not user-facing **Digital Estate Management**. For personal/family digital assets, legacy access, and death/incapacity planning, see `DIGITAL_ESTATE_MANAGEMENT_GUIDANCE.md`.
+This is not user-facing **Digital Estate Management**. For personal/family digital assets, legacy access, and death/incapacity planning, see [`DIGITAL_ESTATE_MANAGEMENT_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/DIGITAL_ESTATE_MANAGEMENT_GUIDANCE.md).
 
 ## Purpose
 

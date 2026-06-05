@@ -125,7 +125,7 @@ Expect:
 - security/privacy notes
 - architecture notes updated when implementation diverges
 
-Guidance: `DOCUMENTATION_GUIDANCE.md`
+Guidance: [`DOCUMENTATION_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/DOCUMENTATION_GUIDANCE.md)
 
 ### 9. Web SEO Implementation, Where Applicable
 
@@ -141,7 +141,7 @@ For public web projects, implement:
 - image alt text where appropriate
 - performance budgets and asset optimization
 
-Guidance: `SEO_GUIDANCE.md`
+Guidance: [`SEO_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/SEO_GUIDANCE.md)
 
 ### 10. Review
 
@@ -169,7 +169,7 @@ For small projects:
 
 ## Recommended Project Files
 
-- `README.md`
+- [`README.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/README.md)
 - `.gitignore`
 - `docs/implementation/setup.md`
 - `docs/implementation/configuration.md`

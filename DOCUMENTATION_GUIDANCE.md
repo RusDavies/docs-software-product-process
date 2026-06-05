@@ -96,7 +96,7 @@ For operated systems, document:
 - automation boundaries
 - support handoffs
 
-Operator docs should align with `OPERATIONS_GUIDANCE.md`.
+Operator docs should align with [`OPERATIONS_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/OPERATIONS_GUIDANCE.md).
 
 ### 5. Developer / Integrator Documentation
 
@@ -126,7 +126,7 @@ Document what users, admins, and customers need to know about:
 - compliance status without overclaiming
 - responsible disclosure/security contact where relevant
 
-For enterprise-targeted products, align customer-facing claims with `COMPLIANCE_READINESS_GUIDANCE.md`.
+For enterprise-targeted products, align customer-facing claims with [`COMPLIANCE_READINESS_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/COMPLIANCE_READINESS_GUIDANCE.md).
 
 ### 7. In-Product Help and Content
 
@@ -141,7 +141,7 @@ Where useful, define:
 - links to docs
 - accessibility of help content
 
-This overlaps with `UX_GUIDANCE.md`; the documentation source should not contradict the product interface.
+This overlaps with [`UX_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/UX_GUIDANCE.md); the documentation source should not contradict the product interface.
 
 ### 8. Release Notes and Change Communication
 

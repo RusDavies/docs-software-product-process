@@ -144,7 +144,7 @@ For small projects:
 
 ## Recommended Project Files
 
-- `BACKLOG.md` or an equivalent project-specific TODO file
+- [`BACKLOG.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/BACKLOG.md) or an equivalent project-specific TODO file
 - `docs/planning/milestones.md`
 - `docs/planning/risk-register.md`
 - `docs/planning/test-strategy.md`

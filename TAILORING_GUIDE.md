@@ -83,7 +83,7 @@ Required:
 
 Recommended:
 
-- `README.md`
+- [`README.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/README.md)
 - lightweight sections from relevant guidance docs
 - small backlog or TODO list if follow-up exists
 
@@ -116,12 +116,12 @@ Required:
 
 Recommended documents:
 
-- `PRODUCT_FRAMING_GUIDANCE.md`
-- `REQUIREMENTS_GUIDANCE.md`
-- `ARCHITECTURE_GUIDANCE.md`
-- `IMPLEMENTATION_GUIDANCE.md`
-- `QA_GUIDANCE.md`
-- `AI_AGENT_OPERATION_GUIDANCE.md`
+- [`PRODUCT_FRAMING_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/PRODUCT_FRAMING_GUIDANCE.md)
+- [`REQUIREMENTS_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/REQUIREMENTS_GUIDANCE.md)
+- [`ARCHITECTURE_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/ARCHITECTURE_GUIDANCE.md)
+- [`IMPLEMENTATION_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/IMPLEMENTATION_GUIDANCE.md)
+- [`QA_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/QA_GUIDANCE.md)
+- [`AI_AGENT_OPERATION_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/AI_AGENT_OPERATION_GUIDANCE.md)
 - relevant templates from `templates/`
 
 Approval:
@@ -151,9 +151,9 @@ Required:
 Recommended documents:
 
 - all core guidance docs except items clearly irrelevant to the product
-- `RELEASE_SECURITY_GATE.md` before launch
-- `OPERATIONS_GUIDANCE.md` before ongoing use
-- `AI_AGENT_OPERATION_GUIDANCE.md` before ongoing use
+- [`RELEASE_SECURITY_GATE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/RELEASE_SECURITY_GATE.md) before launch
+- [`OPERATIONS_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/OPERATIONS_GUIDANCE.md) before ongoing use
+- [`AI_AGENT_OPERATION_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/AI_AGENT_OPERATION_GUIDANCE.md) before ongoing use
 
 Approval:
 
@@ -223,7 +223,7 @@ Approval:
 
 - human approval required for compliance claims, audit scope, customer-facing security answers, accepted compliance gaps, formal auditor engagement, and any claim that the product is SOC 2 or ISO/IEC 27001 ready/certified.
 
-Guidance: `COMPLIANCE_READINESS_GUIDANCE.md`
+Guidance: [`COMPLIANCE_READINESS_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/COMPLIANCE_READINESS_GUIDANCE.md)
 
 ### Class 5: Regulated / Safety-Critical / High-Risk
 
@@ -284,13 +284,13 @@ Escalate out of the pure library target if the project adds any hosted service, 
 
 Recommended documents:
 
-- `REQUIREMENTS_GUIDANCE.md`
-- `SECURITY_GUIDANCE.md`
-- `ARCHITECTURE_GUIDANCE.md` for API, dependency, and package/release architecture
-- `IMPLEMENTATION_GUIDANCE.md`
-- `QA_GUIDANCE.md`
-- `RELEASE_GUIDANCE.md`
-- `RELEASE_SECURITY_GATE.md` for public or security-sensitive libraries
+- [`REQUIREMENTS_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/REQUIREMENTS_GUIDANCE.md)
+- [`SECURITY_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/SECURITY_GUIDANCE.md)
+- [`ARCHITECTURE_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/ARCHITECTURE_GUIDANCE.md) for API, dependency, and package/release architecture
+- [`IMPLEMENTATION_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/IMPLEMENTATION_GUIDANCE.md)
+- [`QA_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/QA_GUIDANCE.md)
+- [`RELEASE_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/RELEASE_GUIDANCE.md)
+- [`RELEASE_SECURITY_GATE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/RELEASE_SECURITY_GATE.md) for public or security-sensitive libraries
 
 ## Tailoring Matrix
 

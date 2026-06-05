@@ -289,7 +289,7 @@ For small projects:
 - `docs/operations/runbook.md`
 - `docs/operations/debugging-guide.md`
 
-Use `templates/observability-debuggability-plan.md` as a starter artifact.
+Use [`templates/observability-debuggability-plan.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/templates/observability-debuggability-plan.md) as a starter artifact.
 
 ## Definition of Observability-Ready
 

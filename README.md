@@ -6,15 +6,15 @@ The guidance is modular. The top-level process explains the flow; each sub-docum
 
 Start here instead of reading everything like a doomed compliance intern:
 
-1. Classify the project with `TAILORING_GUIDE.md`.
+1. Classify the project with [`TAILORING_GUIDE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/TAILORING_GUIDE.md).
 2. Select any target profile, such as software library/package, that changes which process parts apply.
-3. Follow the lifecycle spine in `SOFTWARE_PRODUCT_DEVELOPMENT_PROCESS.md`.
+3. Follow the lifecycle spine in [`SOFTWARE_PRODUCT_DEVELOPMENT_PROCESS.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/SOFTWARE_PRODUCT_DEVELOPMENT_PROCESS.md).
 4. Use the relevant discipline guide when that phase becomes active.
 5. Copy starter artifacts from `templates/` when useful.
-6. Use `GOVERNANCE_AND_APPROVALS.md` when decisions, approvals, risk acceptance, releases, or agent boundaries matter.
-7. Use `OBSERVABILITY_DEBUGGABILITY_GUIDANCE.md` when operators, support staff, or incident teams need to understand failures and product health.
-8. Use `PRODUCT_OPERATIONAL_ESTATE_GUIDANCE.md` and `AI_AGENT_OPERATION_GUIDANCE.md` when the product needs a clear operating footprint or may be operated with approved AI-agent assistance.
-9. Use `DIGITAL_ESTATE_MANAGEMENT_GUIDANCE.md` when a product has non-corporate end users whose digital assets, accounts, memories, identity, access paths, or death/incapacity instructions may matter.
+6. Use [`GOVERNANCE_AND_APPROVALS.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/GOVERNANCE_AND_APPROVALS.md) when decisions, approvals, risk acceptance, releases, or agent boundaries matter.
+7. Use [`OBSERVABILITY_DEBUGGABILITY_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/OBSERVABILITY_DEBUGGABILITY_GUIDANCE.md) when operators, support staff, or incident teams need to understand failures and product health.
+8. Use [`PRODUCT_OPERATIONAL_ESTATE_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/PRODUCT_OPERATIONAL_ESTATE_GUIDANCE.md) and [`AI_AGENT_OPERATION_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/AI_AGENT_OPERATION_GUIDANCE.md) when the product needs a clear operating footprint or may be operated with approved AI-agent assistance.
+9. Use [`DIGITAL_ESTATE_MANAGEMENT_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/DIGITAL_ESTATE_MANAGEMENT_GUIDANCE.md) when a product has non-corporate end users whose digital assets, accounts, memories, identity, access paths, or death/incapacity instructions may matter.
 
 ## Quick Start by Project Size
 
@@ -28,7 +28,7 @@ Class 0 keeps only the small safety wrapper: disposable-work statement, owner ap
 
 Use:
 
-- `TAILORING_GUIDE.md`
+- [`TAILORING_GUIDE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/TAILORING_GUIDE.md)
 - lightweight sections from the relevant guidance docs
 - direct smoke test or inspection evidence
 
@@ -43,19 +43,19 @@ Usually enough:
 
 Use:
 
-- `TAILORING_GUIDE.md`
-- `PRODUCT_FRAMING_GUIDANCE.md`
-- `REQUIREMENTS_GUIDANCE.md`
-- `ARCHITECTURE_GUIDANCE.md`
-- `IMPLEMENTATION_GUIDANCE.md`
-- `QA_GUIDANCE.md`
+- [`TAILORING_GUIDE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/TAILORING_GUIDE.md)
+- [`PRODUCT_FRAMING_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/PRODUCT_FRAMING_GUIDANCE.md)
+- [`REQUIREMENTS_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/REQUIREMENTS_GUIDANCE.md)
+- [`ARCHITECTURE_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/ARCHITECTURE_GUIDANCE.md)
+- [`IMPLEMENTATION_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/IMPLEMENTATION_GUIDANCE.md)
+- [`QA_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/QA_GUIDANCE.md)
 - selected templates
 
-Add `GOVERNANCE_AND_APPROVALS.md` if the tool touches external systems, shared users, sensitive data, destructive actions, or release approval.
+Add [`GOVERNANCE_AND_APPROVALS.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/GOVERNANCE_AND_APPROVALS.md) if the tool touches external systems, shared users, sensitive data, destructive actions, or release approval.
 
 ### Software Library / Package
 
-Use the software-library target profile in `TAILORING_GUIDE.md` for reusable libraries, SDKs, framework modules, or packages that other software consumes but that do not themselves run as operated services.
+Use the software-library target profile in [`TAILORING_GUIDE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/TAILORING_GUIDE.md) for reusable libraries, SDKs, framework modules, or packages that other software consumes but that do not themselves run as operated services.
 
 Libraries keep the security, compatibility, test, documentation, release, provenance, maintainer, vulnerability-intake, and security-patching parts of the process. They exclude normal runtime operations machinery by default: no operations runbook, monitoring/alerting, backup/restore plan, runtime incident process, or AI-agent runtime-operation design unless the library also ships an operated service, daemon, scheduled job, data store, telemetry backend, update service, or other runtime component.
 
@@ -63,11 +63,11 @@ Libraries keep the security, compatibility, test, documentation, release, proven
 
 Use the full lifecycle:
 
-- `SOFTWARE_PRODUCT_DEVELOPMENT_PROCESS.md`
-- `ENGINEERING_PRINCIPLES.md`
+- [`SOFTWARE_PRODUCT_DEVELOPMENT_PROCESS.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/SOFTWARE_PRODUCT_DEVELOPMENT_PROCESS.md)
+- [`ENGINEERING_PRINCIPLES.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/ENGINEERING_PRINCIPLES.md)
 - all relevant discipline guides
-- `RELEASE_SECURITY_GATE.md`
-- `GOVERNANCE_AND_APPROVALS.md`
+- [`RELEASE_SECURITY_GATE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/RELEASE_SECURITY_GATE.md)
+- [`GOVERNANCE_AND_APPROVALS.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/GOVERNANCE_AND_APPROVALS.md)
 - templates for evidence and approvals
 
 ### Enterprise-Targeted Product
@@ -76,7 +76,7 @@ If the product targets enterprise customers, assume SOC 2, ISO/IEC 27001, vendor
 
 Add:
 
-- `COMPLIANCE_READINESS_GUIDANCE.md`
+- [`COMPLIANCE_READINESS_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/COMPLIANCE_READINESS_GUIDANCE.md)
 - compliance templates from `templates/`
 - control/evidence/policy tracking before customer pressure turns into archaeology with deadlines
 
@@ -84,76 +84,76 @@ Add:
 
 ### Start / Navigation
 
-- `TAILORING_GUIDE.md` — classify project risk and choose the right amount of process
-- `SOFTWARE_PRODUCT_DEVELOPMENT_PROCESS.md` — high-level process and phase gates
-- `ENGINEERING_PRINCIPLES.md` — baseline engineering, security, privacy, and operations principles
-- `GOVERNANCE_AND_APPROVALS.md` — human approval boundaries, accepted-risk rules, and agent autonomy limits
+- [`TAILORING_GUIDE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/TAILORING_GUIDE.md) — classify project risk and choose the right amount of process
+- [`SOFTWARE_PRODUCT_DEVELOPMENT_PROCESS.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/SOFTWARE_PRODUCT_DEVELOPMENT_PROCESS.md) — high-level process and phase gates
+- [`ENGINEERING_PRINCIPLES.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/ENGINEERING_PRINCIPLES.md) — baseline engineering, security, privacy, and operations principles
+- [`GOVERNANCE_AND_APPROVALS.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/GOVERNANCE_AND_APPROVALS.md) — human approval boundaries, accepted-risk rules, and agent autonomy limits
 
 ### Product, Design, Documentation, and SEO
 
-- `PRODUCT_FRAMING_GUIDANCE.md` — opportunity framing and problem definition
-- `REQUIREMENTS_GUIDANCE.md` — product, functional, non-functional, security, and operational requirements
-- `DIGITAL_ESTATE_MANAGEMENT_GUIDANCE.md` — user-facing Digital Estate Management for personal/family assets, legacy access, and death/incapacity planning
-- `UX_GUIDANCE.md` — UX design process, trust UX, accessibility, validation, and UX readiness
-- `DOCUMENTATION_GUIDANCE.md` — user, admin, operator, developer, release, and documentation QA expectations
-- `SEO_GUIDANCE.md` — search/discovery, metadata, crawlability, technical SEO, and launch SEO checks for web products
+- [`PRODUCT_FRAMING_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/PRODUCT_FRAMING_GUIDANCE.md) — opportunity framing and problem definition
+- [`REQUIREMENTS_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/REQUIREMENTS_GUIDANCE.md) — product, functional, non-functional, security, and operational requirements
+- [`DIGITAL_ESTATE_MANAGEMENT_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/DIGITAL_ESTATE_MANAGEMENT_GUIDANCE.md) — user-facing Digital Estate Management for personal/family assets, legacy access, and death/incapacity planning
+- [`UX_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/UX_GUIDANCE.md) — UX design process, trust UX, accessibility, validation, and UX readiness
+- [`DOCUMENTATION_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/DOCUMENTATION_GUIDANCE.md) — user, admin, operator, developer, release, and documentation QA expectations
+- [`SEO_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/SEO_GUIDANCE.md) — search/discovery, metadata, crawlability, technical SEO, and launch SEO checks for web products
 
 ### Security, Compliance, Architecture, and Planning
 
-- `SECURITY_GUIDANCE.md` — canonical security and privacy design process
-- `COMPLIANCE_READINESS_GUIDANCE.md` — SOC 2, ISO/IEC 27001, enterprise questionnaire, control, and evidence readiness
-- `ARCHITECTURE_GUIDANCE.md` — technical architecture and system design
-- `OBSERVABILITY_DEBUGGABILITY_GUIDANCE.md` — operator visibility, diagnostics, failure reconstruction, and incident evidence design
-- `IMPLEMENTATION_PLANNING_GUIDANCE.md` — milestones, backlog breakdown, and delivery planning
-- `PRODUCT_OPERATIONAL_ESTATE_GUIDANCE.md` — product/operator estate: domains, accounts, environments, credentials, dependencies, renewals, ownership, and decommissioning
-- `AI_AGENT_OPERATION_GUIDANCE.md` — safe, auditable, least-privilege operation by approved AI agents
+- [`SECURITY_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/SECURITY_GUIDANCE.md) — canonical security and privacy design process
+- [`COMPLIANCE_READINESS_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/COMPLIANCE_READINESS_GUIDANCE.md) — SOC 2, ISO/IEC 27001, enterprise questionnaire, control, and evidence readiness
+- [`ARCHITECTURE_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/ARCHITECTURE_GUIDANCE.md) — technical architecture and system design
+- [`OBSERVABILITY_DEBUGGABILITY_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/OBSERVABILITY_DEBUGGABILITY_GUIDANCE.md) — operator visibility, diagnostics, failure reconstruction, and incident evidence design
+- [`IMPLEMENTATION_PLANNING_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/IMPLEMENTATION_PLANNING_GUIDANCE.md) — milestones, backlog breakdown, and delivery planning
+- [`PRODUCT_OPERATIONAL_ESTATE_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/PRODUCT_OPERATIONAL_ESTATE_GUIDANCE.md) — product/operator estate: domains, accounts, environments, credentials, dependencies, renewals, ownership, and decommissioning
+- [`AI_AGENT_OPERATION_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/AI_AGENT_OPERATION_GUIDANCE.md) — safe, auditable, least-privilege operation by approved AI agents
 
 ### Build, Verify, Release, Operate
 
-- `IMPLEMENTATION_GUIDANCE.md` — build guidance and coding expectations
-- `QA_GUIDANCE.md` — verification, testing, and quality gates
-- `RELEASE_SECURITY_GATE.md` — explicit security review before release
-- `RELEASE_GUIDANCE.md` — launch/release checklist and rollback readiness
-- `OPERATIONS_GUIDANCE.md` — post-launch operations, automation, maintenance, and incident handling
+- [`IMPLEMENTATION_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/IMPLEMENTATION_GUIDANCE.md) — build guidance and coding expectations
+- [`QA_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/QA_GUIDANCE.md) — verification, testing, and quality gates
+- [`RELEASE_SECURITY_GATE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/RELEASE_SECURITY_GATE.md) — explicit security review before release
+- [`RELEASE_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/RELEASE_GUIDANCE.md) — launch/release checklist and rollback readiness
+- [`OPERATIONS_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/OPERATIONS_GUIDANCE.md) — post-launch operations, automation, maintenance, and incident handling
 
 ## Templates
 
 Starter artifacts live in `templates/`:
 
-- `templates/product-brief.md`
-- `templates/requirements-spec.md`
-- `templates/architecture-overview.md`
-- `templates/risk-register.md`
-- `templates/threat-model.md`
-- `templates/qa-plan.md`
-- `templates/release-checklist.md`
-- `templates/operations-runbook.md`
-- `templates/observability-debuggability-plan.md`
-- `templates/product-operational-estate-register.md`
-- `templates/digital-estate-management-requirements.md`
-- `templates/digital-estate-user-inventory.md`
-- `templates/agent-operation-boundaries.md`
-- `templates/decision-record.md`
-- `templates/control-register.md`
-- `templates/evidence-register.md`
-- `templates/policy-index.md`
-- `templates/soc2-iso27001-crosswalk.md`
-- `templates/audit-readiness-checklist.md`
-- `templates/security-questionnaire.md`
-- `templates/csaf-vex-advisory-readiness.md`
-- `templates/user-guide.md`
-- `templates/admin-guide.md`
-- `templates/quick-start.md`
-- `templates/configuration-guide.md`
-- `templates/troubleshooting-guide.md`
-- `templates/documentation-plan.md`
-- `templates/documentation-qa-checklist.md`
-- `templates/seo-plan.md`
-- `templates/page-inventory.md`
-- `templates/metadata-plan.md`
-- `templates/technical-seo-checklist.md`
-- `templates/launch-seo-checklist.md`
-- `templates/post-launch-seo-review.md`
+- [`templates/product-brief.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/templates/product-brief.md)
+- [`templates/requirements-spec.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/templates/requirements-spec.md)
+- [`templates/architecture-overview.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/templates/architecture-overview.md)
+- [`templates/risk-register.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/templates/risk-register.md)
+- [`templates/threat-model.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/templates/threat-model.md)
+- [`templates/qa-plan.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/templates/qa-plan.md)
+- [`templates/release-checklist.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/templates/release-checklist.md)
+- [`templates/operations-runbook.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/templates/operations-runbook.md)
+- [`templates/observability-debuggability-plan.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/templates/observability-debuggability-plan.md)
+- [`templates/product-operational-estate-register.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/templates/product-operational-estate-register.md)
+- [`templates/digital-estate-management-requirements.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/templates/digital-estate-management-requirements.md)
+- [`templates/digital-estate-user-inventory.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/templates/digital-estate-user-inventory.md)
+- [`templates/agent-operation-boundaries.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/templates/agent-operation-boundaries.md)
+- [`templates/decision-record.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/templates/decision-record.md)
+- [`templates/control-register.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/templates/control-register.md)
+- [`templates/evidence-register.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/templates/evidence-register.md)
+- [`templates/policy-index.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/templates/policy-index.md)
+- [`templates/soc2-iso27001-crosswalk.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/templates/soc2-iso27001-crosswalk.md)
+- [`templates/audit-readiness-checklist.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/templates/audit-readiness-checklist.md)
+- [`templates/security-questionnaire.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/templates/security-questionnaire.md)
+- [`templates/csaf-vex-advisory-readiness.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/templates/csaf-vex-advisory-readiness.md)
+- [`templates/user-guide.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/templates/user-guide.md)
+- [`templates/admin-guide.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/templates/admin-guide.md)
+- [`templates/quick-start.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/templates/quick-start.md)
+- [`templates/configuration-guide.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/templates/configuration-guide.md)
+- [`templates/troubleshooting-guide.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/templates/troubleshooting-guide.md)
+- [`templates/documentation-plan.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/templates/documentation-plan.md)
+- [`templates/documentation-qa-checklist.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/templates/documentation-qa-checklist.md)
+- [`templates/seo-plan.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/templates/seo-plan.md)
+- [`templates/page-inventory.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/templates/page-inventory.md)
+- [`templates/metadata-plan.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/templates/metadata-plan.md)
+- [`templates/technical-seo-checklist.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/templates/technical-seo-checklist.md)
+- [`templates/launch-seo-checklist.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/templates/launch-seo-checklist.md)
+- [`templates/post-launch-seo-review.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/templates/post-launch-seo-review.md)
 
 Templates are deliberately plain Markdown. Copy them into a project and delete what does not apply. The punishment for using every section blindly is owning the resulting bureaucracy.
 
@@ -161,19 +161,19 @@ Templates are deliberately plain Markdown. Copy them into a project and delete w
 
 Some topics appear in multiple documents because they matter in multiple phases. To avoid drift:
 
-- Security/privacy design source of truth: `SECURITY_GUIDANCE.md`
-- Release security decision source of truth: `RELEASE_SECURITY_GATE.md`
-- Enterprise compliance readiness source of truth: `COMPLIANCE_READINESS_GUIDANCE.md`
-- User/admin/operator documentation source of truth: `DOCUMENTATION_GUIDANCE.md`
-- Web SEO/discovery source of truth: `SEO_GUIDANCE.md`
-- Operational ownership and runbooks source of truth: `OPERATIONS_GUIDANCE.md`
-- Observability/debuggability source of truth: `OBSERVABILITY_DEBUGGABILITY_GUIDANCE.md`
-- Product operational estate ownership and renewal source of truth: `PRODUCT_OPERATIONAL_ESTATE_GUIDANCE.md`
-- User-facing Digital Estate Management source of truth: `DIGITAL_ESTATE_MANAGEMENT_GUIDANCE.md`
-- AI-agent operational boundary source of truth: `AI_AGENT_OPERATION_GUIDANCE.md`
-- Overall lifecycle source of truth: `SOFTWARE_PRODUCT_DEVELOPMENT_PROCESS.md`
-- Project-class/tailoring source of truth: `TAILORING_GUIDE.md`
-- Approval and agent-boundary source of truth: `GOVERNANCE_AND_APPROVALS.md`
+- Security/privacy design source of truth: [`SECURITY_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/SECURITY_GUIDANCE.md)
+- Release security decision source of truth: [`RELEASE_SECURITY_GATE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/RELEASE_SECURITY_GATE.md)
+- Enterprise compliance readiness source of truth: [`COMPLIANCE_READINESS_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/COMPLIANCE_READINESS_GUIDANCE.md)
+- User/admin/operator documentation source of truth: [`DOCUMENTATION_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/DOCUMENTATION_GUIDANCE.md)
+- Web SEO/discovery source of truth: [`SEO_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/SEO_GUIDANCE.md)
+- Operational ownership and runbooks source of truth: [`OPERATIONS_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/OPERATIONS_GUIDANCE.md)
+- Observability/debuggability source of truth: [`OBSERVABILITY_DEBUGGABILITY_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/OBSERVABILITY_DEBUGGABILITY_GUIDANCE.md)
+- Product operational estate ownership and renewal source of truth: [`PRODUCT_OPERATIONAL_ESTATE_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/PRODUCT_OPERATIONAL_ESTATE_GUIDANCE.md)
+- User-facing Digital Estate Management source of truth: [`DIGITAL_ESTATE_MANAGEMENT_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/DIGITAL_ESTATE_MANAGEMENT_GUIDANCE.md)
+- AI-agent operational boundary source of truth: [`AI_AGENT_OPERATION_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/AI_AGENT_OPERATION_GUIDANCE.md)
+- Overall lifecycle source of truth: [`SOFTWARE_PRODUCT_DEVELOPMENT_PROCESS.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/SOFTWARE_PRODUCT_DEVELOPMENT_PROCESS.md)
+- Project-class/tailoring source of truth: [`TAILORING_GUIDE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/TAILORING_GUIDE.md)
+- Approval and agent-boundary source of truth: [`GOVERNANCE_AND_APPROVALS.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/GOVERNANCE_AND_APPROVALS.md)
 
 Other documents may include phase-specific checkpoints, but should not redefine those policies in incompatible ways.
 
