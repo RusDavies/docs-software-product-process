@@ -9,6 +9,7 @@
 - [x] Add CSAF/VEX advisory-readiness guidance for SaaS/security/infrastructure/developer products that may need to publish machine-readable advisories about themselves.
 - [x] Broaden CSAF/VEX advisory readiness to cover inbound vendor/dependency advisory ingestion, triage, affected-product mapping, VEX/not-affected decisions, and release/customer-notice triggers.
 - [x] Add observability/debuggability guidance so operators and incident teams can understand system health, reconstruct failures, preserve evidence, and debug safely.
+- [x] Add release workflow action SHA-pinning as a supply-chain good practice for package-publication and trusted-publishing workflows.
 
 ## Open
 
@@ -16,6 +17,6 @@
 
 ## Burndown
 
-- Done: 7
+- Done: 8
 - Open: 1
-- Total: 8
+- Total: 9

@@ -135,9 +135,12 @@ Capture:
 - update process
 - vulnerability scanning
 - lockfiles/pinning
+- CI/release workflow action pinning, especially for package-publication or trusted-publishing workflows
 - container/image provenance
 - SBOM needs
 - review process for risky packages
+
+For products that publish packages or artifacts through CI/CD, treat the release workflow itself as part of the supply chain. GitHub Actions `uses:` entries in release, publish, build, and security workflows should be pinned to full immutable commit SHAs, not moving tags or branches. Keep readable comments that identify the upstream action/ref being pinned, and add a policy check that fails when future workflow changes reintroduce non-SHA action refs. This is especially important for PyPI/TestPyPI, RubyGems, npm, container registry, and other trusted-publishing paths where a changed action can affect what gets released without a source-code diff.
 
 ### 9. Secure Coding and Review
 

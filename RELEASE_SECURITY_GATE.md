@@ -88,8 +88,11 @@ Confirm:
 
 - dependency scan is acceptable
 - critical/high findings are fixed or accepted
+- CI/release workflow `uses:` entries are pinned to immutable commit SHAs where release integrity matters, especially package-publication and trusted-publishing workflows
 - container/images are from expected sources
 - build artifacts are traceable where relevant
+
+For package-publication releases, moving GitHub Actions refs are not just housekeeping. Refs such as `actions/checkout@v6`, `pypa/gh-action-pypi-publish@release/v1`, `ruby/setup-ruby@v1`, or `rubygems/release-gem@v1` allow the executed release code to change without a repository diff. Pin external actions to reviewed full 40-character SHAs, keep readable comments for maintainers, and run a policy check that rejects non-SHA `uses:` entries before approving release.
 
 ### 7. Security Testing Review
 

@@ -9,6 +9,7 @@ What is being released?
 - [ ] Requirements satisfied or exceptions approved
 - [ ] QA evidence reviewed
 - [ ] Security/privacy review complete
+- [ ] CI/release workflow action refs pinned to immutable commit SHAs where release integrity matters
 - [ ] CSAF/VEX advisory ingestion/publication applicability checked where relevant
 - [ ] Relevant vendor/dependency advisories reviewed for release impact where applicable
 - [ ] Release security gate complete where required
