@@ -7,19 +7,20 @@ This document defines the baseline process for developing software products. It 
 Every project should move deliberately from idea to operation:
 
 1. Frame the product opportunity.
-2. Define requirements.
-3. Design the user experience.
-4. Design security and privacy.
-5. Define compliance readiness where enterprise, regulated, or customer-required.
-6. Plan user, admin, operator, and developer documentation.
-7. Design SEO/discovery for web products.
-8. Design the technical architecture, including observability and debuggability.
-9. Plan implementation.
-10. Build the product and documentation.
-11. Verify quality, including documentation and SEO quality.
-12. Pass release, documentation, SEO, and security gates.
-13. Launch deliberately.
-14. Operate and improve it.
+2. Assess the competitive and alternative landscape before significant build work.
+3. Define requirements.
+4. Design the user experience.
+5. Design security and privacy.
+6. Define compliance readiness where enterprise, regulated, or customer-required.
+7. Plan user, admin, operator, and developer documentation.
+8. Design SEO/discovery for web products.
+9. Design the technical architecture, including observability and debuggability.
+10. Plan implementation.
+11. Build the product and documentation.
+12. Verify quality, including documentation and SEO quality.
+13. Pass release, documentation, SEO, and security gates.
+14. Launch deliberately.
+15. Operate and improve it.
 
 The process is modular. Small projects can use lightweight versions. Larger, riskier, public, customer-facing, enterprise-targeted, regulated, security-sensitive, or multi-role projects should use the full process.
 
@@ -56,6 +57,7 @@ Key outputs:
 - problem statement
 - target users and affected roles
 - opportunity statement
+- current alternatives and competitive/comparable landscape
 - assumptions and risks
 - initial success criteria
 - explicit non-goals
@@ -67,6 +69,13 @@ Security checkpoint:
 - For consumer, family, creator, life-admin, personal archive, AI-memory, finance, crypto, or personal-data products, decide whether Digital Estate Management applies.
 
 Guidance: [`PRODUCT_FRAMING_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/PRODUCT_FRAMING_GUIDANCE.md)
+
+Competitive landscape checkpoint:
+
+- Before significant implementation, identify the current alternatives users already have, including direct competitors, comparable products, manual workarounds, open-source options, incumbent tools, search/discovery substitutes, and the option of doing nothing.
+- Capture where each alternative wins, where it fails, switching/adoption constraints, pricing or operational implications where known, trust/security/compliance posture where relevant, and the product's intended differentiation.
+- If the landscape is unknown, treat that as a product risk and either research it before building or record an explicit human-approved exception for exploratory/prototype work.
+- Do not build substantial product surface area on an untested assumption that “nothing like this exists.” This is how software becomes archaeology with invoices.
 
 ### 2. Product Requirements
 
@@ -369,6 +378,7 @@ Guidance: [`OPERATIONS_GUIDANCE.md`](https://github.com/RusDavies/docs-software-
 A product or major feature is ready for implementation when:
 
 - the problem and users are defined
+- the competitive/alternative landscape is assessed or an explicit exception is approved
 - requirements and acceptance criteria exist
 - UX direction is approved at the right level
 - security and privacy risks are identified
@@ -407,17 +417,18 @@ Suggested minimum:
 
 1. Problem statement
 2. Target users/roles
-3. Top requirements
-4. Top workflows
-5. Basic UX sketch
-6. Security/privacy notes
-7. Compliance readiness notes if enterprise-targeted or customer-required
-8. Documentation notes for users/operators
-9. SEO/discovery notes for web projects
-10. Architecture sketch
-11. Build checklist
-12. Minimal QA/security/documentation/SEO checks
-13. Launch/rollback note
-14. Post-launch notes after first use
+3. Current alternatives / competitive notes, or an explicit prototype exception
+4. Top requirements
+5. Top workflows
+6. Basic UX sketch
+7. Security/privacy notes
+8. Compliance readiness notes if enterprise-targeted or customer-required
+9. Documentation notes for users/operators
+10. SEO/discovery notes for web projects
+11. Architecture sketch
+12. Build checklist
+13. Minimal QA/security/documentation/SEO checks
+14. Launch/rollback note
+15. Post-launch notes after first use
 
 Lightweight does not mean thought-free. It means appropriately brief.

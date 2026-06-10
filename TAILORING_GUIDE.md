@@ -297,6 +297,7 @@ Recommended documents:
 | Artifact / Check | Class 0 | Class 1 | Class 2 | Class 3 | Class 4 | Class 4E | Class 5 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Problem statement | Disposable statement | Required | Required | Required | Required | Required | Required |
+| Competitive / alternative landscape | Optional | Light | Required before significant build | Required before significant build | Required before significant build | Required before significant build | Required before significant build |
 | Requirements / acceptance criteria | Optional | Light | Required | Required | Required | Required | Required |
 | UX/workflow notes | Optional | If UI | If UI | Required if user-facing | Required | Required | Required |
 | Accessibility expectations | Optional | Basic if UI | Basic if UI | Required if UI | Required if UI | Required if UI | Required if UI |
