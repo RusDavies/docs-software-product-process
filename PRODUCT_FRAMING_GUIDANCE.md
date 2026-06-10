@@ -23,9 +23,10 @@ At minimum, capture:
 3. Current pain or opportunity
 4. Desired outcome
 5. Success criteria
-6. Known risks and assumptions
-7. Security/privacy/abuse notes
-8. Explicit non-goals
+6. Competitive/comparable landscape and current alternatives
+7. Known risks and assumptions
+8. Security/privacy/abuse notes
+9. Explicit non-goals
 
 ## Full Product Framing Checklist
 
@@ -88,9 +89,26 @@ Capture:
 - current tools
 - manual workarounds
 - competitor/comparable products
+- open-source, hosted, consultant/service, spreadsheet, workflow, or “do nothing” alternatives
 - search/discovery alternatives for web projects
+- where alternatives win and fail
+- switching, migration, procurement, trust, security, compliance, or cost constraints
+- intended differentiation and why it matters
 - known frustrations
 - migration or adoption constraints
+
+For any significant product or major feature, this is a pre-build gate, not a trivia exercise. If the team does not understand the competitive and alternative landscape, either research it before building or record a deliberate prototype/research exception approved by the product owner.
+
+Useful questions:
+
+- What do users use today, including ugly-but-working manual processes?
+- Which direct competitors, adjacent products, open-source projects, and incumbent platforms solve part of this problem?
+- Why would someone switch?
+- Why might they refuse to switch?
+- What do alternatives do better than our proposed approach?
+- What security, privacy, compliance, trust, pricing, or operational claims do alternatives make?
+- What must we avoid copying because it is weak, confusing, risky, or ethically dubious?
+- What evidence do we have beyond wishful thinking in a novelty hat?
 
 ### 5. Security, Privacy, and Abuse Framing
 
@@ -170,6 +188,7 @@ A project is framing-ready when:
 
 - the problem is clear
 - users and stakeholders are named
+- current alternatives and competitive/comparable products have been assessed, or an explicit research/prototype exception is recorded
 - success criteria exist
 - major risks and assumptions are known
 - security/privacy/abuse concerns are visible
