@@ -10,14 +10,16 @@
 - [x] Broaden CSAF/VEX advisory readiness to cover inbound vendor/dependency advisory ingestion, triage, affected-product mapping, VEX/not-affected decisions, and release/customer-notice triggers.
 - [x] Add observability/debuggability guidance so operators and incident teams can understand system health, reconstruct failures, preserve evidence, and debug safely.
 - [x] Add release workflow action SHA-pinning as a supply-chain good practice for package-publication and trusted-publishing workflows.
+- [x] Add canonical Project Knowledge Architecture / LLM wiki guidance as part of the agent-operable project environment, including tracked wiki/source manifests, ignored cache/raw-bulk rules, provenance and review expectations, and spec/verifier/environment mapping for agent-heavy work.
 
 ## Open
 
 - [ ] Apply the new Digital Estate Management applicability assessment to existing non-corporate/end-user projects and update their project-specific requirements/backlogs where it applies.
-- [ ] Add Project Knowledge Architecture / LLM wiki guidance as part of the agent-operable project environment, including tracked wiki/source manifests, ignored cache/raw-bulk rules, provenance and review expectations, and spec/verifier/environment mapping for agent-heavy work.
+- [ ] Add starter templates for project knowledge architecture, including `docs/knowledge/README.md`, `sources.yml`, and a project knowledge lint checklist.
+- [ ] Wire Project Knowledge Guidance into lifecycle, tailoring, AI-agent operation, implementation planning, QA, documentation, and governance guidance.
 
 ## Burndown
 
-- Done: 8
-- Open: 2
-- Total: 10
+- Done: 9
+- Open: 3
+- Total: 12

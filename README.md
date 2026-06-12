@@ -15,6 +15,7 @@ Start here instead of reading everything like a doomed compliance intern:
 7. Use [`OBSERVABILITY_DEBUGGABILITY_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/OBSERVABILITY_DEBUGGABILITY_GUIDANCE.md) when operators, support staff, or incident teams need to understand failures and product health.
 8. Use [`PRODUCT_OPERATIONAL_ESTATE_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/PRODUCT_OPERATIONAL_ESTATE_GUIDANCE.md) and [`AI_AGENT_OPERATION_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/AI_AGENT_OPERATION_GUIDANCE.md) when the product needs a clear operating footprint or may be operated with approved AI-agent assistance.
 9. Use [`DIGITAL_ESTATE_MANAGEMENT_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/DIGITAL_ESTATE_MANAGEMENT_GUIDANCE.md) when a product has non-corporate end users whose digital assets, accounts, memories, identity, access paths, or death/incapacity instructions may matter.
+10. Use [`PROJECT_KNOWLEDGE_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/PROJECT_KNOWLEDGE_GUIDANCE.md) when durable project context, source-grounded research, decision maps, or agent-operable environment knowledge needs to be reviewed and maintained.
 
 ## Quick Start by Project Size
 
@@ -107,6 +108,7 @@ Add:
 - [`IMPLEMENTATION_PLANNING_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/IMPLEMENTATION_PLANNING_GUIDANCE.md) — milestones, backlog breakdown, and delivery planning
 - [`PRODUCT_OPERATIONAL_ESTATE_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/PRODUCT_OPERATIONAL_ESTATE_GUIDANCE.md) — product/operator estate: domains, accounts, environments, credentials, dependencies, renewals, ownership, and decommissioning
 - [`AI_AGENT_OPERATION_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/AI_AGENT_OPERATION_GUIDANCE.md) — safe, auditable, least-privilege operation by approved AI agents
+- [`PROJECT_KNOWLEDGE_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/PROJECT_KNOWLEDGE_GUIDANCE.md) — source-grounded project knowledge bases, LLM wiki-style context, version-control rules, and agent-operable environment knowledge
 
 ### Build, Verify, Release, Operate
 
@@ -171,6 +173,7 @@ Some topics appear in multiple documents because they matter in multiple phases.
 - Product operational estate ownership and renewal source of truth: [`PRODUCT_OPERATIONAL_ESTATE_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/PRODUCT_OPERATIONAL_ESTATE_GUIDANCE.md)
 - User-facing Digital Estate Management source of truth: [`DIGITAL_ESTATE_MANAGEMENT_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/DIGITAL_ESTATE_MANAGEMENT_GUIDANCE.md)
 - AI-agent operational boundary source of truth: [`AI_AGENT_OPERATION_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/AI_AGENT_OPERATION_GUIDANCE.md)
+- Project knowledge architecture source of truth: [`PROJECT_KNOWLEDGE_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/PROJECT_KNOWLEDGE_GUIDANCE.md)
 - Overall lifecycle source of truth: [`SOFTWARE_PRODUCT_DEVELOPMENT_PROCESS.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/SOFTWARE_PRODUCT_DEVELOPMENT_PROCESS.md)
 - Project-class/tailoring source of truth: [`TAILORING_GUIDE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/TAILORING_GUIDE.md)
 - Approval and agent-boundary source of truth: [`GOVERNANCE_AND_APPROVALS.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/GOVERNANCE_AND_APPROVALS.md)
