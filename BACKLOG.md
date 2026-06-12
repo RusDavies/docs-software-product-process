@@ -14,9 +14,10 @@
 ## Open
 
 - [ ] Apply the new Digital Estate Management applicability assessment to existing non-corporate/end-user projects and update their project-specific requirements/backlogs where it applies.
+- [ ] Add Project Knowledge Architecture / LLM wiki guidance as part of the agent-operable project environment, including tracked wiki/source manifests, ignored cache/raw-bulk rules, provenance and review expectations, and spec/verifier/environment mapping for agent-heavy work.
 
 ## Burndown
 
 - Done: 8
-- Open: 1
-- Total: 9
+- Open: 2
+- Total: 10
