@@ -12,13 +12,13 @@ Every project should move deliberately from idea to operation:
 4. Design the user experience.
 5. Design security and privacy.
 6. Define compliance readiness where enterprise, regulated, or customer-required.
-7. Plan user, admin, operator, and developer documentation.
+7. Plan user, admin, operator, developer, and project-knowledge documentation.
 8. Design SEO/discovery for web products.
 9. Design the technical architecture, including observability and debuggability.
 10. Plan implementation.
 11. Build the product and documentation.
-12. Verify quality, including documentation and SEO quality.
-13. Pass release, documentation, SEO, and security gates.
+12. Verify quality, including documentation, project knowledge, and SEO quality.
+13. Pass release, documentation, project knowledge, SEO, and security gates.
 14. Launch deliberately.
 15. Operate and improve it.
 
@@ -41,6 +41,7 @@ Important baseline principles include:
 - product operational estate stewardship
 - Digital Estate Management assessment for non-corporate/end-user products
 - AI-operable by design unless explicitly throw-away or product-owner exempted
+- source-grounded project knowledge for durable, agent-operable context where the project needs it
 - observability and debuggability from the start
 - reproducibility and portability
 - resilient failure modes
@@ -182,12 +183,13 @@ Key outputs:
 - documentation acceptance criteria
 - documentation owner and maintenance plan
 - documentation QA plan
+- project knowledge structure, source/provenance rules, and maintenance expectations where durable context or agent-heavy work matters
 
 Security checkpoint:
 
-- Security, privacy, safety, and compliance claims in documentation must be accurate and approved before release.
+- Security, privacy, safety, compliance, and project-knowledge claims must be accurate, source-grounded, and approved before release where they affect trust, operation, or risk.
 
-Guidance: [`DOCUMENTATION_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/DOCUMENTATION_GUIDANCE.md)
+Guidance: [`DOCUMENTATION_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/DOCUMENTATION_GUIDANCE.md), [`PROJECT_KNOWLEDGE_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/PROJECT_KNOWLEDGE_GUIDANCE.md)
 
 ### 7. SEO / Discovery Design, Where Applicable
 
@@ -230,13 +232,14 @@ Key outputs:
 - dependency/service map
 - environment and deployment inventory
 - privileged access model for humans and approved agents
+- agent-operable project knowledge and source context model where applicable
 - failure/recovery model
 
 Security checkpoint:
 
-- Architecture must show authentication, authorization, network boundaries, ingress/egress, secrets, data flows, audit points, privileged operations, product operational estate ownership, and any AI-agent operational interfaces or autonomy boundaries.
+- Architecture must show authentication, authorization, network boundaries, ingress/egress, secrets, data flows, audit points, privileged operations, product operational estate ownership, project knowledge/source boundaries where applicable, and any AI-agent operational interfaces or autonomy boundaries.
 
-Guidance: [`ARCHITECTURE_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/ARCHITECTURE_GUIDANCE.md), [`OBSERVABILITY_DEBUGGABILITY_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/OBSERVABILITY_DEBUGGABILITY_GUIDANCE.md)
+Guidance: [`ARCHITECTURE_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/ARCHITECTURE_GUIDANCE.md), [`OBSERVABILITY_DEBUGGABILITY_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/OBSERVABILITY_DEBUGGABILITY_GUIDANCE.md), [`PROJECT_KNOWLEDGE_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/PROJECT_KNOWLEDGE_GUIDANCE.md)
 
 ### 9. Implementation Planning
 
@@ -248,16 +251,18 @@ Key outputs:
 - backlog breakdown
 - sequencing and dependencies
 - test strategy
+- spec / verifier / environment assumptions for agent-heavy work
 - observability/debuggability implementation tasks
+- project knowledge tasks where durable source-grounded context is needed
 - release strategy
 - staffing/ownership assumptions
 - risk register
 
 Security checkpoint:
 
-- Security and operational tasks must appear in the normal backlog, not a haunted appendix.
+- Security, operational, and project-knowledge tasks must appear in the normal backlog, not a haunted appendix.
 
-Guidance: [`IMPLEMENTATION_PLANNING_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/IMPLEMENTATION_PLANNING_GUIDANCE.md)
+Guidance: [`IMPLEMENTATION_PLANNING_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/IMPLEMENTATION_PLANNING_GUIDANCE.md), [`PROJECT_KNOWLEDGE_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/PROJECT_KNOWLEDGE_GUIDANCE.md)
 
 ### 10. Build / Implementation
 
@@ -294,6 +299,7 @@ Key outputs:
 - performance checks where relevant
 - security test results
 - documentation QA results
+- project knowledge lint/review results where a knowledge base exists
 - SEO QA results for web projects
 - known issues and accepted risks
 
@@ -385,6 +391,7 @@ A product or major feature is ready for implementation when:
 - architecture is plausible and reviewed
 - implementation work is broken down
 - documentation needs and owners are identified
+- project knowledge needs and source/provenance expectations are identified where durable context or agent-heavy work matters
 - SEO/discovery needs are identified for web projects
 - required human approvals are recorded
 - major unknowns are either resolved or explicitly tracked
@@ -397,6 +404,7 @@ A product or major feature is ready for release when:
 - quality gates have passed or exceptions are approved
 - security review is complete
 - required documentation exists and has passed documentation QA or approved exceptions
+- required project knowledge exists, is source-grounded, and has passed knowledge lint/review or approved exceptions where applicable
 - web SEO checks have passed or exceptions are approved where applicable
 - operational monitoring exists
 - product operational estate inventory is complete enough for operation
@@ -424,11 +432,12 @@ Suggested minimum:
 7. Security/privacy notes
 8. Compliance readiness notes if enterprise-targeted or customer-required
 9. Documentation notes for users/operators
-10. SEO/discovery notes for web projects
-11. Architecture sketch
-12. Build checklist
-13. Minimal QA/security/documentation/SEO checks
-14. Launch/rollback note
-15. Post-launch notes after first use
+10. Project knowledge notes if durable context or agent-heavy work matters
+11. SEO/discovery notes for web projects
+12. Architecture sketch
+13. Build checklist
+14. Minimal QA/security/documentation/project-knowledge/SEO checks
+15. Launch/rollback note
+16. Post-launch notes after first use
 
 Lightweight does not mean thought-free. It means appropriately brief.

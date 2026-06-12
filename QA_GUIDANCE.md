@@ -14,6 +14,7 @@ Every project should verify:
 - data behavior
 - performance where relevant
 - operational readiness
+- project knowledge accuracy and source grounding where a knowledge base exists
 
 ## Minimum Expectations
 
@@ -25,7 +26,8 @@ At minimum, capture:
 4. UX/accessibility verification
 5. Regression checks
 6. Known issues
-7. Approval or accepted-risk note
+7. Project knowledge lint/review where applicable
+8. Approval or accepted-risk note
 
 ## Full QA Checklist
 
@@ -142,7 +144,22 @@ Verify:
 
 Guidance: [`DOCUMENTATION_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/DOCUMENTATION_GUIDANCE.md)
 
-### 10. SEO QA, Where Applicable
+### 10. Project Knowledge QA, Where Applicable
+
+For projects with a `docs/knowledge/` base or equivalent LLM wiki-style context, verify:
+
+- important claims link to sources or approved project artifacts
+- generated summaries are marked draft or reviewed
+- source manifest entries are sufficient to find the source again
+- project knowledge does not contradict requirements, architecture, runbooks, decisions, or backlog items
+- project knowledge does not replace approved specs, risk acceptances, release approvals, or QA evidence
+- raw sources, caches, generated indexes, embeddings, and temporary outputs follow version-control and ignore rules
+- secrets, sensitive data, and copyrighted external sources have not been committed improperly
+- knowledge gaps or stale context risks are added to the backlog
+
+Guidance: [`PROJECT_KNOWLEDGE_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/PROJECT_KNOWLEDGE_GUIDANCE.md)
+
+### 11. SEO QA, Where Applicable
 
 For public web projects, verify:
 
@@ -168,8 +185,9 @@ For small projects:
 4. Accessibility basics
 5. Operational smoke checks
 6. Documentation smoke check
-7. SEO smoke check for public web projects
-8. Known issues list
+7. Project knowledge smoke check where a knowledge base exists
+8. SEO smoke check for public web projects
+9. Known issues list
 
 ## Recommended Project Files
 
@@ -179,6 +197,7 @@ For small projects:
 - `docs/qa/accessibility-checks.md`
 - `docs/qa/release-qa-report.md`
 - `docs/documentation/documentation-qa-checklist.md`
+- `docs/knowledge/project-knowledge-lint-checklist.md`
 - `docs/seo/launch-seo-checklist.md`
 
 ## Definition of QA-Ready
@@ -188,6 +207,7 @@ QA is ready when:
 - acceptance criteria exist
 - test data/environment exists
 - security/UX/operations/documentation/SEO checks are known
+- project knowledge checks are known where a knowledge base exists
 - risks and edge cases are identified
 
 ## Definition of QA-Done
@@ -196,6 +216,7 @@ QA is done when:
 
 - required checks pass or exceptions are approved
 - required documentation has been checked or exceptions are approved
+- project knowledge has been checked or exceptions are approved where applicable
 - SEO checks have passed or exceptions are approved where applicable
 - known issues are documented
 - release blockers are resolved

@@ -19,6 +19,7 @@ Products designed for AI-agent operation should define:
 - safe rollback/undo paths
 - sensitive-data exposure limits
 - runbooks and interfaces designed for agent use
+- durable project knowledge and source context designed for agent use
 
 The goal is not to let agents “do everything”. The goal is to make routine operation legible, bounded, auditable, and safe enough that agents can help without bypassing human judgment.
 
@@ -52,6 +53,7 @@ At minimum, capture:
 7. Audit logging expectations
 8. Rollback/undo expectations
 9. Sensitive-data handling boundaries
+10. Project knowledge/source-context boundaries where durable agent context is used
 
 ## Full AI-Agent Operation Checklist
 
@@ -152,7 +154,24 @@ Design operational surfaces to be usable by humans and agents:
 - runbooks with prerequisites, commands, expected outputs, rollback, and escalation
 - clear separation between inspect, plan, approve, execute, and verify
 
-### 9. Security and Privacy Boundaries
+### 9. Project Knowledge Environment
+
+For agent-heavy projects, define the source-grounded knowledge environment agents may use.
+
+Capture:
+
+- project knowledge location, such as `docs/knowledge/`
+- source manifest and provenance expectations
+- which knowledge artifacts are approved context versus draft generated summaries
+- version-control and ignore rules for wiki pages, raw sources, caches, indexes, and embeddings
+- how agents should update knowledge when they discover missing requirements, decisions, risks, or backlog items
+- knowledge lint/review expectations before release, handoff, or major agent work
+
+Project knowledge is part of the agent environment. It informs work but does not replace approved specs, decision records, risk acceptances, release approvals, or QA evidence.
+
+Guidance: [`PROJECT_KNOWLEDGE_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/PROJECT_KNOWLEDGE_GUIDANCE.md)
+
+### 10. Security and Privacy Boundaries
 
 Capture:
 
@@ -174,9 +193,12 @@ For small projects:
 4. Mark actions needing human approval
 5. Document the log/evidence path
 6. Document rollback or “do not automate” where rollback is weak
+7. Note any durable project knowledge or source context agents may rely on
 
 ## Recommended Project Files
 
+- `docs/knowledge/README.md`
+- `docs/knowledge/sources.yml`
 - `docs/operations/agent-operation-boundaries.md`
 - `docs/architecture/agent-operation.md`
 - `docs/operations/runbook.md`
@@ -188,6 +210,7 @@ For small projects:
 A product is agent-operation-ready when:
 
 - approved agent roles and boundaries are documented
+- project knowledge/source-context boundaries are documented where durable agent context exists
 - read-only inspection paths are available
 - write-capable actions are least-privilege and approval-gated where risky
 - audit logs can distinguish agent actions
@@ -199,6 +222,7 @@ A product is agent-operation-ready when:
 For a release, agent-operation work is done when:
 
 - runbooks and operational interfaces match the documented boundaries
+- project knowledge and source manifests are current enough for the release or known gaps are tracked
 - credentials/tool scopes are configured as documented
 - approval and audit paths have been tested or directly inspected
 - any unsafe or unresolved agent-operation gaps are tracked in the backlog

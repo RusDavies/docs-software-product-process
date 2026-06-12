@@ -11,6 +11,7 @@ Tailoring answers:
 - which target profile applies
 - who must approve the work
 - what evidence should be kept
+- whether durable project knowledge architecture is needed
 - where agents can proceed autonomously
 - when lightweight guidance is enough
 
@@ -45,6 +46,7 @@ Required:
 Excluded by default:
 
 - product operational estate management
+- project knowledge architecture
 - AI-agent operation design
 - operations runbook
 - post-launch review
@@ -86,6 +88,7 @@ Recommended:
 - [`README.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/README.md)
 - lightweight sections from relevant guidance docs
 - small backlog or TODO list if follow-up exists
+- lightweight project knowledge note if context will be reused by humans or agents
 
 Usually optional:
 
@@ -109,6 +112,7 @@ Required:
 - lightweight UX/workflow notes where a UI exists
 - security/privacy notes
 - lightweight architecture/deployment notes
+- lightweight project knowledge/source note if the work is ongoing, research-heavy, or agent-assisted
 - implementation checklist
 - basic QA evidence
 - rollback/disable note
@@ -122,6 +126,7 @@ Recommended documents:
 - [`IMPLEMENTATION_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/IMPLEMENTATION_GUIDANCE.md)
 - [`QA_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/QA_GUIDANCE.md)
 - [`AI_AGENT_OPERATION_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/AI_AGENT_OPERATION_GUIDANCE.md)
+- [`PROJECT_KNOWLEDGE_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/PROJECT_KNOWLEDGE_GUIDANCE.md) when durable project context or source provenance matters
 - relevant templates from `templates/`
 
 Approval:
@@ -144,6 +149,7 @@ Required:
 - release checklist
 - operations runbook
 - AI-agent operation boundaries
+- project knowledge structure where the project is long-running, research-heavy, or agent-assisted
 - user/admin/operator documentation as applicable
 - SEO/discovery plan for public web projects
 - decision records for major tradeoffs
@@ -175,6 +181,7 @@ Required:
 - monitoring and incident path
 - operations runbook
 - AI-agent operation boundaries
+- project knowledge architecture where durable context, source provenance, or agent-heavy work matters
 - accepted-risk record where needed
 - post-launch review
 
@@ -306,6 +313,7 @@ Recommended documents:
 | Architecture notes | Optional | Light | Required | Required | Required | Required | Required |
 | Product operational estate management | Excluded unless classification breaks | If maintained/deployable | Required unless exempted | Required | Required | Required | Required |
 | Digital Estate Management | Excluded unless classification breaks | Assess if non-corporate/end-user assets exist | Assess; implement if applicable | Assess; implement if applicable | Assess; implement if applicable | Assess; implement if applicable | Required if personal/family/creator/life-admin assets or death/incapacity workflows exist |
+| Project knowledge architecture | Optional | If durable context is reused | If ongoing/research-heavy/agent-assisted | Required when long-running/research-heavy/agent-assisted | Required when durable context/source provenance matters | Required when source provenance/customer evidence matters | Required when evidence, provenance, or high-risk agent context matters |
 | Implementation plan | Optional | Optional | Light | Required | Required | Required | Required |
 | QA evidence | Smoke test | Smoke test | Required | Required | Required | Required | Required |
 | Release security gate | Optional | Optional | If shared/risky | Required before release | Required | Required | Required |
@@ -368,6 +376,7 @@ Class 2 evidence should include:
 - requirements or TODO completion notes
 - test/smoke-test output
 - user/admin/operator notes where shared or operated
+- project knowledge/source notes where durable context is reused
 - known limitations
 - rollback/disable note
 
@@ -375,6 +384,7 @@ Class 3 evidence should include:
 
 - requirements and acceptance criteria
 - architecture/security/privacy notes
+- project knowledge structure and source manifest where applicable
 - documentation plan and documentation QA results
 - SEO plan and launch SEO QA results for public web projects
 - QA results
@@ -385,6 +395,7 @@ Class 4 evidence should include:
 
 - all Class 3 evidence
 - release security gate result
+- project knowledge lint/review result where a knowledge base exists
 - accepted-risk record if anything material remains
 - monitoring/incident readiness
 - rollback validation or clear rollback procedure

@@ -12,6 +12,7 @@ This guidance covers documentation for:
 - support teams
 - developers/integrators
 - enterprise buyers and security reviewers, where relevant
+- maintainers and approved agents that need durable project knowledge
 
 It makes user and operator documentation explicit release artifacts, not optional debris generated after everyone is tired.
 
@@ -27,7 +28,8 @@ At minimum, define:
 6. Security/privacy/safety notes users need to know
 7. Release notes or change summary
 8. Documentation owner and maintenance path
-9. Documentation QA/sign-off before release
+9. Project knowledge structure and provenance rules where durable context matters
+10. Documentation QA/sign-off before release
 
 ## Full Documentation Checklist
 
@@ -172,7 +174,21 @@ Before release, verify:
 
 Docs that confidently explain the wrong product are worse than no docs. At least no docs are honest about being useless.
 
-### 10. Maintenance
+### 10. Project Knowledge Documentation
+
+For projects with durable context, research, decision history, or agent-heavy work, document:
+
+- knowledge base location
+- source manifest and provenance rules
+- glossary and terminology expectations
+- version-control and ignore rules for wiki pages, raw sources, caches, indexes, and embeddings
+- sensitive-data and copyright boundaries
+- review/lint cadence
+- relationship between project knowledge, specs, decision records, runbooks, QA evidence, and backlog items
+
+Project knowledge documentation should align with [`PROJECT_KNOWLEDGE_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/PROJECT_KNOWLEDGE_GUIDANCE.md).
+
+### 11. Maintenance
 
 Define:
 
@@ -193,7 +209,8 @@ For small projects:
 4. common troubleshooting
 5. security/privacy caveats where relevant
 6. operator/run notes if anyone other than the author will run it
-7. release/change note if shared
+7. project knowledge note if durable context or agent-heavy work matters
+8. release/change note if shared
 
 ## Recommended Project Files
 
@@ -204,6 +221,9 @@ For small projects:
 - `docs/admin/configuration.md`
 - `docs/operations/runbook.md`
 - `docs/developer/api-or-integration-guide.md`
+- `docs/knowledge/README.md`
+- `docs/knowledge/sources.yml`
+- `docs/knowledge/project-knowledge-lint-checklist.md`
 - `docs/release/release-notes.md`
 - `docs/documentation/documentation-plan.md`
 - `docs/documentation/documentation-qa-checklist.md`
@@ -216,6 +236,7 @@ Documentation is ready for implementation/release planning when:
 - required docs are listed
 - documentation owners are assigned
 - documentation acceptance criteria exist
+- project knowledge ownership and provenance expectations are identified where durable context matters
 - security/privacy/compliance claims needing approval are identified
 
 ## Definition of Documentation-Done
@@ -225,6 +246,7 @@ Documentation is done when:
 - required user/admin/operator docs exist
 - setup/configuration/troubleshooting instructions have been checked
 - release notes are prepared where needed
+- project knowledge docs exist and are source-grounded where required
 - documentation QA has passed or exceptions are approved
 - known documentation gaps are in the backlog
 - docs match the product closely enough that support does not need to perform interpretive dance

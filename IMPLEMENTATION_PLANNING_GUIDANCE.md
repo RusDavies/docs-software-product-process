@@ -25,7 +25,9 @@ At minimum, capture:
 4. Test/verification plan
 5. Security and operational tasks
 6. Release plan
-7. Known risks/blockers
+7. Spec / verifier / environment assumptions for agent-heavy work
+8. Project knowledge tasks where durable context is needed
+9. Known risks/blockers
 
 ## Full Planning Checklist
 
@@ -54,6 +56,7 @@ Each backlog item should include:
 - UX impact
 - test expectations
 - documentation impact
+- project knowledge impact where durable context, provenance, or agent environment changes
 
 ### 3. Sequencing
 
@@ -108,7 +111,19 @@ Capture:
 - performance checks
 - manual review gates
 
-### 7. Release Strategy
+### 7. Spec / Verifier / Environment Planning
+
+For agent-heavy work, make the working model explicit:
+
+- **Spec:** goal, acceptance criteria, constraints, approved decisions, risks, and non-goals
+- **Verifier:** tests, QA checks, review gates, security checks, knowledge linting, and approval evidence
+- **Environment:** repository structure, tools, runbooks, agent instructions, project knowledge base, and allowed operations
+
+Do not let generated project knowledge become the spec. Link it to approved requirements, decision records, risks, and backlog items.
+
+Guidance: [`PROJECT_KNOWLEDGE_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/PROJECT_KNOWLEDGE_GUIDANCE.md)
+
+### 8. Release Strategy
 
 Capture:
 
@@ -120,7 +135,7 @@ Capture:
 - launch communication
 - support expectations
 
-### 8. Risk Register
+### 9. Risk Register
 
 Track:
 
@@ -140,11 +155,15 @@ For small projects:
 2. Prioritized backlog
 3. Verification checklist
 4. Security/operations tasks
-5. Release note
+5. Spec/verifier/environment note for agent-heavy work
+6. Project knowledge note if durable context matters
+7. Release note
 
 ## Recommended Project Files
 
 - [`BACKLOG.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/BACKLOG.md) or an equivalent project-specific TODO file
+- `docs/knowledge/README.md`
+- `docs/knowledge/sources.yml`
 - `docs/planning/milestones.md`
 - `docs/planning/risk-register.md`
 - `docs/planning/test-strategy.md`
@@ -158,6 +177,8 @@ Planning is ready when:
 - sequencing is sensible
 - security, observability/debuggability, and operations are represented
 - verification is planned
+- spec/verifier/environment assumptions are explicit where agent-heavy work is expected
+- project knowledge work is represented where durable context or source provenance matters
 - risks and blockers are visible
 
 ## Definition of Planning-Done

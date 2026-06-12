@@ -13,6 +13,7 @@ It defines:
 - approval checkpoints
 - accepted-risk rules
 - evidence expectations
+- project knowledge and generated-summary boundaries
 - decision records
 
 ## Governance Principles
@@ -47,6 +48,7 @@ Agents may generally do the following without additional approval when scoped to
 
 - read and summarize project files
 - create or improve internal documentation
+- create or improve project knowledge and source manifests
 - propose backlog items
 - implement approved backlog items
 - run tests, linters, builds, and local inspections
@@ -145,6 +147,20 @@ Evidence:
 - owner/approver
 - expiry/review date where appropriate
 
+### Project Knowledge and Generated Summaries
+
+Project knowledge, LLM wiki pages, and generated summaries may support decisions, but they do not approve decisions by existing.
+
+Rules:
+
+- generated summaries are drafts until reviewed
+- project knowledge should link to approved specs, decision records, risks, release approvals, and QA evidence instead of replacing them
+- source manifests and provenance notes are evidence aids, not automatic truth
+- human review is required before project knowledge is used as the basis for risk acceptance, release approval, compliance claims, or public/customer-facing claims
+- agents should add missing requirements, risks, decisions, or backlog items to the authoritative artifact rather than leaving them only in the knowledge base
+
+Guidance: [`PROJECT_KNOWLEDGE_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/PROJECT_KNOWLEDGE_GUIDANCE.md)
+
 ## Approval Format
 
 Approvals may be lightweight, but they must be visible and durable.
@@ -192,6 +208,7 @@ Recommended locations:
 - `docs/qa/`
 - `docs/release/`
 - `docs/operations/`
+- `docs/knowledge/`
 
 At minimum, record:
 
@@ -201,6 +218,7 @@ At minimum, record:
 - what risks remain
 - who approved high-risk decisions
 - what follow-up exists
+- which source material or project knowledge informed the change where relevant
 
 ## Backlog Governance
 
@@ -235,6 +253,7 @@ A project is governance-ready when:
 - human-owned decisions are identified
 - approval checkpoints are known
 - evidence locations are chosen
+- project knowledge boundaries are clear where generated or curated knowledge informs work
 - agent autonomy boundaries are clear
 
 ## Definition of Governance-Done
@@ -245,4 +264,5 @@ Governance is done when:
 - accepted risks are explicit
 - release/operation decisions have evidence
 - follow-up items are in the backlog
+- project knowledge has not been mistaken for approval, risk acceptance, or release evidence without review
 - agents and humans can tell who owns what without consulting a séance
