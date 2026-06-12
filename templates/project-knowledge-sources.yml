@@ -1,0 +1,24 @@
+# Project knowledge source manifest.
+# Keep this file reviewed and source-grounded. Do not paste secrets or unnecessary private data here.
+
+sources:
+  - id: SRC-001
+    title:
+    type: requirement | decision | research | interview | documentation | code | runbook | ticket | external-web | transcript | other
+    owner_or_publisher:
+    location:
+    access_date:
+    license_or_usage_constraint:
+    sensitivity: public | internal | confidential | restricted
+    storage_decision: link-only | tracked-summary | tracked-raw | external-only
+    raw_location:
+    reviewed_by:
+    reviewed_date:
+    review_status: draft | reviewed | stale | retired
+    related_artifacts:
+      requirements: []
+      decisions: []
+      risks: []
+      backlog_items: []
+      runbooks: []
+    notes:
