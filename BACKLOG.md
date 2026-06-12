@@ -13,13 +13,17 @@
 - [x] Add canonical Project Knowledge Architecture / LLM wiki guidance as part of the agent-operable project environment, including tracked wiki/source manifests, ignored cache/raw-bulk rules, provenance and review expectations, and spec/verifier/environment mapping for agent-heavy work.
 - [x] Add starter templates for project knowledge architecture, including `docs/knowledge/README.md`, `sources.yml`, and a project knowledge lint checklist.
 - [x] Wire Project Knowledge Guidance into lifecycle, tailoring, AI-agent operation, implementation planning, QA, documentation, and governance guidance.
+- [x] Apply the new Digital Estate Management applicability assessment to existing non-corporate/end-user projects and update their project-specific requirements/backlogs where it applies.
+  - Updated `projects/digital-asset-management-inventory` with an applies-if-reopened assessment and requirements/security backlog.
+  - Updated `projects/www-dam-certificate-xxx` with certification-content versus website-feature scope boundaries.
+  - Updated `projects/digital-estate-question-bank` with content/provenance applicability and assessment-delivery limits.
 
 ## Open
 
-- [ ] Apply the new Digital Estate Management applicability assessment to existing non-corporate/end-user projects and update their project-specific requirements/backlogs where it applies.
+None.
 
 ## Burndown
 
-- Done: 11
-- Open: 1
+- Done: 12
+- Open: 0
 - Total: 12
