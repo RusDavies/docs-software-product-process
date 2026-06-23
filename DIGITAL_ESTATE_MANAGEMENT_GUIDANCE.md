@@ -94,6 +94,8 @@ Allow users to document or configure trusted roles such as:
 
 The product must distinguish legal authority from technical access. Technical capability does not grant permission, and a named trusted contact is not automatically an executor.
 
+Legal management and legal practitioners should be involved when the product names trusted roles, implies authority, supports survivor or delegated workflows, or offers copy that users may read as legal advice. The product owns the workflow; legal review owns the authority, consent, provider-term, jurisdiction, and professional-advice boundaries.
+
 ### 5. Transfer, preserve, memorialize, delete, close, or review
 
 Let users express disposition instructions for each asset or category:
@@ -123,6 +125,8 @@ For applicable products, requirements should answer:
 8. What export package is available for the user, executor, family, advisor, or fiduciary?
 9. What audit trail exists for delegated, emergency, or survivor workflows?
 10. What user documentation explains limits, risks, provider constraints, and professional-advice boundaries?
+
+When a product answers these questions with user-facing authority, executor, fiduciary, inheritance, disposition, or survivor-access language, route the wording and assumptions through Legal Management / Legal Practitioner review. A UI checkbox can record intent or role information; it cannot manufacture legal authority.
 
 ## UX Patterns
 
@@ -163,6 +167,7 @@ For products where Digital Estate Management applies, release readiness should i
 - trusted-contact, export, emergency, deletion, and revocation workflows are tested where present
 - inventory features do not expose raw secrets by default
 - privacy and consent boundaries are documented
+- legal authority, provider-term, jurisdiction, and professional-advice boundaries have been reviewed where the product makes or implies them
 - user-facing language does not overpromise legal authority, provider cooperation, transferability, or recovery
 - support and documentation explain limits, risks, escalation paths, and professional-advice boundaries
 
