@@ -20,10 +20,33 @@
 
 ## Open
 
-None.
+- [ ] Define public reuse and licensing posture for the guidance repo:
+  - Decide whether the public docs are intended for reuse, reference only, or later open-source collaboration.
+  - Add the corresponding `LICENSE` or copyright/reuse note.
+  - Update `README.md` so visitors understand whether they may copy, adapt, or contribute to the guidance.
+- [ ] Decide which management artifacts remain public versus move private:
+  - Review `BACKLOG.md`, future `LIFECYCLE_STATE.md`, review notes, decision records, and channel/project metadata.
+  - Keep product-facing process guidance public.
+  - Move or omit internal planning/history only when it exposes private context, clutters the showcase, or belongs to channel operations rather than the public guidance corpus.
+- [ ] Create private management boundary for future work:
+  - Create or designate a private `docs-software-product-process-mgnt` project/repo if ongoing planning, lifecycle state, review notes, or channel-specific decisions continue.
+  - Record that the public repo is the guidance artifact and the private management repo is the operational/project-control layer.
+  - Link the private management repo from local channel mapping or project notes without adding private URLs or operational details to the public repo.
+- [ ] Move current management backlog if presentation review says it should not stay public:
+  - If `BACKLOG.md` is retained publicly, trim it to public-roadmap language.
+  - If it moves private, replace it in the public repo with a short public roadmap or remove it entirely.
+  - Preserve useful completed-work history in the private management repo before removing it from the public repo.
+- [ ] Add public/private repository hygiene checks:
+  - Add a lightweight check for private-management-only paths, channel metadata, secrets, runtime files, and local workspace references.
+  - Document the check in `README.md` or a contributor note.
+  - Run it before future pushes to the public docs repo.
+- [ ] Re-review public-readiness after the split:
+  - Confirm public repo contains only guidance docs, templates, public roadmap/licensing material, and safe contributor-facing notes.
+  - Confirm private management repo contains any internal planning, lifecycle state, operational notes, and channel-specific history.
+  - Confirm both repos are clean and remotes/visibility match their intended roles.
 
 ## Burndown
 
 - Done: 12
-- Open: 0
-- Total: 12
+- Open: 6
+- Total: 18
