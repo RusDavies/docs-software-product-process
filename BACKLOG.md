@@ -2,6 +2,10 @@
 
 ## Completed
 
+- [x] Define public reuse and licensing posture for the guidance repo:
+  - Released the guidance corpus and templates under the MIT License.
+  - Added `LICENSE`.
+  - Updated `README.md` so visitors understand they may use, copy, adapt, and distribute the guidance under MIT terms.
 - [x] Add explicit user/admin/operator documentation guidance, templates, and release/QA gates.
 - [x] Run consistency pass across guidance docs for terminology, navigation, phase numbering, and ambiguous references.
 - [x] Add SEO/discovery guidance for web projects, including templates and process/release/QA gates.
@@ -20,10 +24,6 @@
 
 ## Open
 
-- [ ] Define public reuse and licensing posture for the guidance repo:
-  - Decide whether the public docs are intended for reuse, reference only, or later open-source collaboration.
-  - Add the corresponding `LICENSE` or copyright/reuse note.
-  - Update `README.md` so visitors understand whether they may copy, adapt, or contribute to the guidance.
 - [ ] Decide which management artifacts remain public versus move private:
   - Review `BACKLOG.md`, future `LIFECYCLE_STATE.md`, review notes, decision records, and channel/project metadata.
   - Keep product-facing process guidance public.
@@ -47,6 +47,6 @@
 
 ## Burndown
 
-- Done: 12
-- Open: 6
+- Done: 13
+- Open: 5
 - Total: 18

@@ -4,6 +4,10 @@ Workspace guidance for taking software products from idea to operation without s
 
 The guidance is modular. The top-level process explains the flow; each sub-document expands one discipline or checkpoint. Small projects can use the lightweight versions. Serious, public, security-sensitive, multi-user, enterprise-targeted, regulated, or production projects should treat the full guidance as required gates.
 
+## License and Reuse
+
+This guidance corpus and its templates are released under the MIT License. You may use, copy, adapt, and distribute them under the terms in [`LICENSE`](https://github.com/RusDavies/docs-software-product-process/blob/main/LICENSE).
+
 Start here instead of reading everything like a doomed compliance intern:
 
 1. Classify the project with [`TAILORING_GUIDE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/TAILORING_GUIDE.md).
