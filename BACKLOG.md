@@ -6,6 +6,10 @@
   - Released the guidance corpus and templates under the MIT License.
   - Added `LICENSE`.
   - Updated `README.md` so visitors understand they may use, copy, adapt, and distribute the guidance under MIT terms.
+- [x] Decide which management artifacts remain public versus move private:
+  - Added `REPOSITORY_BOUNDARY.md` with public/private artifact rules.
+  - Kept guidance docs, templates, README, license, and public-facing roadmap/backlog in the public repo.
+  - Classified lifecycle state, channel metadata, private review notes, and internal operational/project-management history as private management-layer material once the private management repo exists.
 - [x] Add explicit user/admin/operator documentation guidance, templates, and release/QA gates.
 - [x] Run consistency pass across guidance docs for terminology, navigation, phase numbering, and ambiguous references.
 - [x] Add SEO/discovery guidance for web projects, including templates and process/release/QA gates.
@@ -24,10 +28,6 @@
 
 ## Open
 
-- [ ] Decide which management artifacts remain public versus move private:
-  - Review `BACKLOG.md`, future `LIFECYCLE_STATE.md`, review notes, decision records, and channel/project metadata.
-  - Keep product-facing process guidance public.
-  - Move or omit internal planning/history only when it exposes private context, clutters the showcase, or belongs to channel operations rather than the public guidance corpus.
 - [ ] Create private management boundary for future work:
   - Create or designate a private `docs-software-product-process-mgnt` project/repo if ongoing planning, lifecycle state, review notes, or channel-specific decisions continue.
   - Record that the public repo is the guidance artifact and the private management repo is the operational/project-control layer.
@@ -47,6 +47,6 @@
 
 ## Burndown
 
-- Done: 13
-- Open: 5
+- Done: 14
+- Open: 4
 - Total: 18

@@ -21,6 +21,8 @@ Start here instead of reading everything like a doomed compliance intern:
 9. Use [`DIGITAL_ESTATE_MANAGEMENT_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/DIGITAL_ESTATE_MANAGEMENT_GUIDANCE.md) when a product has non-corporate end users whose digital assets, accounts, memories, identity, access paths, or death/incapacity instructions may matter.
 10. Use [`PROJECT_KNOWLEDGE_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/PROJECT_KNOWLEDGE_GUIDANCE.md) when durable project context, source-grounded research, decision maps, or agent-operable environment knowledge needs to be reviewed and maintained.
 
+Repository public/private boundaries are documented in [`REPOSITORY_BOUNDARY.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/REPOSITORY_BOUNDARY.md).
+
 ## Quick Start by Project Size
 
 ### Throw-Away / Disposable
