@@ -10,6 +10,10 @@
   - Added `REPOSITORY_BOUNDARY.md` with public/private artifact rules.
   - Kept guidance docs, templates, README, license, and public-facing roadmap/backlog in the public repo.
   - Classified lifecycle state, channel metadata, private review notes, and internal operational/project-management history as private management-layer material once the private management repo exists.
+- [x] Create private management boundary for future work:
+  - Created private `docs-software-product-process-mgnt` project/repo.
+  - Recorded that the public repo is the guidance artifact and the private management repo is the operational/project-control layer.
+  - Updated workspace channel mapping so this Discord channel resolves to the private management repo.
 - [x] Add explicit user/admin/operator documentation guidance, templates, and release/QA gates.
 - [x] Run consistency pass across guidance docs for terminology, navigation, phase numbering, and ambiguous references.
 - [x] Add SEO/discovery guidance for web projects, including templates and process/release/QA gates.
@@ -28,10 +32,6 @@
 
 ## Open
 
-- [ ] Create private management boundary for future work:
-  - Create or designate a private `docs-software-product-process-mgnt` project/repo if ongoing planning, lifecycle state, review notes, or channel-specific decisions continue.
-  - Record that the public repo is the guidance artifact and the private management repo is the operational/project-control layer.
-  - Link the private management repo from local channel mapping or project notes without adding private URLs or operational details to the public repo.
 - [ ] Move current management backlog if presentation review says it should not stay public:
   - If `BACKLOG.md` is retained publicly, trim it to public-roadmap language.
   - If it moves private, replace it in the public repo with a short public roadmap or remove it entirely.
@@ -47,6 +47,6 @@
 
 ## Burndown
 
-- Done: 14
-- Open: 4
+- Done: 15
+- Open: 3
 - Total: 18
