@@ -6,10 +6,11 @@ guidance artifact.
 
 ## Current
 
-- Collect human review comments on public readiness and incorporate accepted
-  changes.
+- No active public roadmap items.
 
 ## Recently Completed
+
+- Human review completed for public readiness; no further changes requested.
 
 - Re-reviewed public readiness after the repository split:
   - confirmed public contents are limited to reusable guidance, templates,
