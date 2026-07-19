@@ -44,7 +44,7 @@ for the guidance corpus.
 | `README.md` | Public repo | Keep public. |
 | `LICENSE` | Public repo | Keep public. |
 | `BACKLOG.md` | Public repo for now | Keep temporarily as public roadmap/backlog; later trim or replace after the private management repo exists. |
-| `LIFECYCLE_STATE.md` | Public repo for now | Move to private management when the management repo is created; it is operational channel state, not public guidance content. |
+| `LIFECYCLE_STATE.md` | Private management repo | Keep out of the public repo; it is operational channel state, not public guidance content. |
 | Review sessions | Private management | Do not add to public repo unless intentionally rewritten as public design notes. |
 | Discord/channel metadata | Private management or workspace map | Do not add to public repo. |
 | Internal operational notes | Private management | Do not add to public repo. |

@@ -2,6 +2,10 @@
 
 ## Completed
 
+- [x] Move lifecycle state into the private management repo:
+  - Confirmed the Discord channel now resolves to `projects/docs-software-product-process-mgnt`.
+  - Removed `LIFECYCLE_STATE.md` from the public repo.
+  - Kept lifecycle/channel operations in the private management repo.
 - [x] Define public reuse and licensing posture for the guidance repo:
   - Released the guidance corpus and templates under the MIT License.
   - Added `LICENSE`.
@@ -47,6 +51,6 @@
 
 ## Burndown
 
-- Done: 15
+- Done: 16
 - Open: 3
-- Total: 18
+- Total: 19
