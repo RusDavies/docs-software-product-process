@@ -16,7 +16,7 @@ Keep these in this public repository:
 - repository-boundary guidance that helps contributors keep the public artifact clean
 
 The public repository should be understandable on its own. It should not depend
-on private Discord history, private workspace notes, or local OpenClaw runtime
+on private chat history, private workspace notes, or local automation runtime
 state to make sense.
 
 ## Private Management Contents
@@ -25,7 +25,7 @@ Move or keep these in a private management repository when that repository
 exists:
 
 - private planning notes and review sessions
-- Discord channel metadata and channel lifecycle operations
+- chat/channel metadata and channel lifecycle operations
 - detailed project-management history that is not useful to public readers
 - internal decision notes that mention private workspace context
 - incident notes, recovery notes, or operational queue details
@@ -47,13 +47,13 @@ for the guidance corpus.
 | `LIFECYCLE_STATE.md` | Private management repo | Keep out of the public repo; it is operational channel state, not public guidance content. |
 | `tools/public_hygiene_check.py` | Public repo | Keep public; run before public pushes to catch accidental private operational material. |
 | Review sessions | Private management | Do not add to public repo unless intentionally rewritten as public design notes. |
-| Discord/channel metadata | Private management or workspace map | Do not add to public repo. |
+| Chat/channel metadata | Private management or workspace map | Do not add to public repo. |
 | Internal operational notes | Private management | Do not add to public repo. |
 
 ## Split Rule
 
 If a file helps a public reader use or improve the software-product-process
-guidance, it can stay public. If a file mainly helps Skippy/Russ operate the
+guidance, it can stay public. If a file mainly helps private operators run the
 channel, track private decisions, recover work, or manage local workflow, it
 belongs in the private management layer.
 
