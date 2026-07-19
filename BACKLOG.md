@@ -6,8 +6,6 @@ guidance artifact.
 
 ## Current
 
-- Add repository hygiene checks that catch non-public operational metadata,
-  secrets, runtime files, and machine-specific references before public pushes.
 - Re-review public readiness after the repository split:
   - confirm public contents are limited to reusable guidance, templates,
     public roadmap/licensing material, and contributor-facing notes
@@ -16,6 +14,9 @@ guidance artifact.
 
 ## Recently Completed
 
+- Added a public hygiene check for private operational metadata,
+  machine-specific references, lifecycle state files, and obvious secret
+  material.
 - Released the guidance corpus and templates under the MIT License.
 - Added `REPOSITORY_BOUNDARY.md` to define public versus private-management
   contents.

@@ -43,8 +43,9 @@ for the guidance corpus.
 | Templates | Public repo | Keep public. |
 | `README.md` | Public repo | Keep public. |
 | `LICENSE` | Public repo | Keep public. |
-| `BACKLOG.md` | Public repo for now | Keep temporarily as public roadmap/backlog; later trim or replace after the private management repo exists. |
+| `BACKLOG.md` | Public repo | Keep as a short public roadmap; detailed execution history belongs in private management. |
 | `LIFECYCLE_STATE.md` | Private management repo | Keep out of the public repo; it is operational channel state, not public guidance content. |
+| `tools/public_hygiene_check.py` | Public repo | Keep public; run before public pushes to catch accidental private operational material. |
 | Review sessions | Private management | Do not add to public repo unless intentionally rewritten as public design notes. |
 | Discord/channel metadata | Private management or workspace map | Do not add to public repo. |
 | Internal operational notes | Private management | Do not add to public repo. |

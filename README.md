@@ -23,6 +23,17 @@ Start here instead of reading everything like a doomed compliance intern:
 
 Repository public/private boundaries are documented in [`REPOSITORY_BOUNDARY.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/REPOSITORY_BOUNDARY.md).
 
+Before pushing public changes, run the public hygiene check:
+
+```sh
+python3 tools/public_hygiene_check.py
+```
+
+It scans for private operational metadata, local machine references, lifecycle
+state files, and obvious secret material before they escape into the public
+guidance repo. A script is not a substitute for judgment, obviously, but it is
+better than hoping everyone suddenly becomes careful under deadline pressure.
+
 ## Quick Start by Project Size
 
 ### Throw-Away / Disposable
