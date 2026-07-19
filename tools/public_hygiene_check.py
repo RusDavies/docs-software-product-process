@@ -35,7 +35,7 @@ TEXT_PATTERNS = [
     ("local projects path", re.compile(r"(^|[\s`'\"(])projects/[A-Za-z0-9._/-]+")),
     ("lifecycle state file", re.compile(r"\bLIFECYCLE_STATE\.md\b")),
     ("channel metadata key", re.compile(r"\b(channel_id|channel-id|chat_id|message_id)\b", re.IGNORECASE)),
-    ("named private operator context", re.compile(r"\b(Skippy|Rusty Frink Desiato)\b")),
+    ("named private operator context", re.compile(r"\b(Skippy|Rusty Frink Desiato|Skippy/Russ)\b")),
     ("private key material", re.compile(r"-----BEGIN [A-Z ]*PRIVATE KEY-----")),
     ("common secret assignment", re.compile(r"\b[A-Z0-9_]*(TOKEN|SECRET|PASSWORD|API_KEY)\s*=\s*['\"]?[^'\"\s]+")),
     ("AWS access key", re.compile(r"\bAKIA[0-9A-Z]{16}\b")),

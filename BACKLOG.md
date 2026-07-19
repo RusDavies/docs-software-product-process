@@ -6,13 +6,18 @@ guidance artifact.
 
 ## Current
 
-- Re-review public readiness after the repository split:
-  - confirm public contents are limited to reusable guidance, templates,
-    public roadmap/licensing material, and contributor-facing notes
-  - confirm operational state and internal planning stay outside this repo
-  - confirm repository remotes and visibility match the intended public role
+- Collect human review comments on public readiness and incorporate accepted
+  changes.
 
 ## Recently Completed
+
+- Re-reviewed public readiness after the repository split:
+  - confirmed public contents are limited to reusable guidance, templates,
+    public roadmap/licensing material, and contributor-facing notes
+  - removed leftover private-operator wording from the repository-boundary
+    guidance
+  - confirmed operational state and internal planning stay outside this repo
+  - confirmed repository remotes and visibility match the intended public role
 
 - Added a public hygiene check for private operational metadata,
   machine-specific references, lifecycle state files, and obvious secret
