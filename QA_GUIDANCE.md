@@ -27,7 +27,8 @@ At minimum, capture:
 5. Regression checks
 6. Known issues
 7. Project knowledge lint/review where applicable
-8. Approval or accepted-risk note
+8. Optional high-intensity verifier loop where a concrete artifact needs it
+9. Approval or accepted-risk note
 
 ## Full QA Checklist
 
@@ -159,7 +160,35 @@ For projects with a `docs/knowledge/` base or equivalent LLM wiki-style context,
 
 Guidance: [`PROJECT_KNOWLEDGE_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/PROJECT_KNOWLEDGE_GUIDANCE.md)
 
-### 11. SEO QA, Where Applicable
+### 11. Gauntlet Loop QA, Where Useful
+
+A Gauntlet Loop is an optional QA tactic for concrete artifacts where repeated
+critique is likely to improve the result. It does not replace acceptance
+criteria, tests, security review, accessibility review, documentation QA, or
+human approval.
+
+Use it when all of these are true:
+
+- there is a concrete artifact to inspect
+- the target quality bar is explicit
+- independent critique can find meaningful gaps
+- deterministic checks can still verify the required behavior
+- the loop has stop conditions and a budget
+
+Verify:
+
+- the spec and non-goals are still controlling the work
+- critique notes are tied to specific artifact revisions
+- each iteration records what changed and why
+- automated tests, linting, screenshots, accessibility checks, or other objective checks still pass where relevant
+- security, privacy, release, and public-claim boundaries were not expanded by the loop
+- unresolved critique becomes a known issue, backlog item, or explicit accepted exception
+
+Useful evidence can live in
+[`templates/gauntlet-loop-review-log.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/templates/gauntlet-loop-review-log.md)
+or an equivalent QA record.
+
+### 12. SEO QA, Where Applicable
 
 For public web projects, verify:
 
@@ -186,8 +215,9 @@ For small projects:
 5. Operational smoke checks
 6. Documentation smoke check
 7. Project knowledge smoke check where a knowledge base exists
-8. SEO smoke check for public web projects
-9. Known issues list
+8. Gauntlet Loop review note where used
+9. SEO smoke check for public web projects
+10. Known issues list
 
 ## Recommended Project Files
 
@@ -195,6 +225,7 @@ For small projects:
 - `docs/qa/manual-test-checklist.md`
 - `docs/qa/security-test-results.md`
 - `docs/qa/accessibility-checks.md`
+- `docs/qa/gauntlet-loop-review-log.md`
 - `docs/qa/release-qa-report.md`
 - `docs/documentation/documentation-qa-checklist.md`
 - `docs/knowledge/project-knowledge-lint-checklist.md`
@@ -208,6 +239,7 @@ QA is ready when:
 - test data/environment exists
 - security/UX/operations/documentation/SEO checks are known
 - project knowledge checks are known where a knowledge base exists
+- any Gauntlet Loop has a concrete artifact, target quality bar, and stop rule
 - risks and edge cases are identified
 
 ## Definition of QA-Done
@@ -217,6 +249,7 @@ QA is done when:
 - required checks pass or exceptions are approved
 - required documentation has been checked or exceptions are approved
 - project knowledge has been checked or exceptions are approved where applicable
+- Gauntlet Loop findings are resolved, accepted, or tracked where the tactic was used
 - SEO checks have passed or exceptions are approved where applicable
 - known issues are documented
 - release blockers are resolved

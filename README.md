@@ -145,6 +145,7 @@ Starter artifacts live in `templates/`:
 - [`templates/risk-register.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/templates/risk-register.md)
 - [`templates/threat-model.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/templates/threat-model.md)
 - [`templates/qa-plan.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/templates/qa-plan.md)
+- [`templates/gauntlet-loop-review-log.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/templates/gauntlet-loop-review-log.md)
 - [`templates/release-checklist.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/templates/release-checklist.md)
 - [`templates/operations-runbook.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/templates/operations-runbook.md)
 - [`templates/observability-debuggability-plan.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/templates/observability-debuggability-plan.md)

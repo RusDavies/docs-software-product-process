@@ -52,6 +52,13 @@ For agent-heavy work, distinguish three concerns:
 
 An LLM wiki, project memory, or generated knowledge map belongs primarily in the environment. It may summarize or link to specifications, decisions, and evidence, but it should not silently replace them.
 
+High-intensity tactics such as a Gauntlet Loop belong in the verifier layer, not
+the environment and not the spec. They can be useful when a concrete artifact
+needs repeated critique against a clear target quality bar, but the loop should
+point back to approved requirements, decision records, backlog items, QA checks,
+and review evidence. It should not become a new source of scope, authority,
+release approval, public claims, or accepted risk.
+
 ## Recommended Structure
 
 Use a simple structure unless the project genuinely needs more:

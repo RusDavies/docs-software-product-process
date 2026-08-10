@@ -10,6 +10,10 @@ guidance artifact.
 
 ## Recently Completed
 
+- Added optional Gauntlet Loop verifier-mode guidance and a review-log template
+  for bounded high-intensity critique inside the existing Spec / Verifier /
+  Environment model.
+
 - Human review completed for public readiness; no further changes requested.
 
 - Re-reviewed public readiness after the repository split:

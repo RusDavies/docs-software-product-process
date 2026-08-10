@@ -27,7 +27,8 @@ At minimum, capture:
 6. Release plan
 7. Spec / verifier / environment assumptions for agent-heavy work
 8. Project knowledge tasks where durable context is needed
-9. Known risks/blockers
+9. Optional high-intensity verifier modes where an artifact needs repeated critique
+10. Known risks/blockers
 
 ## Full Planning Checklist
 
@@ -123,7 +124,39 @@ Do not let generated project knowledge become the spec. Link it to approved requ
 
 Guidance: [`PROJECT_KNOWLEDGE_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/PROJECT_KNOWLEDGE_GUIDANCE.md)
 
-### 8. Release Strategy
+### 8. Optional Gauntlet Loop Verifier Mode
+
+Use a Gauntlet Loop only as an intensified verifier or execution tactic inside
+the Spec / Verifier / Environment model. It is useful when the work produces a
+concrete artifact and repeated independent critique can move it closer to a
+clear quality bar.
+
+Good candidates include:
+
+- UI screens or flows with a reference design or acceptance criteria
+- product copy, documentation, or launch content with a known audience and tone
+- prototypes with a concrete behavior target
+- creative assets with an accepted reference or explicit constraints
+- complex implementation slices with defined tests, review checks, and stop rules
+
+Before planning a Gauntlet Loop, capture:
+
+- the artifact under review
+- the spec and non-goals
+- the independent critique method
+- deterministic checks that must still pass
+- human approval boundaries
+- stop conditions, budget limits, and escalation triggers
+- where review notes or evidence will be recorded
+
+Do not use the loop to change scope, approval requirements, security posture,
+release readiness, public claims, or accepted risks. Those stay governed by the
+normal spec, decision, risk, and approval process. Otherwise the verifier starts
+writing the spec, which is how you get process soup with extra confidence.
+
+Template: [`templates/gauntlet-loop-review-log.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/templates/gauntlet-loop-review-log.md)
+
+### 9. Release Strategy
 
 Capture:
 
@@ -135,7 +168,7 @@ Capture:
 - launch communication
 - support expectations
 
-### 9. Risk Register
+### 10. Risk Register
 
 Track:
 
@@ -156,8 +189,9 @@ For small projects:
 3. Verification checklist
 4. Security/operations tasks
 5. Spec/verifier/environment note for agent-heavy work
-6. Project knowledge note if durable context matters
-7. Release note
+6. Optional Gauntlet Loop note if a concrete artifact needs intensified critique
+7. Project knowledge note if durable context matters
+8. Release note
 
 ## Recommended Project Files
 
@@ -168,6 +202,7 @@ For small projects:
 - `docs/planning/risk-register.md`
 - `docs/planning/test-strategy.md`
 - `docs/planning/release-plan.md`
+- `docs/qa/gauntlet-loop-review-log.md`
 
 ## Definition of Planning-Ready
 
@@ -177,6 +212,7 @@ Planning is ready when:
 - sequencing is sensible
 - security, observability/debuggability, and operations are represented
 - verification is planned
+- any Gauntlet Loop verifier mode has a concrete artifact, quality bar, and stop rules
 - spec/verifier/environment assumptions are explicit where agent-heavy work is expected
 - project knowledge work is represented where durable context or source provenance matters
 - risks and blockers are visible

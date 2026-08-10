@@ -54,6 +54,7 @@ At minimum, capture:
 8. Rollback/undo expectations
 9. Sensitive-data handling boundaries
 10. Project knowledge/source-context boundaries where durable agent context is used
+11. Optional high-intensity verifier modes and their stop/approval boundaries
 
 ## Full AI-Agent Operation Checklist
 
@@ -171,7 +172,34 @@ Project knowledge is part of the agent environment. It informs work but does not
 
 Guidance: [`PROJECT_KNOWLEDGE_GUIDANCE.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/PROJECT_KNOWLEDGE_GUIDANCE.md)
 
-### 10. Security and Privacy Boundaries
+### 10. High-Intensity Verifier Modes
+
+Agents may use an intensified verifier tactic, such as a Gauntlet Loop, only
+inside documented operating boundaries. The loop may produce critique,
+iteration notes, candidate revisions, and verification evidence; it must not
+grant itself broader authority.
+
+Capture:
+
+- the artifact and approved spec the loop is judging against
+- allowed tools, repositories, data, and environments
+- whether the loop is read-only, advisory, or allowed to edit candidate artifacts
+- deterministic checks that must run after iterations
+- actions that still require human approval
+- stop conditions for budget, diminishing returns, uncertainty, safety, or scope drift
+- where review logs and decisions are recorded
+
+Forbidden loop behavior includes:
+
+- changing the approved scope or acceptance criteria
+- weakening security, privacy, accessibility, or release gates
+- making public/customer claims without approval
+- treating generated critique as proof when tests or human review are required
+- continuing after stop conditions or approval boundaries are hit
+
+Template: [`templates/gauntlet-loop-review-log.md`](https://github.com/RusDavies/docs-software-product-process/blob/main/templates/gauntlet-loop-review-log.md)
+
+### 11. Security and Privacy Boundaries
 
 Capture:
 
@@ -194,6 +222,7 @@ For small projects:
 5. Document the log/evidence path
 6. Document rollback or “do not automate” where rollback is weak
 7. Note any durable project knowledge or source context agents may rely on
+8. Note any Gauntlet Loop-style verifier mode, including artifact, checks, approval boundaries, and stop rules
 
 ## Recommended Project Files
 
@@ -213,6 +242,7 @@ A product is agent-operation-ready when:
 - project knowledge/source-context boundaries are documented where durable agent context exists
 - read-only inspection paths are available
 - write-capable actions are least-privilege and approval-gated where risky
+- high-intensity verifier modes are bounded by documented specs, checks, approvals, and stop rules
 - audit logs can distinguish agent actions
 - rollback/undo paths exist for permitted changes
 - forbidden actions and sensitive-data boundaries are explicit
